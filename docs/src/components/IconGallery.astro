@@ -1,0 +1,384 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL;
+
+/* ── Read categories.json at build time ── */
+const categoriesPath = path.join(process.cwd(), 'public', 'categories.json');
+const rawCategories: Record<string, { category: string; tags: string[] }> =
+  JSON.parse(fs.readFileSync(categoriesPath, 'utf-8'));
+
+/* ── Reserved words matching scripts/build.ts ── */
+const RESERVED_WORDS = new Set([
+  'abstract','arguments','async','await','boolean','break','byte','case','catch',
+  'char','class','const','continue','debugger','default','delete','do','double',
+  'else','enum','eval','export','extends','false','final','finally','float','for',
+  'from','function','goto','if','implements','import','in','instanceof','int',
+  'interface','let','long','native','new','null','of','package','private',
+  'protected','public','return','short','static','super','switch','synchronized',
+  'this','throw','throws','transient','true','try','type','typeof','var','void',
+  'volatile','while','with','yield',
+]);
+
+function kebabToCamel(str: string): string {
+  let s = str;
+  if (/^\d/.test(s)) s = 'http' + s;
+  const camel = s.replace(/-([a-z0-9])/g, (_, c: string) => c.toUpperCase());
+  return RESERVED_WORDS.has(camel) ? camel + 'Icon' : camel;
+}
+
+function formatCategory(slug: string): string {
+  return slug
+    .replace(/(^|-)(\w)/g, (_: string, sep: string, c: string) =>
+      (sep ? ' ' : '') + c.toUpperCase()
+    )
+    .replace('Ai Ml', 'AI & ML')
+    .replace('Data Api', 'Data & API')
+    .replace('Frontend Ui', 'Frontend & UI')
+    .replace('Design Ux', 'Design & UX')
+    .replace('Testing Qa', 'Testing & QA')
+    .replace('Cloud Devops', 'Cloud & DevOps')
+    .replace('Database Storage', 'Database & Storage')
+    .replace('Status Workflow', 'Status & Workflow')
+    .replace('Files Media', 'Files & Media')
+    .replace('Arrows Symbols', 'Arrows & Symbols')
+    .replace('Math Crypto', 'Math & Crypto')
+    .replace('Backend Languages', 'Backend & Languages')
+    .replace('Http Codes', 'HTTP Codes');
+}
+
+/* ── Build icon list with computed metadata ── */
+interface IconEntry {
+  name: string;
+  category: string;
+  categoryDisplay: string;
+  tags: string[];
+  exportName: string;
+}
+
+const icons: IconEntry[] = Object.entries(rawCategories)
+  .map(([name, meta]) => ({
+    name,
+    category: meta.category,
+    categoryDisplay: formatCategory(meta.category),
+    tags: meta.tags,
+    exportName: kebabToCamel(name),
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+/* ── Unique category display names sorted alphabetically ── */
+const categoryDisplayNames = [...new Set(icons.map((i) => i.categoryDisplay))].sort();
+---
+
+<div class="gallery-wrapper">
+  <div class="gallery-header">
+    <div class="gallery-count" id="gallery-count">{icons.length} icons</div>
+  </div>
+
+  <div class="gallery-controls">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
+        <circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input type="text" id="gallery-search" placeholder="Search icons..." autocomplete="off" />
+    </div>
+    <div class="filter-pills" id="gallery-filters">
+      <button class="pill active" data-category="All">All</button>
+      {categoryDisplayNames.map((cat) => (
+        <button class="pill" data-category={cat}>{cat}</button>
+      ))}
+    </div>
+  </div>
+
+  <div class="icon-grid" id="icon-grid">
+    {icons.map((icon) => (
+      <div
+        class="icon-card"
+        data-name={icon.name}
+        data-category={icon.categoryDisplay}
+        data-tags={icon.tags.join(',')}
+        data-export={icon.exportName}
+      >
+        <div class="icon-preview">
+          <img
+            src={`${base}icons/${icon.name}.svg`}
+            alt={icon.name}
+            width="48"
+            height="48"
+            loading="lazy"
+          />
+        </div>
+        <span class="icon-name">{icon.name}</span>
+        <div class="toast">Copied!</div>
+      </div>
+    ))}
+  </div>
+
+  <div class="gallery-empty" id="gallery-empty" hidden>No icons match your search</div>
+</div>
+
+<script>
+  const searchEl = document.getElementById('gallery-search') as HTMLInputElement | null;
+  const gridEl = document.getElementById('icon-grid');
+  const emptyEl = document.getElementById('gallery-empty');
+  const countEl = document.getElementById('gallery-count');
+  const cards = gridEl ? Array.from(gridEl.querySelectorAll('.icon-card')) as HTMLElement[] : [];
+  const pills = Array.from(document.querySelectorAll('.pill')) as HTMLElement[];
+
+  let activeCategory = 'All';
+
+  function render() {
+    const q = searchEl?.value.toLowerCase().trim() ?? '';
+    let visible = 0;
+
+    for (const card of cards) {
+      const name = card.dataset.name ?? '';
+      const category = card.dataset.category ?? '';
+      const tags = card.dataset.tags ?? '';
+
+      const matchesCategory = activeCategory === 'All' || category === activeCategory;
+      const matchesSearch = !q || name.includes(q) || tags.includes(q);
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = '';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
+    }
+
+    if (emptyEl) emptyEl.hidden = visible > 0;
+    if (countEl) countEl.textContent = `${visible} icon${visible !== 1 ? 's' : ''}`;
+  }
+
+  /* ── Pill click ── */
+  for (const pill of pills) {
+    pill.addEventListener('click', () => {
+      for (const p of pills) p.classList.remove('active');
+      pill.classList.add('active');
+      activeCategory = pill.dataset.category ?? 'All';
+      render();
+    });
+  }
+
+  /* ── Search ── */
+  searchEl?.addEventListener('input', render);
+
+  /* ── Click to copy import statement ── */
+  for (const card of cards) {
+    card.addEventListener('click', () => {
+      const exportName = card.dataset.export ?? '';
+      const importStr = `import { ${exportName} } from '@modern-svg-icons/core';`;
+      navigator.clipboard.writeText(importStr).then(() => {
+        const toast = card.querySelector('.toast') as HTMLElement | null;
+        if (toast) {
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 900);
+        }
+      });
+    });
+  }
+</script>
+
+<style>
+  .gallery-wrapper {
+    width: 100%;
+  }
+
+  .gallery-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .gallery-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: #8b8b96;
+    background: #16161a;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #2a2a32;
+  }
+
+  .gallery-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  /* ── Search ── */
+  .search-wrap {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: #8b8b96;
+  }
+
+  .search-wrap input {
+    width: 100%;
+    padding: 12px 14px 12px 42px;
+    background: #16161a;
+    border: 1px solid #2a2a32;
+    border-radius: 12px;
+    color: #e4e4e8;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .search-wrap input:focus {
+    border-color: #42a5f5;
+  }
+
+  .search-wrap input::placeholder {
+    color: #8b8b96;
+  }
+
+  /* ── Filter pills ── */
+  .filter-pills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+    background: #16161a;
+    border: 1px solid #2a2a32;
+    color: #8b8b96;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+  }
+
+  .pill:hover {
+    border-color: #8b8b96;
+  }
+
+  .pill.active {
+    background: #42a5f5;
+    border-color: #42a5f5;
+    color: #fff;
+  }
+
+  /* ── Icon grid ── */
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
+  .icon-card {
+    background: #16161a;
+    border: 1px solid #2a2a32;
+    border-radius: 14px;
+    padding: 16px 8px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .icon-card:hover {
+    border-color: #42a5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(66, 165, 245, 0.1);
+  }
+
+  .icon-card:active {
+    transform: translateY(0);
+  }
+
+  .icon-preview {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-preview img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .icon-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #8b8b96;
+    text-align: center;
+    line-height: 1.3;
+    word-break: break-all;
+  }
+
+  /* ── Copied toast ── */
+  .toast {
+    position: absolute;
+    inset: 0;
+    background: rgba(66, 187, 106, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+  }
+
+  .toast.show {
+    opacity: 1;
+  }
+
+  /* ── Empty state ── */
+  .gallery-empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: #8b8b96;
+    font-size: 15px;
+  }
+
+  @media (max-width: 600px) {
+    .icon-grid {
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      gap: 8px;
+    }
+
+    .icon-card {
+      padding: 12px 6px 8px;
+    }
+
+    .icon-preview {
+      width: 44px;
+      height: 44px;
+    }
+
+    .icon-preview img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+</style>
