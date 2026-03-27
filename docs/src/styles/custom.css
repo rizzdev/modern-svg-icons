@@ -1,1 +1,54 @@
-/* Placeholder — replaced in Task 2 */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;500;700&display=swap');
+
+/* ── Force dark theme on both light and dark modes ── */
+:root,
+:root[data-theme='light'],
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #0c2a47;
+  --sl-color-accent: #42a5f5;
+  --sl-color-accent-high: #e4e4e8;
+  --sl-color-white: #e4e4e8;
+  --sl-color-gray-1: #e4e4e8;
+  --sl-color-gray-2: #c0c0c8;
+  --sl-color-gray-3: #8b8b96;
+  --sl-color-gray-4: #4a4a54;
+  --sl-color-gray-5: #2a2a32;
+  --sl-color-gray-6: #16161a;
+  --sl-color-gray-7: #0c0c0e;
+  --sl-color-black: #0c0c0e;
+  --sl-font: 'Outfit', sans-serif;
+  --sl-font-mono: 'JetBrains Mono', monospace;
+  color-scheme: dark;
+}
+
+/* ── Grid background on gallery page ── */
+[data-slug='icons'] .main-frame {
+  position: relative;
+}
+
+[data-slug='icons'] .main-frame::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Widen content area for gallery ── */
+[data-slug='icons'] .sl-markdown-content {
+  max-width: 100%;
+}
+
+/* ── Code blocks styling ── */
+.sl-markdown-content pre {
+  border: 1px solid #2a2a32;
+}
+
+/* ── Sidebar active link accent ── */
+nav.sidebar a[aria-current='page'] {
+  color: #42a5f5;
+}
