@@ -1,5 +1,22 @@
-.DS_Store
+# Package outputs
+packages/*/dist/
+
+# Generated source files (build artifacts)
+packages/core/src/icons/
+packages/core/src/index.ts
+packages/core/src/meta.ts
+
+# Dependencies
 node_modules/
-png/
+.turbo/
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
 *.pyc
 __pycache__/
+
+# Temp
+png/
