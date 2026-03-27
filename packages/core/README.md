@@ -43,6 +43,50 @@ createIcon(terminal, { size: 32 })
 createIcon(terminal, { animated: false, size: 48 })
 ```
 
+### Themes
+
+```ts
+import { createIcon } from '@modern-svg-icons/core/utils'
+import { terminal } from '@modern-svg-icons/core'
+
+// Grayscale
+createIcon(terminal, { theme: 'grayscale' })
+
+// Darkened
+createIcon(terminal, { theme: 'dark' })
+
+// Custom color — auto-generates shades
+createIcon(terminal, { theme: '#3B82F6' })
+
+// Direct palette control
+createIcon(terminal, { palette: ['#1a1a2e', '#16213e', '#0f3460', '#533483', '#e94560'] })
+```
+
+### Animation Speed
+
+```ts
+createIcon(terminal, { speed: 'slow' })   // 0.5x
+createIcon(terminal, { speed: 'normal' }) // 1x (default)
+createIcon(terminal, { speed: 'fast' })   // 2x
+```
+
+### Factory (global defaults)
+
+```ts
+import { createIconFactory } from '@modern-svg-icons/core/utils'
+import { terminal, docker, lock } from '@modern-svg-icons/core'
+
+const icon = createIconFactory({
+  theme: 'grayscale',
+  speed: 'fast',
+  size: 24
+})
+
+icon(terminal)                    // all defaults
+icon(docker)                      // all defaults
+icon(lock, { size: 48 })          // override size only
+```
+
 ### Search and filter with metadata
 
 ```ts
