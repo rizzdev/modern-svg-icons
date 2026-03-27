@@ -1,0 +1,14 @@
+import { defineConfig } from 'tsup'
+
+export default defineConfig({
+  entry: {
+    index: 'src/index.ts',
+    utils: 'src/utils.ts',
+    meta: 'src/meta.ts',
+  },
+  format: ['esm', 'cjs'],
+  dts: true,
+  splitting: false,
+  clean: true,
+  outDir: 'dist',
+})
