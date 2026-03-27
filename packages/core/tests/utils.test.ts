@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { createIcon } from '../src/utils'
+import { createIcon, createIconFactory } from '../src/utils'
 
 const sampleSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
 <style>
@@ -68,5 +68,77 @@ describe('createIcon', () => {
   it('preserves viewBox when changing size', () => {
     const result = createIcon(sampleSvg, { size: 32 })
     expect(result).toContain('viewBox="0 0 44 44"')
+  })
+})
+
+const colorfulSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}.p{animation:pulse 2s ease-in-out infinite}</style>
+<circle cx="22" cy="22" r="16" fill="#AB47BC"/>
+<circle class="p" cx="16" cy="28" r="2" fill="#FFC107"/>
+<circle class="p" cx="28" cy="28" r="2" fill="#42A5F5"/>
+<line x1="16" y1="28" x2="22" y2="16" stroke="#E1BEE7" stroke-width="1"/>
+</svg>`
+
+describe('theme option', () => {
+  it('theme default returns SVG unchanged', () => {
+    const result = createIcon(colorfulSvg, { theme: 'default' })
+    expect(result).toBe(colorfulSvg)
+  })
+
+  it('theme grayscale replaces all fill colors with grays', () => {
+    const result = createIcon(colorfulSvg, { theme: 'grayscale' })
+    expect(result).not.toContain('#AB47BC')
+    expect(result).not.toContain('#FFC107')
+    expect(result).not.toContain('#42A5F5')
+    expect(result).toContain('fill="#')
+  })
+
+  it('theme grayscale replaces stroke colors too', () => {
+    const result = createIcon(colorfulSvg, { theme: 'grayscale' })
+    expect(result).not.toContain('stroke="#E1BEE7"')
+    expect(result).toContain('stroke="#')
+  })
+
+  it('theme dark darkens all colors', () => {
+    const result = createIcon(colorfulSvg, { theme: 'dark' })
+    expect(result).not.toContain('#AB47BC')
+    expect(result).not.toContain('#FFC107')
+    expect(result).toContain('fill="#')
+  })
+
+  it('theme with hex string applies custom color shades', () => {
+    const result = createIcon(colorfulSvg, { theme: '#3B82F6' })
+    expect(result).not.toContain('#AB47BC')
+    expect(result).not.toContain('#FFC107')
+    expect(result).toContain('fill="#')
+  })
+
+  it('palette overrides theme', () => {
+    const result = createIcon(colorfulSvg, {
+      theme: 'grayscale',
+      palette: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00']
+    })
+    const hasRed = result.includes('#FF0000')
+    const hasGreen = result.includes('#00FF00')
+    const hasBlue = result.includes('#0000FF')
+    const hasYellow = result.includes('#FFFF00')
+    expect(hasRed || hasGreen || hasBlue || hasYellow).toBe(true)
+    expect(result).not.toContain('#AB47BC')
+  })
+
+  it('palette maps colors by luminance', () => {
+    const result = createIcon(colorfulSvg, {
+      palette: ['#000000', '#FFFFFF']
+    })
+    expect(result).toContain('#000000')
+    expect(result).toContain('#FFFFFF')
+  })
+
+  it('theme does not affect non-hex fill values', () => {
+    const svgWithNone = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<path d="M15 18 L15 13" stroke="#78909C" fill="none"/>
+</svg>`
+    const result = createIcon(svgWithNone, { theme: 'grayscale' })
+    expect(result).toContain('fill="none"')
   })
 })
