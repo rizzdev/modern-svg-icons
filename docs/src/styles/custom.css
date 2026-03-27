@@ -80,8 +80,8 @@ starlight-toc a:hover {
 .sl-markdown-content h2 {
   color: #a0a0aa;
   font-weight: 600;
-  border-bottom: 1px solid #1e1e24;
-  padding-bottom: 0.4rem;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .sl-markdown-content h3 {
@@ -166,10 +166,20 @@ site-search button {
   max-width: 100%;
 }
 
-/* ── Page title (above content): muted ── */
+/* ── Page title (above content): muted, more breathing room ── */
 h1.page-title {
   color: #a0a0aa !important;
   font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+}
+
+/* ── Content area: push away from TOC sidebar ── */
+.main-pane {
+  padding-right: 2rem;
+}
+
+.right-sidebar-panel {
+  padding-left: 1.5rem;
 }
 
 /* ── Tabs: muted styling ── */
