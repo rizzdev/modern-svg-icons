@@ -1,0 +1,72 @@
+{
+  "name": "@modern-svg-icons/core",
+  "version": "0.1.0",
+  "description": "514 animated SVG icons for developers — tree-shakeable, zero dependencies, TypeScript-first",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./utils": {
+      "import": {
+        "types": "./dist/utils.d.ts",
+        "default": "./dist/utils.js"
+      },
+      "require": {
+        "types": "./dist/utils.d.cts",
+        "default": "./dist/utils.cjs"
+      }
+    },
+    "./meta": {
+      "import": {
+        "types": "./dist/meta.d.ts",
+        "default": "./dist/meta.js"
+      },
+      "require": {
+        "types": "./dist/meta.d.cts",
+        "default": "./dist/meta.cjs"
+      }
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "svg",
+    "icons",
+    "animated",
+    "material",
+    "developer",
+    "tree-shakeable",
+    "typescript",
+    "animated-icons",
+    "svg-icons",
+    "icon-library"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knoxhack/modern-svg-icons",
+    "directory": "packages/core"
+  },
+  "scripts": {
+    "build": "tsx ../../scripts/build.ts && tsup",
+    "lint": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "vitest": "^2.0.0"
+  }
+}
