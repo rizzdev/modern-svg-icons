@@ -15,12 +15,28 @@ interface CategoryEntry {
   tags: string[]
 }
 
+// Reserved words that cannot be used as identifiers in TypeScript/JavaScript
+const RESERVED_WORDS = new Set([
+  'abstract', 'arguments', 'async', 'await', 'boolean', 'break', 'byte',
+  'case', 'catch', 'char', 'class', 'const', 'continue', 'debugger',
+  'default', 'delete', 'do', 'double', 'else', 'enum', 'eval', 'export',
+  'extends', 'false', 'final', 'finally', 'float', 'for', 'from',
+  'function', 'goto', 'if', 'implements', 'import', 'in', 'instanceof',
+  'int', 'interface', 'let', 'long', 'native', 'new', 'null', 'of',
+  'package', 'private', 'protected', 'public', 'return', 'short', 'static',
+  'super', 'switch', 'synchronized', 'this', 'throw', 'throws', 'transient',
+  'true', 'try', 'type', 'typeof', 'var', 'void', 'volatile', 'while',
+  'with', 'yield',
+])
+
 function kebabToCamel(str: string): string {
   // Handle numeric-prefixed names: 200-ok → http200Ok
   if (/^\d/.test(str)) {
     str = 'http' + str
   }
-  return str.replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase())
+  const camel = str.replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase())
+  // Escape reserved words by appending "Icon"
+  return RESERVED_WORDS.has(camel) ? camel + 'Icon' : camel
 }
 
 function categoryToFilename(category: string): string {
