@@ -196,3 +196,51 @@ describe('speed option', () => {
     expect(result).toContain('50%')
   })
 })
+
+describe('createIconFactory', () => {
+  const testSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>.x{animation:spin 2s linear infinite}</style>
+<circle cx="22" cy="22" r="16" fill="#AB47BC"/>
+<circle cx="16" cy="28" r="2" fill="#FFC107"/>
+</svg>`
+
+  it('returns a function', () => {
+    const icon = createIconFactory({ size: 32 })
+    expect(typeof icon).toBe('function')
+  })
+
+  it('applies defaults to every call', () => {
+    const icon = createIconFactory({ size: 32 })
+    const result = icon(testSvg)
+    expect(result).toContain('width="32"')
+    expect(result).toContain('height="32"')
+  })
+
+  it('per-call overrides replace defaults', () => {
+    const icon = createIconFactory({ size: 32, theme: 'grayscale' })
+    const result = icon(testSvg, { size: 64 })
+    expect(result).toContain('width="64"')
+    expect(result).toContain('height="64"')
+  })
+
+  it('per-call overrides only affect specified fields', () => {
+    const icon = createIconFactory({ size: 32, theme: 'grayscale' })
+    const result = icon(testSvg, { size: 64 })
+    expect(result).not.toContain('#AB47BC')
+  })
+
+  it('works with no per-call options', () => {
+    const icon = createIconFactory({ theme: 'grayscale', speed: 'fast' })
+    const result = icon(testSvg)
+    expect(result).not.toContain('#AB47BC')
+    expect(result).toContain('1s')
+  })
+
+  it('produces same result as createIcon with same options', () => {
+    const opts = { size: 48, theme: 'grayscale' as const, speed: 'fast' as const }
+    const icon = createIconFactory(opts)
+    const factoryResult = icon(testSvg)
+    const directResult = createIcon(testSvg, opts)
+    expect(factoryResult).toBe(directResult)
+  })
+})
