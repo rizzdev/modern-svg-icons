@@ -97,7 +97,7 @@ No build step needed — load the bundle directly in a `<script>` tag:
 Clone the repo and reference icons from the `icons/` directory:
 
 ```bash
-git clone https://github.com/knoxhack/modern-svg-icons.git
+git clone https://github.com/rizzdev/modern-svg-icons.git
 ```
 
 ```html
@@ -214,6 +214,6 @@ Add new icons to `icons/` following the existing style. Run through the checklis
 
 <div align="center">
 
-**[Browse Gallery](gallery.html)** · **[Report Issue](https://github.com/knoxhack/modern-svg-icons/issues)**
+**[Browse Gallery](gallery.html)** · **[Report Issue](https://github.com/rizzdev/modern-svg-icons/issues)**
 
 </div>

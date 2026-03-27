@@ -119,4 +119,4 @@ Every npm package is available via CDN:
 
 ## License
 
-[MIT](https://github.com/knoxhack/modern-svg-icons/blob/master/LICENSE)
+[MIT](https://github.com/rizzdev/modern-svg-icons/blob/master/LICENSE)

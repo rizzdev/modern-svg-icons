@@ -57,7 +57,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/knoxhack/modern-svg-icons",
+    "url": "https://github.com/rizzdev/modern-svg-icons",
     "directory": "packages/core"
   },
   "scripts": {
