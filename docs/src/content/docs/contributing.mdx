@@ -1,5 +1,61 @@
 ---
 title: Contributing
+description: How to add new icons, update categories, and submit pull requests.
 ---
 
-Placeholder — will be replaced.
+## Adding new icons
+
+Icons are generated using the AI prompt in [`PROMPT.md`](https://github.com/rizzdev/modern-svg-icons/blob/master/PROMPT.md). The workflow:
+
+1. Open a Claude conversation
+2. Paste the full contents of `PROMPT.md`
+3. Append your icon names: `ICONS TO GENERATE: joystick, pixel-heart, save-game`
+4. Claude outputs raw SVG — save each to `icons/{name}.svg`
+
+## Icon spec
+
+Every icon must follow these rules:
+
+- **ViewBox:** `0 0 44 44`
+- **Size attributes:** `width="256" height="256"`
+- **Colors:** Use the palette defined in `PROMPT.md` (17 named colors)
+- **Style:** Flat shapes only — no gradients, shadows, blur, or opacity
+- **Animation:** One contextual CSS `@keyframes` animation in a `<style>` tag
+- **Duration:** 1.5–3s, `ease-in-out`
+- **Filename:** kebab-case (e.g. `save-game.svg`)
+
+## Updating `categories.json`
+
+After adding icons, update `scripts/categories.json`:
+
+```json
+{
+  "save-game": {
+    "category": "gaming",
+    "tags": ["save", "game", "floppy", "checkpoint"]
+  }
+}
+```
+
+Each entry needs:
+- `category` — one of the 23 existing category slugs (kebab-case)
+- `tags` — 3-4 searchable keywords
+
+## Building
+
+After adding icons and updating categories:
+
+```bash
+pnpm build:icons   # Regenerates TypeScript source from SVGs
+pnpm build         # Rebuilds the core package
+pnpm test          # Runs tests
+```
+
+## Pull request workflow
+
+1. Fork the repo and create a branch
+2. Add your icons and update `categories.json`
+3. Run `pnpm build:icons && pnpm build && pnpm test`
+4. Submit a PR with the new SVG files and updated `categories.json`
+
+Keep PRs focused — one theme or category per PR when possible.

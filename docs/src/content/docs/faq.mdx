@@ -1,5 +1,83 @@
 ---
 title: FAQ
+description: Frequently asked questions about modern-svg-icons.
 ---
 
-Placeholder — will be replaced.
+## How does tree-shaking work?
+
+Each icon is a named export in the ESM build. Bundlers like Vite, webpack, Rollup, and esbuild will only include the icons you actually import. If you import 5 icons, only those 5 SVG strings end up in your bundle.
+
+```js
+// Only 'terminal' and 'rocket' are bundled
+import { terminal, rocket } from '@modern-svg-icons/core';
+```
+
+## What's the bundle size impact?
+
+Each icon is roughly 1-2 KB of SVG string (minified). Importing 10 icons adds ~10-20 KB to your bundle (before gzip). The `createIcon` and `createIconFactory` utilities add ~1 KB.
+
+The full package (all 514 icons) is ~500 KB, but tree-shaking means you only pay for what you use.
+
+## Can I use these with React / Vue / Svelte?
+
+Yes. The icons are raw SVG strings, so you can inject them with `dangerouslySetInnerHTML` (React), `v-html` (Vue), or `{@html}` (Svelte):
+
+**React:**
+```jsx
+import { terminal } from '@modern-svg-icons/core';
+
+function Icon() {
+  return <span dangerouslySetInnerHTML={{ __html: terminal }} />;
+}
+```
+
+**Vue:**
+```vue
+<template>
+  <span v-html="terminal" />
+</template>
+
+<script setup>
+import { terminal } from '@modern-svg-icons/core';
+</script>
+```
+
+**Svelte:**
+```svelte
+<script>
+  import { terminal } from '@modern-svg-icons/core';
+</script>
+
+<span>{@html terminal}</span>
+```
+
+## How do I disable animations?
+
+Pass `animated: false` to `createIcon()`:
+
+```js
+import { terminal, createIcon } from '@modern-svg-icons/core';
+
+const staticIcon = createIcon(terminal, { animated: false });
+```
+
+This strips all `<style>` blocks and CSS class attributes from the SVG.
+
+## Can I use these as Notion / Slack emojis?
+
+Yes, but these platforms require raster images (PNG). Use the [Export CLI](../export-cli/) to convert:
+
+```bash
+pnpm export --format png --size 128 --icons terminal,rocket,fire
+```
+
+Then upload the PNGs as custom emoji in your workspace.
+
+## Are the animations accessible?
+
+The icons use CSS animations with `ease-in-out` timing. Users with `prefers-reduced-motion: reduce` set in their OS will still see the animations unless you explicitly handle it. To respect reduced motion:
+
+```js
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const icon = createIcon(terminal, { animated: !prefersReduced });
+```
