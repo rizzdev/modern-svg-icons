@@ -1,5 +1,94 @@
 ---
 title: Export CLI
+description: Generate PNG, WebP, and GIF raster exports from SVG icons using the built-in CLI.
 ---
 
-Placeholder — will be replaced.
+## Purpose
+
+The export CLI converts animated SVG icons to raster formats (PNG, WebP, GIF) for platforms that don't support SVG — Notion custom emoji, Slack, Discord, etc.
+
+## Prerequisites
+
+The CLI uses Puppeteer for headless browser rendering:
+
+```bash
+npm install puppeteer
+```
+
+Puppeteer is listed as a devDependency in the monorepo root. For GIF export, the optional `canvas` and `gif-encoder-2` packages are also needed.
+
+## Usage
+
+Run from the monorepo root:
+
+```bash
+npx tsx scripts/export.ts [options]
+```
+
+Or via the workspace script:
+
+```bash
+pnpm export [options]
+```
+
+## Flags
+
+| Flag | Type | Default | Description |
+|---|---|---|---|
+| `--format` | `png \| webp \| gif` | `png` | Output format |
+| `--size` | `number` | `128` | Width and height in pixels |
+| `--icons` | `string` | all | Comma-separated icon names (kebab-case) |
+| `--theme` | `string` | `default` | Theme preset or hex color |
+| `--out` | `string` | `exports/` | Output directory |
+
+## Examples
+
+### Export all icons as 128×128 PNG (default)
+
+```bash
+pnpm export
+```
+
+### Export specific icons as WebP
+
+```bash
+pnpm export --format webp --icons terminal,docker,rocket
+```
+
+### Export for Notion emoji (128px PNG)
+
+```bash
+pnpm export --format png --size 128 --out notion-emoji/
+```
+
+### Export with grayscale theme
+
+```bash
+pnpm export --theme grayscale
+```
+
+### Export large icons for a hero section
+
+```bash
+pnpm export --format webp --size 512 --icons rocket,deploy,lightning
+```
+
+### Export animated GIF
+
+```bash
+pnpm export --format gif --icons terminal --size 64
+```
+
+GIF export captures multiple frames of the CSS animation and encodes them as an animated GIF. Requires `canvas` and `gif-encoder-2`.
+
+## Output
+
+Exported files are saved to the output directory with kebab-case filenames:
+
+```
+exports/
+├── terminal.png
+├── docker.png
+├── rocket.png
+└── ...
+```
