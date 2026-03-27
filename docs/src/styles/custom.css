@@ -6,19 +6,142 @@
 :root[data-theme='dark'] {
   --sl-color-accent-low: #0c2a47;
   --sl-color-accent: #42a5f5;
-  --sl-color-accent-high: #e4e4e8;
-  --sl-color-white: #e4e4e8;
-  --sl-color-gray-1: #e4e4e8;
-  --sl-color-gray-2: #c0c0c8;
-  --sl-color-gray-3: #8b8b96;
-  --sl-color-gray-4: #4a4a54;
-  --sl-color-gray-5: #2a2a32;
-  --sl-color-gray-6: #16161a;
+  --sl-color-accent-high: #c0c0c8;
+  --sl-color-white: #c0c0c8;
+  --sl-color-gray-1: #a0a0aa;
+  --sl-color-gray-2: #8b8b96;
+  --sl-color-gray-3: #6a6a74;
+  --sl-color-gray-4: #3a3a44;
+  --sl-color-gray-5: #222228;
+  --sl-color-gray-6: #141418;
   --sl-color-gray-7: #0c0c0e;
   --sl-color-black: #0c0c0e;
   --sl-font: 'Outfit', sans-serif;
   --sl-font-mono: 'JetBrains Mono', monospace;
+  --sl-text-h1: 1.75rem;
+  --sl-text-h2: 1.35rem;
+  --sl-text-h3: 1.1rem;
   color-scheme: dark;
+}
+
+/* ── Header bar: blend into background ── */
+header.header {
+  background: rgba(12, 12, 14, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1e1e24;
+}
+
+/* ── Site title in header: muted, not white ── */
+.site-title {
+  color: #8b8b96 !important;
+  font-weight: 500 !important;
+}
+
+/* ── Sidebar: more subdued ── */
+nav.sidebar-content a {
+  color: #6a6a74;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+nav.sidebar-content a:hover {
+  color: #a0a0aa;
+}
+
+nav.sidebar-content a[aria-current='page'] {
+  color: #42a5f5;
+  font-weight: 500;
+  background: rgba(66, 165, 245, 0.06);
+  border-color: #42a5f5;
+}
+
+/* ── Sidebar border: subtler ── */
+.sidebar-pane {
+  border-right: 1px solid #1e1e24 !important;
+}
+
+/* ── Right sidebar (table of contents): muted ── */
+starlight-toc a {
+  color: #4a4a54;
+  font-size: 0.8rem;
+}
+
+starlight-toc a:hover {
+  color: #8b8b96;
+}
+
+/* ── Page headings: less bold, muted white ── */
+.sl-markdown-content h1 {
+  color: #c0c0c8;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.sl-markdown-content h2 {
+  color: #a0a0aa;
+  font-weight: 600;
+  border-bottom: 1px solid #1e1e24;
+  padding-bottom: 0.4rem;
+}
+
+.sl-markdown-content h3 {
+  color: #8b8b96;
+  font-weight: 500;
+}
+
+/* ── Body text: slightly muted ── */
+.sl-markdown-content {
+  color: #9a9aa4;
+}
+
+.sl-markdown-content strong {
+  color: #c0c0c8;
+}
+
+/* ── Inline code: subtle ── */
+.sl-markdown-content :not(pre) > code {
+  background: #1a1a20;
+  border: 1px solid #222228;
+  color: #8b8b96;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* ── Code blocks: darker, subtler border ── */
+.sl-markdown-content pre {
+  border: 1px solid #1e1e24;
+  background: #111114 !important;
+}
+
+/* ── Tables: muted ── */
+.sl-markdown-content table {
+  border-color: #1e1e24;
+}
+
+.sl-markdown-content th {
+  color: #8b8b96;
+  background: #141418;
+}
+
+.sl-markdown-content td {
+  border-color: #1e1e24;
+  color: #8b8b96;
+}
+
+/* ── Search bar: blend in ── */
+site-search button {
+  border-color: #222228 !important;
+  background: #141418 !important;
+}
+
+/* ── Links: accent color ── */
+.sl-markdown-content a {
+  color: #42a5f5;
+}
+
+.sl-markdown-content a:hover {
+  color: #64b5f6;
 }
 
 /* ── Grid background on gallery page ── */
@@ -43,12 +166,13 @@
   max-width: 100%;
 }
 
-/* ── Code blocks styling ── */
-.sl-markdown-content pre {
-  border: 1px solid #2a2a32;
+/* ── Page title (above content): muted ── */
+h1.page-title {
+  color: #a0a0aa !important;
+  font-weight: 600 !important;
 }
 
-/* ── Sidebar active link accent ── */
-nav.sidebar a[aria-current='page'] {
-  color: #42a5f5;
+/* ── Tabs: muted styling ── */
+.tablist-wrapper [role='tablist'] {
+  border-bottom-color: #1e1e24;
 }
