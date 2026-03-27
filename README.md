@@ -33,24 +33,63 @@ Most icon sets are either static SVGs with no personality, or heavyweight librar
 
 ## Gallery
 
-**[Browse all 514 icons →](https://pub-c8881e7b708145c5a525ff9d44814ec2.r2.dev/icon-gallery.html)**
+**[Browse all 514 icons →](gallery.html)**
 
-The live gallery lets you search, filter by category, and click any icon to copy its URL.
+The gallery lets you search, filter by category, and preview every icon.
 
 ## Usage
 
-### Direct URL (CDN)
+### npm (recommended)
 
-Every icon is hosted on Cloudflare R2 with a public URL:
+```bash
+npm install @modern-svg-icons/core
+```
 
+```js
+// Named import — tree-shakeable
+import { terminal } from '@modern-svg-icons/core';
+
+// Inject into the DOM
+document.getElementById('icon').innerHTML = terminal;
 ```
-https://pub-c8881e7b708145c5a525ff9d44814ec2.r2.dev/emojis/{name}.svg
+
+#### Customization with `createIcon()`
+
+```js
+import { createIcon } from '@modern-svg-icons/core';
+
+const icon = createIcon('terminal', {
+  size: 32,        // px
+  className: 'my-icon',
+  ariaLabel: 'Terminal',
+});
+document.body.appendChild(icon); // returns an <svg> element
 ```
+
+#### Metadata for search / filter
+
+```js
+import { metadata } from '@modern-svg-icons/core';
+
+// [{ name: 'terminal', category: 'Dev Tools', tags: ['cli', 'bash', ...] }, ...]
+const devTools = metadata.filter(icon => icon.category === 'Dev Tools');
+```
+
+### CDN (unpkg / jsDelivr)
+
+No build step needed — load the bundle directly in a `<script>` tag:
 
 ```html
-<img src="https://pub-c8881e7b708145c5a525ff9d44814ec2.r2.dev/emojis/terminal.svg" width="32" alt="terminal">
-<img src="https://pub-c8881e7b708145c5a525ff9d44814ec2.r2.dev/emojis/docker.svg" width="32" alt="docker">
-<img src="https://pub-c8881e7b708145c5a525ff9d44814ec2.r2.dev/emojis/kubernetes.svg" width="32" alt="kubernetes">
+<!-- unpkg -->
+<script src="https://unpkg.com/@modern-svg-icons/core"></script>
+
+<!-- jsDelivr -->
+<script src="https://cdn.jsdelivr.net/npm/@modern-svg-icons/core"></script>
+
+<script>
+  // Available as a global after the script loads
+  document.getElementById('icon').innerHTML = ModernSvgIcons.terminal;
+</script>
 ```
 
 ### Local files
@@ -122,7 +161,7 @@ All icons use **kebab-case** filenames:
 
 ```
 terminal.svg
-pull-request.svg  
+pull-request.svg
 dns-lookup.svg
 hot-reload.svg
 500-server-error.svg
@@ -175,6 +214,6 @@ Add new icons to `icons/` following the existing style. Run through the checklis
 
 <div align="center">
 
-**[Browse Gallery](https://pub-c8881e7b708145c5a525ff9d44814ec2.r2.dev/icon-gallery.html)** · **[CDN Base URL](https://pub-c8881e7b708145c5a525ff9d44814ec2.r2.dev/emojis/)** · **[Report Issue](https://github.com/knoxhack/modern-svg-icons/issues)**
+**[Browse Gallery](gallery.html)** · **[Report Issue](https://github.com/knoxhack/modern-svg-icons/issues)**
 
 </div>
