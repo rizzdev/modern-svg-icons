@@ -5,12 +5,16 @@
     "build": "pnpm -r run build",
     "build:icons": "tsx scripts/build.ts",
     "test": "pnpm -r run test",
-    "lint": "pnpm -r run lint"
+    "lint": "pnpm -r run lint",
+    "export": "tsx scripts/export.ts"
   },
   "devDependencies": {
     "svgo": "^3.3.2",
     "tsx": "^4.19.0",
-    "typescript": "^5.5.0"
+    "typescript": "^5.5.0",
+    "puppeteer": "^23.0.0",
+    "gif-encoder-2": "^1.0.5",
+    "canvas": "^2.11.2"
   },
   "engines": {
     "node": ">=20"
