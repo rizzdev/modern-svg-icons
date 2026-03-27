@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes mutFlash{0%,100%{opacity:1}50%{opacity:.5}}
+.mf{animation:mutFlash 1.5s ease-in-out infinite}
+</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#EF5350"/>
+<g class="mf">
+<path d="M14 14 L22 8 L30 14" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="22" y1="8" x2="22" y2="24" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+</g>
+<rect x="12" y="28" width="20" height="3" rx="1" fill="#FFCDD2"/>
+<rect x="12" y="33" width="14" height="3" rx="1" fill="#FFCDD2" opacity=".6"/>
+</svg>

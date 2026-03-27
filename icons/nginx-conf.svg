@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes ncGlow{0%,100%{opacity:.7}50%{opacity:1}}.nc{animation:ncGlow 2s ease-in-out infinite}</style>
+<g class="nc"><rect x="4" y="4" width="36" height="36" rx="4" fill="#009639"/>
+<text x="8" y="14" font-family="monospace" font-size="4" fill="#FFF">server {</text>
+<text x="12" y="22" font-family="monospace" font-size="3.5" fill="#A5D6A7">listen 80;</text>
+<text x="12" y="28" font-family="monospace" font-size="3.5" fill="#A5D6A7">root /var</text>
+<text x="8" y="36" font-family="monospace" font-size="4" fill="#FFF">}</text></g></svg>

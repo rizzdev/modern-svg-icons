@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes netGlow{0%,100%{opacity:.8}50%{opacity:1}}
+.ng{animation:netGlow 2s ease-in-out infinite}</style>
+<g class="ng"><rect x="4" y="4" width="36" height="36" rx="5" fill="#00C7B7"/>
+<polygon points="22,8 36,22 22,36 8,22" fill="#FFF" opacity=".9"/>
+<polygon points="22,14 30,22 22,30 14,22" fill="#00C7B7"/></g>
+</svg>

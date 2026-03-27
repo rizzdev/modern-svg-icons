@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes esFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}.esf{animation:esFloat 3s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<g class="esf">
+<circle cx="22" cy="18" r="8" fill="#CFD8DC"/>
+<path d="M18 16 L22 20 L26 16" stroke="#78909C" stroke-width="2" fill="none" stroke-linecap="round"/>
+<line x1="22" y1="12" x2="22" y2="20" stroke="#78909C" stroke-width="2" stroke-linecap="round"/>
+</g>
+<rect x="12" y="30" width="20" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="16" y="35" width="12" height="2" rx="1" fill="#CFD8DC"/></svg>

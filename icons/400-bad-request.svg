@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes brShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-2px)}40%{transform:translateX(2px)}60%{transform:translateX(-1px)}80%{transform:translateX(1px)}}
+.bs{animation:brShake 1.5s ease-in-out infinite}</style>
+<g class="bs"><rect x="4" y="8" width="36" height="28" rx="6" fill="#FFC107"/>
+<text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#FFF">400</text></g>
+</svg>

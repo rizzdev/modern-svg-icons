@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes serFlow{0%{stroke-dashoffset:20}100%{stroke-dashoffset:0}}
+.sf{stroke-dasharray:5 5;animation:serFlow 1.5s linear infinite}
+</style>
+<rect x="4" y="10" width="12" height="24" rx="3" fill="#42A5F5"/>
+<rect x="28" y="10" width="12" height="24" rx="3" fill="#FFB74D"/>
+<rect x="6" y="14" width="8" height="3" rx="1" fill="#FFF" opacity=".6"/>
+<rect x="6" y="19" width="8" height="3" rx="1" fill="#FFF" opacity=".6"/>
+<rect x="6" y="24" width="8" height="3" rx="1" fill="#FFF" opacity=".6"/>
+<text x="34" y="24" text-anchor="middle" font-family="monospace" font-size="6" fill="#FFF">{ }</text>
+<line class="sf" x1="16" y1="22" x2="28" y2="22" stroke="#66BB6A" stroke-width="2"/>
+</svg>

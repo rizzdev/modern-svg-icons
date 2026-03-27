@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes gridPop{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.g1{animation:gridPop 2s ease-in-out infinite;transform-origin:12px 12px}
+.g2{animation:gridPop 2s ease-in-out .3s infinite;transform-origin:32px 12px}
+.g3{animation:gridPop 2s ease-in-out .6s infinite;transform-origin:12px 32px}
+.g4{animation:gridPop 2s ease-in-out .9s infinite;transform-origin:32px 32px}</style>
+<g class="g1"><rect x="4" y="4" width="16" height="16" rx="3" fill="#42A5F5"/></g>
+<g class="g2"><rect x="24" y="4" width="16" height="16" rx="3" fill="#FFC107"/></g>
+<g class="g3"><rect x="4" y="24" width="16" height="16" rx="3" fill="#66BB6A"/></g>
+<g class="g4"><rect x="24" y="24" width="16" height="16" rx="3" fill="#EF5350"/></g>
+</svg>

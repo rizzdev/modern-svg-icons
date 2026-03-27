@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes httpsShield{0%,100%{opacity:.7}50%{opacity:1}}
+.hs{animation:httpsShield 2s ease-in-out infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#66BB6A"/>
+<text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">HTTPS</text>
+<g class="hs"><path d="M18 24 L22 22 L26 24 L26 28 Q26 32 22 34 Q18 32 18 28Z" fill="#FFF" opacity=".3"/>
+<circle cx="22" cy="27" r="1.5" fill="#FFF"/></g>
+</svg>

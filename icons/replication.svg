@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes repPulse{0%,100%{opacity:.5}50%{opacity:1}}
+.r1{animation:repPulse 2s ease-in-out infinite}
+.r2{animation:repPulse 2s ease-in-out .5s infinite}
+.r3{animation:repPulse 2s ease-in-out 1s infinite}</style>
+<g class="r1"><ellipse cx="10" cy="14" rx="8" ry="4" fill="#42A5F5"/>
+<rect x="2" y="14" width="16" height="8" fill="#1E88E5"/>
+<ellipse cx="10" cy="22" rx="8" ry="4" fill="#1E88E5"/></g>
+<g class="r2"><ellipse cx="22" cy="22" rx="8" ry="4" fill="#FFC107"/>
+<rect x="14" y="22" width="16" height="8" fill="#FFA000"/>
+<ellipse cx="22" cy="30" rx="8" ry="4" fill="#FFA000"/></g>
+<g class="r3"><ellipse cx="34" cy="14" rx="8" ry="4" fill="#66BB6A"/>
+<rect x="26" y="14" width="16" height="8" fill="#43A047"/>
+<ellipse cx="34" cy="22" rx="8" ry="4" fill="#43A047"/></g>
+<path d="M18 16 L24 20" stroke="#78909C" stroke-width="1.5" stroke-dasharray="2 2"/>
+<path d="M26 16 L20 20" stroke="#78909C" stroke-width="1.5" stroke-dasharray="2 2"/>
+</svg>

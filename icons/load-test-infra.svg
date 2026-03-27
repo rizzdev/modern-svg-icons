@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes ltiPulse{0%,100%{opacity:.5}50%{opacity:1}}.lti{animation:ltiPulse 1s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#263238"/>
+<g class="lti">
+<path d="M8 34 L14 28 L18 30 L24 16 L30 22 L36 10" stroke="#EF5350" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="22" y="40" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">10k rps</text></svg>

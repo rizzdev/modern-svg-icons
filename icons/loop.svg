@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes loopSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.ls{animation:loopSpin 2s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="14" fill="none" stroke="#FFC107" stroke-width="4" stroke-dasharray="60 20" stroke-linecap="round"/>
+<g class="ls"><path d="M22 8 L26 12 L22 16" stroke="#FFC107" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<circle cx="22" cy="22" r="5" fill="#FFC107"/>
+<text x="22" y="24" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">∞</text>
+</svg>

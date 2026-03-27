@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes potBubble{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-6px);opacity:0}}
+.pb1{animation:potBubble 1.5s ease-out infinite}
+.pb2{animation:potBubble 1.5s ease-out .5s infinite}</style>
+<rect x="16" y="4" width="12" height="8" rx="2" fill="#78909C"/>
+<path d="M14 12 L12 22 Q10 36 22 38 Q34 36 32 22 L30 12Z" fill="#66BB6A"/>
+<path d="M14 12 L12 22 Q10 36 22 38 L22 12Z" fill="#81C784"/>
+<circle class="pb1" cx="18" cy="28" r="2" fill="#FFF" opacity=".5"/>
+<circle class="pb2" cx="26" cy="24" r="1.5" fill="#FFF" opacity=".4"/>
+<rect x="14" y="10" width="16" height="4" rx="2" fill="#607D8B"/>
+</svg>

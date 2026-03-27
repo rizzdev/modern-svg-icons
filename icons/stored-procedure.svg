@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes spRun{0%,100%{opacity:.6}50%{opacity:1}}
+.sr{animation:spRun 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#37474F"/>
+<g class="sr">
+<rect x="8" y="8" width="28" height="6" rx="2" fill="#42A5F5"/>
+<text x="22" y="13" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">EXEC</text>
+</g>
+<rect x="10" y="18" width="24" height="2" rx=".5" fill="#546E7A"/>
+<rect x="10" y="22" width="20" height="2" rx=".5" fill="#546E7A"/>
+<rect x="10" y="26" width="24" height="2" rx=".5" fill="#546E7A"/>
+<rect x="10" y="30" width="16" height="2" rx=".5" fill="#546E7A"/>
+<rect x="8" y="34" width="28" height="4" rx="2" fill="#66BB6A"/>
+<text x="22" y="37.5" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#FFF">RETURN ✓</text>
+</svg>

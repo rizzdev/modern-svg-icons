@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes itConnect{0%{stroke-dashoffset:10}100%{stroke-dashoffset:0}}
+.ic{stroke-dasharray:3 3;animation:itConnect 1.5s linear infinite}</style>
+<rect x="4" y="10" width="14" height="10" rx="3" fill="#42A5F5"/>
+<rect x="26" y="10" width="14" height="10" rx="3" fill="#FFC107"/>
+<rect x="15" y="26" width="14" height="10" rx="3" fill="#66BB6A"/>
+<line class="ic" x1="18" y1="15" x2="26" y2="15" stroke="#78909C" stroke-width="1.5"/>
+<line class="ic" x1="11" y1="20" x2="22" y2="26" stroke="#78909C" stroke-width="1.5"/>
+<line class="ic" x1="33" y1="20" x2="22" y2="26" stroke="#78909C" stroke-width="1.5"/>
+<path d="M19 30 L21 32 L25 28" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

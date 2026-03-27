@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes soFlow{0%{transform:translateY(4px);opacity:0}50%{opacity:1}100%{transform:translateY(-4px);opacity:0}}.sf{animation:soFlow 1.5s linear infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#263238"/>
+<g class="sf"><text x="8" y="18" font-family="monospace" font-size="4" fill="#66BB6A">output: ok</text>
+<text x="8" y="26" font-family="monospace" font-size="4" fill="#ECEFF1">data: [...]</text>
+<text x="8" y="34" font-family="monospace" font-size="4" fill="#42A5F5">done ✓</text></g></svg>

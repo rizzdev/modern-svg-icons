@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes repGlow{0%,100%{opacity:.7}50%{opacity:1}}
+.rg{animation:repGlow 2.5s ease-in-out infinite}</style>
+<g class="rg"><rect x="6" y="2" width="32" height="40" rx="4" fill="#ECEFF1"/>
+<rect x="10" y="6" width="24" height="4" rx="1" fill="#42A5F5"/>
+<rect x="10" y="13" width="10" height="10" rx="1" fill="#66BB6A"/>
+<rect x="22" y="13" width="12" height="3" rx=".5" fill="#90A4AE"/>
+<rect x="22" y="18" width="8" height="3" rx=".5" fill="#90A4AE"/>
+<rect x="10" y="26" width="24" height="2" rx=".5" fill="#CFD8DC"/>
+<rect x="10" y="30" width="20" height="2" rx=".5" fill="#CFD8DC"/>
+<rect x="10" y="34" width="24" height="2" rx=".5" fill="#CFD8DC"/>
+<rect x="10" y="38" width="14" height="2" rx=".5" fill="#CFD8DC"/></g>
+</svg>

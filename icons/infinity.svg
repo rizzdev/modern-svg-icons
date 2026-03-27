@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes infFlow{0%{stroke-dashoffset:60}100%{stroke-dashoffset:0}}
+.if{stroke-dasharray:15 15;animation:infFlow 3s linear infinite}</style>
+<path class="if" d="M12 22 Q12 12 22 12 Q32 12 32 22 Q32 32 22 32 Q12 32 12 22 Q12 12 2 22 Q-8 32 2 32 Q12 32 12 22" stroke="#42A5F5" stroke-width="0" fill="none"/>
+<path d="M22 14 Q30 14 30 22 Q30 30 22 30 Q14 30 14 22 Q14 14 8 22 Q14 30 8 30 Q2 30 2 22 Q2 14 8 14 Q14 14 14 22 Q14 30 22 30 Q30 30 30 22 Q30 14 36 22 Q30 30 36 30 Q42 30 42 22 Q42 14 36 14 Q30 14 30 22" stroke="#42A5F5" stroke-width="3.5" fill="none" stroke-linecap="round" class="if"/>
+</svg>

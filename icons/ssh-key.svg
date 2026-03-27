@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes skGlow{0%,100%{opacity:.5}50%{opacity:1}}.skg{animation:skGlow 2s ease-in-out infinite}</style>
+<g class="skg">
+<circle cx="14" cy="16" r="6" fill="#FFC107"/>
+<circle cx="14" cy="16" r="3" fill="#F57F17"/>
+<rect x="18" y="14" width="20" height="4" rx="2" fill="#FFC107"/>
+<rect x="32" y="12" width="4" height="8" rx="1" fill="#FFD54F"/>
+<rect x="26" y="12" width="3" height="6" rx="1" fill="#FFD54F"/>
+</g>
+<text x="22" y="32" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">ssh-rsa ...</text></svg>

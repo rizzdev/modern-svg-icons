@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes zap{0%,70%{opacity:1}75%{opacity:.3}80%{opacity:1}85%{opacity:.3}90%,100%{opacity:1}}
+.zp{animation:zap 2s ease-in-out infinite}
+</style>
+<g class="zp">
+<polygon points="24,2 10,24 20,24 16,42 34,18 24,18" fill="#FFC107"/>
+<polygon points="24,2 10,24 20,24 18,32 24,18" fill="#FFD54F"/>
+</g>
+</svg>

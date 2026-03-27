@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes elPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+.ep{animation:elPulse 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="ep">
+<rect x="4" y="6" width="36" height="10" rx="3" fill="#FEC514"/>
+<rect x="4" y="18" width="36" height="8" rx="3" fill="#00BFB3"/>
+<rect x="4" y="28" width="36" height="10" rx="3" fill="#F04E98"/>
+<circle cx="22" cy="22" r="6" fill="#343741"/>
+</g>
+</svg>

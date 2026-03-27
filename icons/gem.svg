@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes gemSparkle{0%,100%{opacity:.3}50%{opacity:1}}
+.gs{animation:gemSparkle 1.5s ease-in-out infinite}</style>
+<polygon points="22,4 38,16 30,38 14,38 6,16" fill="#42A5F5"/>
+<polygon points="22,4 14,16 30,16" fill="#64B5F6"/>
+<polygon points="14,16 6,16 14,38" fill="#1E88E5"/>
+<polygon points="30,16 38,16 30,38" fill="#1E88E5"/>
+<polygon points="14,16 30,16 30,38 14,38" fill="#42A5F5"/>
+<g class="gs"><polygon points="18,10 20,14 16,14" fill="#FFF" opacity=".5"/></g>
+</svg>

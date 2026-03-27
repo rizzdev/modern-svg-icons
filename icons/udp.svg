@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes udpFire{0%{transform:translateX(0);opacity:1}100%{transform:translateX(14px);opacity:0}}
+.uf1{animation:udpFire 1s ease-out infinite}
+.uf2{animation:udpFire 1s ease-out .3s infinite}
+.uf3{animation:udpFire 1s ease-out .6s infinite}</style>
+<rect x="4" y="10" width="12" height="24" rx="3" fill="#FF7043"/>
+<rect x="28" y="10" width="12" height="24" rx="3" fill="#78909C"/>
+<circle class="uf1" cx="18" cy="18" r="2" fill="#FFC107"/>
+<circle class="uf2" cx="18" cy="22" r="2" fill="#FFC107"/>
+<circle class="uf3" cx="18" cy="26" r="2" fill="#FFC107"/>
+<text x="10" y="24" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">UDP</text>
+</svg>

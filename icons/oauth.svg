@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes oauthSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.os{animation:oauthSpin 5s linear infinite;transform-origin:22px 22px}
+</style>
+<circle cx="22" cy="22" r="16" fill="#37474F"/>
+<g class="os">
+<circle cx="22" cy="8" r="4" fill="#42A5F5"/>
+<circle cx="34" cy="28" r="4" fill="#EF5350"/>
+<circle cx="10" cy="28" r="4" fill="#66BB6A"/>
+</g>
+<circle cx="22" cy="22" r="6" fill="#FFC107"/>
+<circle cx="22" cy="22" r="3" fill="#37474F"/>
+</svg>

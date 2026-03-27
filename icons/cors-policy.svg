@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes cpToggle{0%,40%{fill:#EF5350}50%,90%{fill:#66BB6A}100%{fill:#EF5350}}.cpt{animation:cpToggle 3s step-end infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#37474F"/>
+<circle class="cpt" cx="22" cy="18" r="6"/>
+<text x="22" y="32" text-anchor="middle" font-family="monospace" font-size="4" fill="#90A4AE">CORS: *</text></svg>

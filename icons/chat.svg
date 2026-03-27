@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes chatDot{0%,100%{opacity:.3}50%{opacity:1}}
+.cd1{animation:chatDot 1.5s ease-in-out infinite}
+.cd2{animation:chatDot 1.5s ease-in-out .3s infinite}
+.cd3{animation:chatDot 1.5s ease-in-out .6s infinite}
+</style>
+<path d="M6 6 L38 6 Q40 6 40 8 L40 28 Q40 30 38 30 L14 30 L8 36 L8 30 L6 30 Q4 30 4 28 L4 8 Q4 6 6 6Z" fill="#42A5F5"/>
+<circle class="cd1" cx="15" cy="18" r="2.5" fill="#FFF"/>
+<circle class="cd2" cx="22" cy="18" r="2.5" fill="#FFF"/>
+<circle class="cd3" cx="29" cy="18" r="2.5" fill="#FFF"/>
+</svg>

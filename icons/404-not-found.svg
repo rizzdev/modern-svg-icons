@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes nfWander{0%,100%{transform:translate(0,0)}25%{transform:translate(1px,-1px)}50%{transform:translate(-1px,1px)}75%{transform:translate(1px,0)}}
+.nf{animation:nfWander 3s ease-in-out infinite}</style>
+<g class="nf"><rect x="4" y="8" width="36" height="28" rx="6" fill="#78909C"/>
+<text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#FFF">404</text></g>
+<text x="22" y="40" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#90A4AE">¯\_(ツ)_/¯</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes colGlow{0%,100%{opacity:.5}50%{opacity:1}}
+.cg{animation:colGlow 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<rect x="6" y="6" width="8" height="32" rx="2" fill="#CFD8DC"/>
+<rect class="cg" x="16" y="6" width="8" height="32" rx="2" fill="#42A5F5"/>
+<rect x="26" y="6" width="8" height="32" rx="2" fill="#CFD8DC"/>
+<rect x="36" y="6" width="4" height="32" rx="2" fill="#CFD8DC"/>
+</svg>

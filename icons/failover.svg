@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes foSwitch{0%,40%{opacity:1}50%,90%{opacity:.2}100%{opacity:1}}
+@keyframes foSwitch2{0%,40%{opacity:.2}50%,90%{opacity:1}100%{opacity:.2}}
+.fo1{animation:foSwitch 3s ease-in-out infinite}
+.fo2{animation:foSwitch2 3s ease-in-out infinite}</style>
+<g class="fo1"><rect x="4" y="10" width="16" height="24" rx="3" fill="#66BB6A"/>
+<text x="12" y="24" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">Pri</text></g>
+<g class="fo2"><rect x="24" y="10" width="16" height="24" rx="3" fill="#FFC107"/>
+<text x="32" y="24" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">Sec</text></g>
+<path d="M20 18 L24 22 L20 26" stroke="#78909C" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes typeL1{0%{width:0}40%,100%{width:12}}
+@keyframes typeL2{0%,25%{width:0}55%,100%{width:20}}
+@keyframes typeL3{0%,45%{width:0}75%,100%{width:14}}
+.cur{animation:blink .8s step-end infinite}
+</style>
+<rect x="3" y="6" width="38" height="30" rx="4" fill="#455A64"/>
+<rect x="3" y="6" width="38" height="7" rx="4" fill="#607D8B"/>
+<rect x="3" y="11" width="38" height="2" fill="#607D8B"/>
+<circle cx="9" cy="10" r="2" fill="#F44336"/>
+<circle cx="15" cy="10" r="2" fill="#FFEB3B"/>
+<circle cx="21" cy="10" r="2" fill="#8BC34A"/>
+<rect x="8" y="17" width="12" height="3" rx="1" fill="#29B6F6"/>
+<rect x="8" y="22" width="20" height="2" rx="1" fill="#CE93D8"/>
+<rect x="8" y="26" width="8" height="2" rx="1" fill="#FFB74D"/>
+<rect x="18" y="26" width="14" height="2" rx="1" fill="#81C784"/>
+<rect x="8" y="30" width="16" height="2" rx="1" fill="#90A4AE"/>
+<rect class="cur" x="26" y="30" width="3" height="2" rx=".5" fill="#FFF"/>
+</svg>

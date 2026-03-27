@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes cpCycle{0%{fill:#EF5350}25%{fill:#42A5F5}50%{fill:#66BB6A}75%{fill:#FFC107}100%{fill:#EF5350}}
+.cc{animation:cpCycle 4s ease-in-out infinite}</style>
+<circle cx="22" cy="20" r="14" fill="#ECEFF1"/>
+<path d="M22 6 A14 14 0 0 1 36 20Z" fill="#EF5350"/>
+<path d="M36 20 A14 14 0 0 1 22 34Z" fill="#42A5F5"/>
+<path d="M22 34 A14 14 0 0 1 8 20Z" fill="#66BB6A"/>
+<path d="M8 20 A14 14 0 0 1 22 6Z" fill="#FFC107"/>
+<circle class="cc" cx="22" cy="20" r="5"/>
+<circle cx="22" cy="20" r="2.5" fill="#FFF"/>
+<line x1="22" y1="34" x2="22" y2="42" stroke="#78909C" stroke-width="3" stroke-linecap="round"/>
+</svg>

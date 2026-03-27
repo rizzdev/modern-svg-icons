@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes alSlide{0%,100%{transform:translateX(0)}50%{transform:translateX(-3px)}}
+.al{animation:alSlide 1.5s ease-in-out infinite}</style>
+<g class="al"><path d="M6 22 L22 10 L22 18 L38 18 L38 26 L22 26 L22 34Z" fill="#FFC107"/></g>
+</svg>

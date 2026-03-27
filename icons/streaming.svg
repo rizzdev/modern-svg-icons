@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes stFlow{0%{transform:translateX(-8px);opacity:0}50%{opacity:1}100%{transform:translateX(8px);opacity:0}}
+.sf1{animation:stFlow 1.2s ease-in-out infinite}
+.sf2{animation:stFlow 1.2s ease-in-out .3s infinite}
+.sf3{animation:stFlow 1.2s ease-in-out .6s infinite}
+</style>
+<rect x="4" y="10" width="36" height="24" rx="5" fill="#5C6BC0"/>
+<rect class="sf1" x="10" y="16" width="8" height="4" rx="2" fill="#FFF" opacity=".8"/>
+<rect class="sf2" x="18" y="22" width="8" height="4" rx="2" fill="#FFF" opacity=".6"/>
+<rect class="sf3" x="26" y="28" width="8" height="4" rx="2" fill="#FFF" opacity=".4"/>
+<path d="M6 10 L10 14 L6 18" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

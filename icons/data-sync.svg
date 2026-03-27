@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes dsSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.dss{animation:dsSpin 2s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="16" fill="#5C6BC0"/>
+<g class="dss">
+<path d="M14 16 A10 10 0 0 1 30 16" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M30 28 A10 10 0 0 1 14 28" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M30 16 L28 12 M30 16 L34 16" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M14 28 L16 32 M14 28 L10 28" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g></svg>

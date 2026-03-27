@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes pmBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}.pmb{animation:pmBounce 2s ease-in-out infinite}</style>
+<g class="pmb"><circle cx="22" cy="22" r="16" fill="#FF6C37"/>
+<path d="M14 22 L30 22" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+<path d="M26 18 L30 22 L26 26" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></svg>

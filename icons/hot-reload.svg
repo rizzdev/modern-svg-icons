@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes hrSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.hr{animation:hrSpin 1.5s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="16" fill="#FF7043"/>
+<g class="hr"><path d="M22 8 A14 14 0 1 1 8 22" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M22 8 L26 12 M22 8 L26 4" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<circle cx="22" cy="22" r="5" fill="#FFF"/>
+<polygon points="20,20 25,22 20,24" fill="#FF7043"/></svg>

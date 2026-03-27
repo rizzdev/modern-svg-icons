@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes nsFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}.nsf{animation:nsFloat 2s ease-in-out infinite}</style>
+<g class="nsf"><rect x="4" y="6" width="36" height="32" rx="5" fill="#37474F"/>
+<text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#66BB6A">NS</text>
+<text x="22" y="28" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#90A4AE">ns1.dns.com</text>
+<text x="22" y="34" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#90A4AE">ns2.dns.com</text></g></svg>

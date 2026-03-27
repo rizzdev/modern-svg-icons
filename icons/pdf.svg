@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes pdfGlow{0%,100%{opacity:.8}50%{opacity:1}}
+.pg{animation:pdfGlow 2s ease-in-out infinite}</style>
+<g class="pg"><path d="M10 4 L28 4 L36 12 L36 40 L10 40Z" fill="#EF5350"/>
+<path d="M28 4 L28 12 L36 12" fill="#C62828"/>
+<text x="23" y="30" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#FFF">PDF</text></g>
+</svg>

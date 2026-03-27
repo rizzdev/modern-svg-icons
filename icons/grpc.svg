@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes grpcPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}.gp{animation:grpcPulse 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="gp"><rect x="4" y="8" width="36" height="28" rx="6" fill="#244C5A"/>
+<text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#5AC7C7">gRPC</text></g></svg>

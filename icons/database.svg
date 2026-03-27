@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes dbP1{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.02)}}
+@keyframes dbP2{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.02)}}
+@keyframes dbP3{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.02)}}
+.d1{animation:dbP1 2s ease-in-out infinite;transform-origin:center}
+.d2{animation:dbP2 2s ease-in-out .4s infinite;transform-origin:center}
+.d3{animation:dbP3 2s ease-in-out .8s infinite;transform-origin:center}
+</style>
+<g class="d1"><ellipse cx="22" cy="11" rx="15" ry="6" fill="#66BB6A"/>
+<rect x="7" y="11" width="30" height="8" fill="#43A047"/>
+<ellipse cx="22" cy="19" rx="15" ry="6" fill="#43A047"/></g>
+<g class="d2"><ellipse cx="22" cy="19" rx="15" ry="6" fill="#FFA726"/>
+<rect x="7" y="19" width="30" height="8" fill="#EF6C00"/>
+<ellipse cx="22" cy="27" rx="15" ry="6" fill="#EF6C00"/></g>
+<g class="d3"><ellipse cx="22" cy="27" rx="15" ry="6" fill="#42A5F5"/>
+<rect x="7" y="27" width="30" height="8" fill="#1E88E5"/>
+<ellipse cx="22" cy="35" rx="15" ry="6" fill="#1E88E5"/></g>
+<ellipse cx="22" cy="11" rx="15" ry="6" fill="#66BB6A"/>
+<ellipse cx="22" cy="11" rx="10" ry="3" fill="#A5D6A7" opacity=".5"/>
+</svg>

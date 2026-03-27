@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes jwtSlide{0%,100%{transform:translateX(0)}50%{transform:translateX(1px)}}
+.js{animation:jwtSlide 2s ease-in-out infinite}
+</style>
+<g class="js">
+<rect x="4" y="10" width="36" height="8" rx="2" fill="#EF5350"/>
+<text x="22" y="16" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">HEADER</text>
+<rect x="4" y="19" width="36" height="8" rx="2" fill="#AB47BC"/>
+<text x="22" y="25" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">PAYLOAD</text>
+<rect x="4" y="28" width="36" height="8" rx="2" fill="#42A5F5"/>
+<text x="22" y="34" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">SIGNATURE</text>
+</g>
+<circle cx="22" cy="6" r="3" fill="#FFC107"/>
+<text x="22" y="7.5" text-anchor="middle" font-family="monospace" font-size="3.5" font-weight="bold" fill="#F57F17">JWT</text>
+</svg>

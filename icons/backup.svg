@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes backupSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.bs{animation:backupSpin 3s linear infinite;transform-origin:22px 22px}
+</style>
+<circle cx="22" cy="22" r="16" fill="#66BB6A"/>
+<g class="bs">
+<path d="M22 10 A12 12 0 1 1 10 22" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M22 10 L19 14 L25 14Z" fill="#FFF"/>
+</g>
+<circle cx="22" cy="22" r="5" fill="#2E7D32"/>
+<path d="M20 22 L21.5 24 L25 20" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

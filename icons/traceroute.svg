@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes trHop{0%{r:2;fill:#42A5F5}50%{r:3;fill:#FFC107}100%{r:2;fill:#42A5F5}}
+.h1{animation:trHop 1.5s ease-in-out infinite}
+.h2{animation:trHop 1.5s ease-in-out .3s infinite}
+.h3{animation:trHop 1.5s ease-in-out .6s infinite}
+.h4{animation:trHop 1.5s ease-in-out .9s infinite}</style>
+<line x1="6" y1="22" x2="38" y2="22" stroke="#CFD8DC" stroke-width="2" stroke-dasharray="3 3"/>
+<circle class="h1" cx="6" cy="22" r="2"/>
+<circle class="h2" cx="16" cy="22" r="2"/>
+<circle class="h3" cx="26" cy="22" r="2"/>
+<circle class="h4" cx="38" cy="22" r="2"/>
+<text x="6" y="14" text-anchor="middle" font-family="monospace" font-size="3" fill="#78909C">hop 1</text>
+<text x="16" y="14" text-anchor="middle" font-family="monospace" font-size="3" fill="#78909C">hop 2</text>
+<text x="26" y="14" text-anchor="middle" font-family="monospace" font-size="3" fill="#78909C">hop 3</text>
+<text x="38" y="14" text-anchor="middle" font-family="monospace" font-size="3" fill="#66BB6A">dest</text>
+</svg>

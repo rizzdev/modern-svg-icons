@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes idmPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}.idm{animation:idmPulse 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="idm"><circle cx="22" cy="22" r="16" fill="#66BB6A"/>
+<text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">f(x)</text>
+<text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="3" fill="#C8E6C9">=</text>
+<text x="22" y="32" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">f(x)</text></g></svg>

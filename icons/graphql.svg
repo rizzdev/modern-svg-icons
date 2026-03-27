@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes gqlSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.gs{animation:gqlSpin 8s linear infinite;transform-origin:22px 22px}
+</style>
+<circle cx="22" cy="22" r="17" fill="#E535AB"/>
+<g class="gs">
+<polygon points="22,7 35,15 35,29 22,37 9,29 9,15" fill="none" stroke="#FFF" stroke-width="2"/>
+<circle cx="22" cy="7" r="3" fill="#FFF"/>
+<circle cx="35" cy="15" r="3" fill="#FFF"/>
+<circle cx="35" cy="29" r="3" fill="#FFF"/>
+<circle cx="22" cy="37" r="3" fill="#FFF"/>
+<circle cx="9" cy="29" r="3" fill="#FFF"/>
+<circle cx="9" cy="15" r="3" fill="#FFF"/>
+</g>
+<circle cx="22" cy="22" r="4" fill="#FFF"/>
+</svg>

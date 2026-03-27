@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes flowDot{0%{cx:8}100%{cx:36}}
+.fd{animation:flowDot 2s linear infinite}
+</style>
+<rect x="4" y="10" width="12" height="10" rx="3" fill="#42A5F5"/>
+<rect x="20" y="10" width="12" height="10" rx="3" fill="#FFC107"/>
+<rect x="4" y="26" width="12" height="10" rx="3" fill="#66BB6A"/>
+<rect x="20" y="26" width="12" height="10" rx="3" fill="#EF5350"/>
+<rect x="34" y="16" width="8" height="12" rx="3" fill="#AB47BC"/>
+<line x1="16" y1="15" x2="20" y2="15" stroke="#90A4AE" stroke-width="1.5"/>
+<line x1="16" y1="31" x2="20" y2="31" stroke="#90A4AE" stroke-width="1.5"/>
+<line x1="32" y1="15" x2="38" y2="22" stroke="#90A4AE" stroke-width="1.5"/>
+<line x1="32" y1="31" x2="38" y2="22" stroke="#90A4AE" stroke-width="1.5"/>
+<circle class="fd" cx="8" cy="15" r="1.5" fill="#FFF" opacity=".8"/>
+</svg>

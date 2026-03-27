@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes nodeGlow{0%,100%{r:8}50%{r:9.5}}
+.ng{animation:nodeGlow 2s ease-in-out infinite}
+</style>
+<circle class="ng" cx="22" cy="22" r="8" fill="#FFC107"/>
+<circle cx="22" cy="22" r="4" fill="#FFF"/>
+<line x1="22" y1="14" x2="22" y2="4" stroke="#78909C" stroke-width="2" stroke-linecap="round"/>
+<line x1="22" y1="30" x2="22" y2="40" stroke="#78909C" stroke-width="2" stroke-linecap="round"/>
+<line x1="14" y1="22" x2="4" y2="22" stroke="#78909C" stroke-width="2" stroke-linecap="round"/>
+<line x1="30" y1="22" x2="40" y2="22" stroke="#78909C" stroke-width="2" stroke-linecap="round"/>
+<circle cx="22" cy="4" r="2.5" fill="#42A5F5"/>
+<circle cx="22" cy="40" r="2.5" fill="#EF5350"/>
+<circle cx="4" cy="22" r="2.5" fill="#66BB6A"/>
+<circle cx="40" cy="22" r="2.5" fill="#AB47BC"/>
+</svg>

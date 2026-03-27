@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes unlockSwing{0%,100%{transform:rotate(0)}50%{transform:rotate(-8deg)}}
+.us{animation:unlockSwing 2s ease-in-out infinite;transform-origin:29px 18px}
+</style>
+<rect x="10" y="18" width="24" height="20" rx="4" fill="#66BB6A"/>
+<rect x="10" y="18" width="24" height="8" rx="4" fill="#81C784"/>
+<g class="us"><path d="M15 18 L15 13 Q15 5 22 5 Q29 5 29 13 L29 15" stroke="#78909C" stroke-width="3.5" fill="none" stroke-linecap="round"/></g>
+<circle cx="22" cy="30" r="3" fill="#2E7D32"/>
+<rect x="21" y="30" width="2" height="5" rx="1" fill="#2E7D32"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes typeFade{0%,100%{opacity:.5}50%{opacity:1}}
+.t1{animation:typeFade 2s ease-in-out infinite}
+.t2{animation:typeFade 2s ease-in-out .5s infinite}</style>
+<g class="t1"><text x="22" y="20" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#37474F">Aa</text></g>
+<g class="t2">
+<rect x="8" y="30" width="28" height="2" rx="1" fill="#42A5F5"/>
+<rect x="8" y="34" width="20" height="2" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="38" width="24" height="2" rx="1" fill="#CFD8DC"/>
+</g>
+</svg>

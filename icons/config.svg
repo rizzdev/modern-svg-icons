@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes cfgSlide{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+.cf1{animation:cfgSlide 2s ease-in-out infinite}
+.cf2{animation:cfgSlide 2s ease-in-out .5s infinite}
+.cf3{animation:cfgSlide 2s ease-in-out 1s infinite}
+</style>
+<rect x="4" y="6" width="36" height="32" rx="5" fill="#ECEFF1"/>
+<line x1="10" y1="14" x2="34" y2="14" stroke="#CFD8DC" stroke-width="3" stroke-linecap="round"/>
+<circle class="cf1" cx="16" cy="14" r="4" fill="#42A5F5"/>
+<line x1="10" y1="22" x2="34" y2="22" stroke="#CFD8DC" stroke-width="3" stroke-linecap="round"/>
+<circle class="cf2" cx="28" cy="22" r="4" fill="#EF5350"/>
+<line x1="10" y1="30" x2="34" y2="30" stroke="#CFD8DC" stroke-width="3" stroke-linecap="round"/>
+<circle class="cf3" cx="20" cy="30" r="4" fill="#66BB6A"/>
+</svg>

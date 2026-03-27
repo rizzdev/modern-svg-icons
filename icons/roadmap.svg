@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes rmFlow{0%{stroke-dashoffset:20}100%{stroke-dashoffset:0}}
+.rf{stroke-dasharray:5 5;animation:rmFlow 2s linear infinite}</style>
+<line class="rf" x1="8" y1="22" x2="36" y2="22" stroke="#78909C" stroke-width="2"/>
+<circle cx="8" cy="22" r="4" fill="#42A5F5"/>
+<circle cx="18" cy="22" r="4" fill="#FFC107"/>
+<circle cx="28" cy="22" r="4" fill="#66BB6A"/>
+<circle cx="36" cy="22" r="4" fill="#EF5350"/>
+<text x="8" y="14" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">Q1</text>
+<text x="18" y="14" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">Q2</text>
+<text x="28" y="14" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">Q3</text>
+<text x="36" y="14" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">Q4</text>
+<path d="M8 22 L18 22 M18 22 L28 22" stroke="#66BB6A" stroke-width="3" stroke-linecap="round"/>
+</svg>

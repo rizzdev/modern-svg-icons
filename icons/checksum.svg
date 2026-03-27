@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes csVerify{0%,70%{opacity:0}80%{opacity:1}100%{opacity:1}}
+.cv{animation:csVerify 2.5s ease-in-out infinite}</style>
+<rect x="4" y="6" width="36" height="32" rx="5" fill="#263238"/>
+<text x="8" y="18" font-family="monospace" font-size="4" fill="#90A4AE">MD5:</text>
+<text x="8" y="26" font-family="monospace" font-size="3.5" fill="#66BB6A">d41d8c...99e</text>
+<g class="cv"><circle cx="36" cy="32" r="4" fill="#66BB6A"/>
+<path d="M34 32 L35.5 33.5 L38 31" stroke="#FFF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

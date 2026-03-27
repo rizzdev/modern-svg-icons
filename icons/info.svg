@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes infoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.ip{animation:infoPulse 2.5s ease-in-out infinite;transform-origin:22px 22px}
+</style>
+<g class="ip">
+<circle cx="22" cy="22" r="16" fill="#42A5F5"/>
+<circle cx="22" cy="13" r="2.5" fill="#FFF"/>
+<rect x="20" y="18" width="4" height="14" rx="2" fill="#FFF"/>
+</g>
+</svg>

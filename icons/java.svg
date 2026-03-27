@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes javaSteam{0%{opacity:0;transform:translateY(0)}50%{opacity:.8}100%{opacity:0;transform:translateY(-6px)}}
+.js1{animation:javaSteam 1.5s ease-out infinite}
+.js2{animation:javaSteam 1.5s ease-out .5s infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#E76F00"/>
+<text x="22" y="30" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#FFF">☕</text>
+<path class="js1" d="M16 8 Q18 4 20 8" stroke="#FFF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path class="js2" d="M24 8 Q26 4 28 8" stroke="#FFF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

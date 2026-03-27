@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes sbGlow{0%,100%{opacity:.6}50%{opacity:1}}.sbg{animation:sbGlow 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<g class="sbg"><rect x="4" y="4" width="12" height="36" rx="4" fill="#37474F"/>
+<rect x="4" y="4" width="12" height="36" rx="4" fill="#37474F"/>
+<circle cx="10" cy="12" r="2" fill="#42A5F5"/>
+<circle cx="10" cy="20" r="2" fill="#78909C"/>
+<circle cx="10" cy="28" r="2" fill="#78909C"/>
+<circle cx="10" cy="36" r="2" fill="#78909C"/></g>
+<rect x="18" y="8" width="20" height="4" rx="1" fill="#CFD8DC"/>
+<rect x="18" y="16" width="20" height="20" rx="2" fill="#FFF"/></svg>

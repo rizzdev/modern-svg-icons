@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes revGlow{0%,100%{opacity:.5}50%{opacity:1}}
+.rv{animation:revGlow 2s ease-in-out infinite}</style>
+<circle cx="22" cy="22" r="16" fill="#FFC107"/>
+<g class="rv"><circle cx="22" cy="18" r="6" fill="#FFF" opacity=".3"/>
+<path d="M18 18 L22 14 L26 18 L22 22Z" fill="#FFF"/></g>
+<circle cx="22" cy="30" r="2" fill="#FFF"/>
+</svg>

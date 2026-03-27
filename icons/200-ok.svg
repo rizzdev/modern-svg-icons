@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes okPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+.op{animation:okPulse 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="op"><rect x="4" y="8" width="36" height="28" rx="6" fill="#66BB6A"/>
+<text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#FFF">200</text></g>
+</svg>

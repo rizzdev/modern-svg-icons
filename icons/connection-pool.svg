@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes cpPulse{0%,100%{opacity:.3}50%{opacity:1}}
+.cp1{animation:cpPulse 1.5s ease-in-out infinite}
+.cp2{animation:cpPulse 1.5s ease-in-out .3s infinite}
+.cp3{animation:cpPulse 1.5s ease-in-out .6s infinite}
+.cp4{animation:cpPulse 1.5s ease-in-out .9s infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#263238"/>
+<rect x="8" y="12" width="28" height="20" rx="3" fill="#37474F"/>
+<circle class="cp1" cx="14" cy="18" r="3" fill="#42A5F5"/>
+<circle class="cp2" cx="22" cy="18" r="3" fill="#66BB6A"/>
+<circle class="cp3" cx="30" cy="18" r="3" fill="#FFC107"/>
+<circle class="cp4" cx="14" cy="26" r="3" fill="#EF5350"/>
+<circle cx="22" cy="26" r="3" fill="#455A64"/>
+<circle cx="30" cy="26" r="3" fill="#455A64"/>
+<text x="22" y="40" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">3/6 active</text>
+</svg>

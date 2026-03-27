@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes bmNeedle{0%{transform:rotate(-60deg)}50%{transform:rotate(60deg)}100%{transform:rotate(-60deg)}}
+.bn{animation:bmNeedle 3s ease-in-out infinite;transform-origin:22px 28px}</style>
+<path d="M4 28 A18 18 0 0 1 40 28" fill="#ECEFF1"/>
+<path d="M4 28 A18 18 0 0 1 22 10" fill="#EF5350" opacity=".3"/>
+<path d="M22 10 A18 18 0 0 1 36 16" fill="#FFC107" opacity=".3"/>
+<path d="M36 16 A18 18 0 0 1 40 28" fill="#66BB6A" opacity=".3"/>
+<g class="bn"><line x1="22" y1="28" x2="22" y2="14" stroke="#37474F" stroke-width="2.5" stroke-linecap="round"/></g>
+<circle cx="22" cy="28" r="3" fill="#37474F"/>
+<text x="22" y="38" text-anchor="middle" font-family="monospace" font-size="4" fill="#78909C">perf</text>
+</svg>

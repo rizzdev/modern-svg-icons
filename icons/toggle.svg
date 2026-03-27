@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes tgSlide{0%,40%{transform:translateX(0)}50%,90%{transform:translateX(16px)}100%{transform:translateX(0)}}
+@keyframes tgColor{0%,40%{fill:#CFD8DC}50%,90%{fill:#66BB6A}100%{fill:#CFD8DC}}
+.tgs{animation:tgSlide 3s ease-in-out infinite}.tgc{animation:tgColor 3s ease-in-out infinite}</style>
+<rect class="tgc" x="6" y="14" width="32" height="16" rx="8"/>
+<circle class="tgs" cx="14" cy="22" r="6" fill="#FFF"/></svg>

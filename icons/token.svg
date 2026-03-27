@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes tokenRotate{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.tr{animation:tokenRotate 4s linear infinite;transform-origin:22px 22px}
+</style>
+<circle cx="22" cy="22" r="16" fill="#FFC107"/>
+<circle cx="22" cy="22" r="12" fill="#FFA000"/>
+<g class="tr">
+<rect x="20" y="8" width="4" height="6" rx="1" fill="#FFF8E1"/>
+<rect x="20" y="30" width="4" height="6" rx="1" fill="#FFF8E1"/>
+<rect x="8" y="20" width="6" height="4" rx="1" fill="#FFF8E1"/>
+<rect x="30" y="20" width="6" height="4" rx="1" fill="#FFF8E1"/>
+</g>
+<circle cx="22" cy="22" r="5" fill="#FFF8E1"/>
+<text x="22" y="24" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#F57F17">T</text>
+</svg>

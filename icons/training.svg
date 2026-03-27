@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes trainBar{0%{width:4}50%{width:24}100%{width:4}}
+.tb{animation:trainBar 2.5s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#263238"/>
+<text x="8" y="14" font-family="monospace" font-size="4" fill="#66BB6A">Epoch 42</text>
+<rect x="8" y="18" width="28" height="4" rx="2" fill="#455A64"/>
+<rect class="tb" x="8" y="18" height="4" rx="2" fill="#66BB6A"/>
+<text x="8" y="30" font-family="monospace" font-size="3.5" fill="#90A4AE">loss: 0.023</text>
+<text x="8" y="36" font-family="monospace" font-size="3.5" fill="#90A4AE">acc: 98.7%</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes pgActive{0%,25%{fill:#42A5F5}33%,58%{fill:#ECEFF1}66%,100%{fill:#ECEFF1}}
+@keyframes pgActive2{0%,25%{fill:#ECEFF1}33%,58%{fill:#42A5F5}66%,100%{fill:#ECEFF1}}
+@keyframes pgActive3{0%,58%{fill:#ECEFF1}66%,100%{fill:#42A5F5}}
+.pg1{animation:pgActive 3s step-end infinite}.pg2{animation:pgActive2 3s step-end infinite}.pg3{animation:pgActive3 3s step-end infinite}</style>
+<rect x="4" y="14" width="36" height="16" rx="4" fill="#FFF" stroke="#CFD8DC" stroke-width="1"/>
+<path d="M8 22 L11 19 M8 22 L11 25" stroke="#78909C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<rect class="pg1" x="14" y="18" width="6" height="8" rx="2"/>
+<rect class="pg2" x="22" y="18" width="6" height="8" rx="2"/>
+<rect class="pg3" x="30" y="18" width="6" height="8" rx="2"/>
+<text x="17" y="24" text-anchor="middle" font-family="sans-serif" font-size="4" font-weight="bold" fill="#FFF">1</text>
+<text x="25" y="24" text-anchor="middle" font-family="sans-serif" font-size="4" fill="#78909C">2</text>
+<text x="33" y="24" text-anchor="middle" font-family="sans-serif" font-size="4" fill="#78909C">3</text></svg>

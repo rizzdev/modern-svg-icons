@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes ddosBomb{0%{opacity:.3}50%{opacity:1}100%{opacity:.3}}.d1{animation:ddosBomb .5s ease-in-out infinite}.d2{animation:ddosBomb .5s ease-in-out .1s infinite}.d3{animation:ddosBomb .5s ease-in-out .2s infinite}</style>
+<rect x="24" y="10" width="16" height="24" rx="3" fill="#42A5F5"/>
+<circle class="d1" cx="8" cy="14" r="3" fill="#EF5350"/>
+<circle class="d2" cx="6" cy="22" r="3" fill="#EF5350"/>
+<circle class="d3" cx="8" cy="30" r="3" fill="#EF5350"/>
+<circle class="d1" cx="14" cy="10" r="2" fill="#EF5350"/>
+<circle class="d2" cx="14" cy="18" r="2" fill="#EF5350"/>
+<circle class="d3" cx="14" cy="26" r="2" fill="#EF5350"/>
+<circle class="d1" cx="14" cy="34" r="2" fill="#EF5350"/>
+<line x1="11" y1="14" x2="24" y2="18" stroke="#EF5350" stroke-width="1" opacity=".5"/>
+<line x1="9" y1="22" x2="24" y2="22" stroke="#EF5350" stroke-width="1" opacity=".5"/>
+<line x1="11" y1="30" x2="24" y2="26" stroke="#EF5350" stroke-width="1" opacity=".5"/></svg>

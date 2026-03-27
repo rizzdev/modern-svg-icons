@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes ebPulse{0%{stroke-dashoffset:12}100%{stroke-dashoffset:0}}.ebp{stroke-dasharray:3 3;animation:ebPulse 1s linear infinite}</style>
+<rect x="4" y="18" width="36" height="8" rx="4" fill="#FF7043"/>
+<line class="ebp" x1="4" y1="22" x2="40" y2="22" stroke="#FFF" stroke-width="1.5"/>
+<circle cx="10" cy="10" r="4" fill="#42A5F5"/>
+<circle cx="22" cy="8" r="4" fill="#66BB6A"/>
+<circle cx="34" cy="10" r="4" fill="#FFC107"/>
+<circle cx="10" cy="34" r="4" fill="#AB47BC"/>
+<circle cx="22" cy="36" r="4" fill="#EF5350"/>
+<circle cx="34" cy="34" r="4" fill="#42A5F5"/>
+<line x1="10" y1="14" x2="10" y2="18" stroke="#78909C" stroke-width="1.5"/>
+<line x1="22" y1="12" x2="22" y2="18" stroke="#78909C" stroke-width="1.5"/>
+<line x1="34" y1="14" x2="34" y2="18" stroke="#78909C" stroke-width="1.5"/>
+<line x1="10" y1="26" x2="10" y2="30" stroke="#78909C" stroke-width="1.5"/>
+<line x1="22" y1="26" x2="22" y2="32" stroke="#78909C" stroke-width="1.5"/>
+<line x1="34" y1="26" x2="34" y2="30" stroke="#78909C" stroke-width="1.5"/></svg>

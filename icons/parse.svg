@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes prSplit{0%,100%{opacity:1}50%{opacity:.4}}
+.ps1{animation:prSplit 2s ease-in-out infinite}
+.ps2{animation:prSplit 2s ease-in-out 1s infinite}
+</style>
+<g class="ps1"><rect x="4" y="8" width="36" height="12" rx="3" fill="#42A5F5"/>
+<text x="22" y="16" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">raw data</text></g>
+<path d="M22 20 L22 24 M18 22 L22 24 L26 22" stroke="#FFC107" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="ps2">
+<rect x="4" y="26" width="16" height="12" rx="3" fill="#66BB6A"/>
+<rect x="24" y="26" width="16" height="12" rx="3" fill="#EF5350"/>
+<text x="12" y="34" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">key</text>
+<text x="32" y="34" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">val</text>
+</g>
+</svg>

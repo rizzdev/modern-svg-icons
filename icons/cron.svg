@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes cronTick{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.ct{animation:cronTick 3s steps(12) infinite;transform-origin:22px 22px}
+</style>
+<circle cx="22" cy="22" r="16" fill="#AB47BC"/>
+<circle cx="22" cy="22" r="12" fill="#7B1FA2"/>
+<g class="ct"><line x1="22" y1="22" x2="22" y2="12" stroke="#FFF" stroke-width="2" stroke-linecap="round"/></g>
+<line x1="22" y1="22" x2="28" y2="26" stroke="#CE93D8" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="22" cy="22" r="2" fill="#FFF"/>
+<text x="22" y="38" text-anchor="middle" font-family="monospace" font-size="4" fill="#CE93D8">0 * * * *</text>
+</svg>

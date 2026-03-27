@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes qMove{0%{transform:translateX(0)}50%{transform:translateX(3px)}100%{transform:translateX(0)}}
+.q1{animation:qMove 1.5s ease-in-out infinite}
+.q2{animation:qMove 1.5s ease-in-out .3s infinite}
+.q3{animation:qMove 1.5s ease-in-out .6s infinite}
+</style>
+<rect x="4" y="12" width="36" height="20" rx="4" fill="#78909C"/>
+<rect class="q1" x="7" y="15" width="8" height="14" rx="2" fill="#42A5F5"/>
+<rect class="q2" x="17" y="15" width="8" height="14" rx="2" fill="#FFC107"/>
+<rect class="q3" x="27" y="15" width="8" height="14" rx="2" fill="#EF5350"/>
+<path d="M38 22 L42 22 M40 20 L42 22 L40 24" stroke="#66BB6A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 22 L6 22 M2 20 L4 22 L2 24" stroke="#AB47BC" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

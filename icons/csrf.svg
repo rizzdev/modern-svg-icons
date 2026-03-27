@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes csrfPulse{0%,100%{opacity:.5}50%{opacity:1}}.csf{animation:csrfPulse 1.5s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#FF7043"/>
+<g class="csf"><text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="6" font-weight="bold" fill="#FFF">CSRF</text>
+<path d="M14 26 Q22 34 30 26" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+<circle cx="14" cy="26" r="2" fill="#FFF"/>
+<circle cx="30" cy="26" r="2" fill="#FFF"/></g></svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes adBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+.ad{animation:adBounce 1.5s ease-in-out infinite}</style>
+<g class="ad"><path d="M22 38 L34 22 L26 22 L26 6 L18 6 L18 22 L10 22Z" fill="#EF5350"/></g>
+</svg>

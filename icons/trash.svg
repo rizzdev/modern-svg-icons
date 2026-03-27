@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes trashShake{0%,100%{transform:rotate(0)}20%{transform:rotate(3deg)}40%{transform:rotate(-3deg)}60%{transform:rotate(2deg)}80%{transform:rotate(0)}}
+.ts{animation:trashShake 2s ease-in-out infinite;transform-origin:22px 20px}
+</style>
+<g class="ts">
+<rect x="10" y="12" width="24" height="26" rx="3" fill="#EF5350"/>
+<rect x="8" y="8" width="28" height="5" rx="2" fill="#C62828"/>
+<rect x="17" y="4" width="10" height="6" rx="2" fill="#EF5350"/>
+<line x1="16" y1="18" x2="16" y2="32" stroke="#FFCDD2" stroke-width="2" stroke-linecap="round"/>
+<line x1="22" y1="18" x2="22" y2="32" stroke="#FFCDD2" stroke-width="2" stroke-linecap="round"/>
+<line x1="28" y1="18" x2="28" y2="32" stroke="#FFCDD2" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

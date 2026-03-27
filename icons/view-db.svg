@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes vdGlow{0%,100%{opacity:.6}50%{opacity:1}}
+.vd{animation:vdGlow 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<g class="vd">
+<circle cx="22" cy="18" r="10" fill="none" stroke="#42A5F5" stroke-width="2"/>
+<circle cx="22" cy="18" r="5" fill="#42A5F5" opacity=".3"/>
+<circle cx="22" cy="18" r="2" fill="#42A5F5"/>
+</g>
+<rect x="8" y="32" width="28" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="37" width="20" height="2" rx="1" fill="#CFD8DC"/>
+</svg>

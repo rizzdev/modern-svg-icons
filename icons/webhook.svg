@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes whPing{0%{r:3;opacity:1}100%{r:12;opacity:0}}
+.wp{animation:whPing 1.5s ease-out infinite}
+</style>
+<circle cx="14" cy="14" r="8" fill="#42A5F5"/>
+<circle class="wp" cx="14" cy="14" r="3" fill="none" stroke="#42A5F5" stroke-width="1.5"/>
+<path d="M22 14 L32 24" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+<path d="M32 24 L32 34" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+<circle cx="32" cy="34" r="4" fill="#66BB6A"/>
+<path d="M30 34 L31.5 35.5 L34 32.5" stroke="#FFF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes ztPulse{0%,100%{r:14;opacity:.5}50%{r:16;opacity:.8}}.ztp{animation:ztPulse 2s ease-in-out infinite}</style>
+<circle class="ztp" cx="22" cy="22" r="14" fill="none" stroke="#EF5350" stroke-width="2"/>
+<circle cx="22" cy="22" r="10" fill="#EF5350"/>
+<text x="22" y="20" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">ZERO</text>
+<text x="22" y="28" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFCDD2">TRUST</text></svg>

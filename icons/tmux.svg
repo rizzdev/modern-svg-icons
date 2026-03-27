@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes tmuxSplit{0%,100%{opacity:.6}50%{opacity:1}}
+.ts1{animation:tmuxSplit 2s ease-in-out infinite}
+.ts2{animation:tmuxSplit 2s ease-in-out .5s infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#263238"/>
+<line x1="22" y1="4" x2="22" y2="40" stroke="#66BB6A" stroke-width="1.5"/>
+<line x1="22" y1="22" x2="40" y2="22" stroke="#66BB6A" stroke-width="1.5"/>
+<rect class="ts1" x="6" y="6" width="14" height="32" rx="1" fill="#37474F"/>
+<rect class="ts2" x="24" y="6" width="14" height="14" rx="1" fill="#37474F"/>
+<rect x="24" y="24" width="14" height="14" rx="1" fill="#37474F"/>
+<rect x="4" y="38" width="36" height="2" fill="#66BB6A"/>
+<text x="8" y="39.5" font-family="monospace" font-size="2.5" fill="#263238">0:zsh</text>
+</svg>

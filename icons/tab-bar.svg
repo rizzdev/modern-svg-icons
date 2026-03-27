@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes tabActive{0%,30%{fill:#42A5F5}35%,65%{fill:#CFD8DC}70%,100%{fill:#42A5F5}}
+@keyframes tabActive2{0%,30%{fill:#CFD8DC}35%,65%{fill:#42A5F5}70%,100%{fill:#CFD8DC}}
+.ta1{animation:tabActive 3s step-end infinite}.ta2{animation:tabActive2 3s step-end infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<rect class="ta1" x="4" y="4" width="12" height="8" rx="4"/>
+<rect class="ta2" x="16" y="4" width="12" height="8" rx="4"/>
+<rect x="28" y="4" width="12" height="8" rx="4" fill="#CFD8DC"/>
+<rect x="4" y="10" width="36" height="2" fill="#42A5F5"/>
+<rect x="8" y="16" width="28" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="21" width="22" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="26" width="26" height="3" rx="1" fill="#CFD8DC"/></svg>

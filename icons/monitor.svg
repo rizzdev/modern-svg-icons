@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes heartbeat{0%,40%{d:path("M8 24 L14 24 L17 18 L20 30 L23 20 L26 26 L30 24 L36 24")}50%{d:path("M8 24 L14 24 L17 16 L20 32 L23 18 L26 28 L30 24 L36 24")}60%,100%{d:path("M8 24 L14 24 L17 18 L20 30 L23 20 L26 26 L30 24 L36 24")}}
+@keyframes linePulse{0%,40%{opacity:.7}50%{opacity:1}60%,100%{opacity:.7}}
+.hb{animation:linePulse 1.5s ease-in-out infinite}
+</style>
+<rect x="4" y="6" width="36" height="28" rx="4" fill="#263238"/>
+<path class="hb" d="M8 24 L14 24 L17 18 L20 30 L23 20 L26 26 L30 24 L36 24" stroke="#66BB6A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="14" y="34" width="16" height="3" rx="1" fill="#455A64"/>
+<rect x="18" y="37" width="8" height="2" rx="1" fill="#607D8B"/>
+<circle cx="8" cy="10" r="1.5" fill="#EF5350"/>
+<circle cx="13" cy="10" r="1.5" fill="#FFC107"/>
+<circle cx="18" cy="10" r="1.5" fill="#66BB6A"/>
+</svg>

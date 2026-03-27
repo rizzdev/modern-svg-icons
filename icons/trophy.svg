@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes trShine{0%,100%{opacity:.4}50%{opacity:.8}}
+.ts{animation:trShine 2s ease-in-out infinite}</style>
+<path d="M12 6 L32 6 L30 22 Q30 30 22 30 Q14 30 14 22Z" fill="#FFC107"/>
+<path d="M12 6 L22 6 L22 30 Q14 30 14 22Z" fill="#FFD54F"/>
+<g class="ts"><rect x="12" y="6" width="4" height="8" rx="2" fill="#FFF" opacity=".3"/>
+</g>
+<rect x="18" y="30" width="8" height="4" rx="1" fill="#FFA000"/>
+<rect x="14" y="34" width="16" height="4" rx="2" fill="#FFB74D"/>
+<path d="M6 10 Q6 18 12 18" stroke="#FFC107" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M38 10 Q38 18 32 18" stroke="#FFC107" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

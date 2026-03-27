@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes mpSlide{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}.mps{animation:mpSlide 2s ease-in-out infinite}</style>
+<g class="mps">
+<rect x="4" y="4" width="36" height="10" rx="3" fill="#42A5F5"/>
+<text x="22" y="11" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#FFF">boundary</text>
+<rect x="4" y="16" width="36" height="10" rx="3" fill="#FFC107"/>
+<text x="22" y="23" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#FFF">file.png</text>
+<rect x="4" y="28" width="36" height="10" rx="3" fill="#66BB6A"/>
+<text x="22" y="35" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#FFF">data: {}</text>
+</g></svg>

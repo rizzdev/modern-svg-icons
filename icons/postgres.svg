@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes pgBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+.pb{animation:pgBob 2s ease-in-out infinite}</style>
+<g class="pb"><rect x="4" y="4" width="36" height="36" rx="5" fill="#336791"/>
+<ellipse cx="22" cy="14" rx="10" ry="5" fill="#FFF" opacity=".3"/>
+<ellipse cx="22" cy="14" rx="10" ry="5" fill="none" stroke="#FFF" stroke-width="1.5"/>
+<path d="M12 14 L12 28 Q12 34 22 34 Q32 34 32 28 L32 14" stroke="#FFF" stroke-width="1.5" fill="none"/>
+<ellipse cx="22" cy="22" rx="10" ry="5" fill="none" stroke="#FFF" stroke-width="1" opacity=".5"/></g>
+</svg>

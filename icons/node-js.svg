@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes nodeGlow{0%,100%{opacity:.8}50%{opacity:1}}
+.ng{animation:nodeGlow 2s ease-in-out infinite}</style>
+<g class="ng"><rect x="4" y="4" width="36" height="36" rx="5" fill="#339933"/>
+<text x="22" y="20" text-anchor="middle" font-family="sans-serif" font-size="6" font-weight="bold" fill="#FFF">Node</text>
+<text x="22" y="30" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="bold" fill="#FFF">.js</text></g>
+</svg>

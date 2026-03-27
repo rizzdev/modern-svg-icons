@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes flyBird{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+.fb{animation:flyBird 1.5s ease-in-out infinite}</style>
+<g class="fb"><rect x="4" y="4" width="36" height="36" rx="5" fill="#7B3BE2"/>
+<path d="M10 24 Q16 14 22 18 Q28 14 34 24 Q28 20 22 24 Q16 20 10 24Z" fill="#FFF"/>
+<circle cx="22" cy="28" r="3" fill="#FFF"/></g>
+</svg>

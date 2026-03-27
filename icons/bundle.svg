@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes bndPulse{0%,100%{opacity:.6}50%{opacity:1}}.bp{animation:bndPulse 2s ease-in-out infinite}</style>
+<g class="bp"><rect x="8" y="4" width="28" height="8" rx="2" fill="#42A5F5"/>
+<rect x="6" y="14" width="32" height="8" rx="2" fill="#FFC107"/>
+<rect x="4" y="24" width="36" height="8" rx="2" fill="#EF5350"/>
+<rect x="6" y="34" width="32" height="8" rx="2" fill="#66BB6A"/></g>
+<rect x="18" y="2" width="8" height="40" fill="#FFF" opacity=".15"/></svg>

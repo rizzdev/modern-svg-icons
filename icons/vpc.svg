@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes vpcPulse{0%,100%{stroke-dashoffset:0}50%{stroke-dashoffset:8}}.vp{animation:vpcPulse 2s linear infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="none" stroke="#42A5F5" stroke-width="2" stroke-dasharray="4 4" class="vp"/>
+<rect x="8" y="8" width="12" height="12" rx="2" fill="#42A5F5"/>
+<rect x="24" y="8" width="12" height="12" rx="2" fill="#66BB6A"/>
+<rect x="8" y="24" width="12" height="12" rx="2" fill="#FFC107"/>
+<rect x="24" y="24" width="12" height="12" rx="2" fill="#EF5350"/>
+<text x="22" y="22" text-anchor="middle" font-family="monospace" font-size="3.5" font-weight="bold" fill="#78909C">VPC</text></svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes nonceFlip{0%,40%{opacity:1}50%,90%{opacity:0}100%{opacity:1}}
+@keyframes nonceFlip2{0%,40%{opacity:0}50%,90%{opacity:1}100%{opacity:0}}
+.nf1{animation:nonceFlip 2s ease-in-out infinite}
+.nf2{animation:nonceFlip2 2s ease-in-out infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#7E57C2"/>
+<g class="nf1"><text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#FFF">8472</text></g>
+<g class="nf2"><text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#FFC107">3691</text></g>
+<text x="22" y="12" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#D1C4E9">nonce</text>
+</svg>

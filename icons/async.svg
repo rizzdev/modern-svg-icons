@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes asyncFlow{0%{stroke-dashoffset:20}100%{stroke-dashoffset:0}}
+.af{stroke-dasharray:5 5;animation:asyncFlow 1.5s linear infinite}</style>
+<circle cx="10" cy="14" r="5" fill="#42A5F5"/>
+<circle cx="34" cy="14" r="5" fill="#66BB6A"/>
+<circle cx="22" cy="34" r="5" fill="#FFC107"/>
+<path class="af" d="M15 14 L29 14" stroke="#78909C" stroke-width="2"/>
+<path class="af" d="M10 19 L22 29" stroke="#78909C" stroke-width="2"/>
+<path class="af" d="M34 19 L22 29" stroke="#78909C" stroke-width="2"/>
+<text x="10" y="16" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">1</text>
+<text x="34" y="16" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">2</text>
+<text x="22" y="36" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">3</text>
+</svg>

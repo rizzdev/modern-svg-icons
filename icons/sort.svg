@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes sortSlide{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
+.ss1{animation:sortSlide 2s ease-in-out infinite}
+.ss2{animation:sortSlide 2s ease-in-out .3s infinite}
+.ss3{animation:sortSlide 2s ease-in-out .6s infinite}
+.ss4{animation:sortSlide 2s ease-in-out .9s infinite}
+</style>
+<rect x="4" y="6" width="36" height="32" rx="4" fill="#ECEFF1"/>
+<rect class="ss1" x="8" y="10" width="8" height="4" rx="1.5" fill="#42A5F5"/>
+<rect class="ss2" x="8" y="17" width="14" height="4" rx="1.5" fill="#66BB6A"/>
+<rect class="ss3" x="8" y="24" width="20" height="4" rx="1.5" fill="#FFC107"/>
+<rect class="ss4" x="8" y="31" width="28" height="4" rx="1.5" fill="#EF5350"/>
+</svg>

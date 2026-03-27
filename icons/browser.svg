@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes brLoad{0%{width:0}60%,100%{width:20}}
+.bl{animation:brLoad 2s ease-out infinite}</style>
+<rect x="3" y="4" width="38" height="34" rx="5" fill="#ECEFF1"/>
+<rect x="3" y="4" width="38" height="9" rx="5" fill="#78909C"/>
+<rect x="3" y="11" width="38" height="2" fill="#78909C"/>
+<circle cx="9" cy="8.5" r="2" fill="#EF5350"/>
+<circle cx="15" cy="8.5" r="2" fill="#FFC107"/>
+<circle cx="21" cy="8.5" r="2" fill="#66BB6A"/>
+<rect x="26" y="7" width="12" height="3" rx="1.5" fill="#607D8B"/>
+<rect class="bl" x="8" y="17" height="3" rx="1" fill="#42A5F5"/>
+<rect x="8" y="23" width="28" height="2" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="28" width="20" height="2" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="33" width="24" height="2" rx="1" fill="#CFD8DC"/>
+</svg>

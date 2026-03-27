@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes compileFlash{0%,100%{fill:#ECEFF1}30%{fill:#C8E6C9}60%{fill:#ECEFF1}}
+.cf{animation:compileFlash 2.5s ease-in-out infinite}
+</style>
+<rect class="cf" x="5" y="3" width="34" height="38" rx="4"/>
+<rect x="9" y="8" width="18" height="3" rx="1" fill="#78909C"/>
+<rect x="9" y="13" width="12" height="3" rx="1" fill="#AB47BC"/>
+<path d="M22 22 L17 27 L22 32" stroke="#42A5F5" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26 22 L31 27 L26 32" stroke="#EF5350" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="9" y="36" width="26" height="3" rx="1" fill="#66BB6A"/>
+</svg>

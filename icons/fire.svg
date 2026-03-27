@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes flicker{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.05)}}
+.fk{animation:flicker .4s ease-in-out infinite;transform-origin:22px 38px}
+</style>
+<g class="fk">
+<path d="M22 4 Q32 14 34 24 Q36 34 22 40 Q8 34 10 24 Q12 14 22 4Z" fill="#FF7043"/>
+<path d="M22 12 Q28 18 30 26 Q32 34 22 38 Q12 34 14 26 Q16 18 22 12Z" fill="#FFC107"/>
+<path d="M22 22 Q26 26 26 30 Q26 36 22 38 Q18 36 18 30 Q18 26 22 22Z" fill="#FFEB3B"/>
+</g>
+</svg>

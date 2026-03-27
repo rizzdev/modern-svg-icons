@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes fixSnap{0%,80%{transform:translateY(0)}85%{transform:translateY(-2px)}100%{transform:translateY(0)}}
+.fs{animation:fixSnap 2.5s ease-in-out infinite}</style>
+<g class="fs"><rect x="8" y="6" width="28" height="32" rx="4" fill="#78909C"/>
+<rect x="12" y="10" width="20" height="4" rx="1" fill="#CFD8DC"/>
+<rect x="12" y="16" width="20" height="4" rx="1" fill="#CFD8DC"/>
+<rect x="12" y="22" width="20" height="4" rx="1" fill="#CFD8DC"/>
+<rect x="12" y="28" width="20" height="4" rx="1" fill="#CFD8DC"/></g>
+<circle cx="34" cy="8" r="4" fill="#42A5F5"/>
+<text x="34" y="10" text-anchor="middle" font-family="sans-serif" font-size="5" font-weight="bold" fill="#FFF">F</text>
+</svg>

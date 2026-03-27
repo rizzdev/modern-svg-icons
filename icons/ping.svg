@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes pingRing{0%{r:4;opacity:1}100%{r:16;opacity:0}}
+.pr{animation:pingRing 1.5s ease-out infinite}</style>
+<circle cx="22" cy="22" r="4" fill="#66BB6A"/>
+<circle class="pr" cx="22" cy="22" r="4" fill="none" stroke="#66BB6A" stroke-width="2"/>
+<circle class="pr" cx="22" cy="22" r="4" fill="none" stroke="#66BB6A" stroke-width="1.5" style="animation-delay:.5s"/>
+<text x="22" y="40" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">12ms</text>
+</svg>

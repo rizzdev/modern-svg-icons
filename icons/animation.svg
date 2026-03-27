@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes animBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.ab{animation:animBounce 1s ease-in-out infinite}</style>
+<circle class="ab" cx="12" cy="28" r="5" fill="#42A5F5"/>
+<circle class="ab" cx="22" cy="28" r="5" fill="#FFC107" style="animation-delay:.15s"/>
+<circle class="ab" cx="32" cy="28" r="5" fill="#EF5350" style="animation-delay:.3s"/>
+<path d="M7 12 Q12 6 17 12 Q22 6 27 12 Q32 6 37 12" stroke="#66BB6A" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes rbSpin{0%{transform:rotate(0)}100%{transform:rotate(-360deg)}}
+.rb{animation:rbSpin 2s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="16" fill="#EF5350"/>
+<g class="rb">
+<path d="M10 22 A12 12 0 1 0 22 10" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M22 10 L18 14 M22 10 L26 14" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

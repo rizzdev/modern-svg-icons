@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes cpSlide{0%{transform:translateX(0)}50%{transform:translateX(4px)}100%{transform:translateX(0)}}.cps{animation:cpSlide 2s ease-in-out infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="4" fill="#ECEFF1"/>
+<rect x="8" y="12" width="28" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="17" width="28" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="22" width="28" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="8" y="27" width="28" height="3" rx="1" fill="#CFD8DC"/>
+<g class="cps"><line x1="36" y1="12" x2="36" y2="30" stroke="#42A5F5" stroke-width="2" stroke-linecap="round"/>
+<path d="M34 28 L36 32 L38 28" stroke="#42A5F5" stroke-width="1.5" fill="none" stroke-linecap="round"/></g></svg>

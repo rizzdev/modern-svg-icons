@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes doDrop{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+.dd{animation:doDrop 2s ease-in-out infinite}</style>
+<g class="dd"><circle cx="22" cy="22" r="17" fill="#0080FF"/>
+<path d="M22 10 Q14 10 14 20 L20 20 L20 26 L14 26 Q14 34 22 34 Q30 34 30 26 L24 26 L24 20 L30 20 Q30 10 22 10Z" fill="#FFF"/></g>
+</svg>

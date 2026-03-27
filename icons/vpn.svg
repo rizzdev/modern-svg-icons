@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes vpnTunnel{0%{stroke-dashoffset:16}100%{stroke-dashoffset:0}}.vt{stroke-dasharray:4 4;animation:vpnTunnel 1.5s linear infinite}</style>
+<circle cx="10" cy="22" r="6" fill="#42A5F5"/>
+<circle cx="34" cy="22" r="6" fill="#66BB6A"/>
+<path class="vt" d="M16 22 Q22 14 28 22" stroke="#FFC107" stroke-width="2.5" fill="none"/>
+<path class="vt" d="M16 22 Q22 30 28 22" stroke="#AB47BC" stroke-width="2.5" fill="none"/>
+<circle cx="10" cy="22" r="2.5" fill="#FFF"/>
+<circle cx="34" cy="22" r="2.5" fill="#FFF"/></svg>

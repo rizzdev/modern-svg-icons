@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes dnaScroll{0%{transform:translateY(0)}100%{transform:translateY(-10px)}}
+.ds{animation:dnaScroll 2s linear infinite}</style>
+<g class="ds">
+<path d="M14 0 Q22 6 30 0 Q22 -6 14 0" stroke="#42A5F5" stroke-width="2" fill="none"/>
+<path d="M14 10 Q22 16 30 10 Q22 4 14 10" stroke="#EF5350" stroke-width="2" fill="none"/>
+<path d="M14 20 Q22 26 30 20 Q22 14 14 20" stroke="#66BB6A" stroke-width="2" fill="none"/>
+<path d="M14 30 Q22 36 30 30 Q22 24 14 30" stroke="#FFC107" stroke-width="2" fill="none"/>
+<path d="M14 40 Q22 46 30 40 Q22 34 14 40" stroke="#AB47BC" stroke-width="2" fill="none"/>
+<path d="M14 50 Q22 56 30 50 Q22 44 14 50" stroke="#42A5F5" stroke-width="2" fill="none"/>
+</g>
+</svg>

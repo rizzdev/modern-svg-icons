@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes fpScan{0%,100%{opacity:.4}50%{opacity:1}}
+.fp{animation:fpScan 2s ease-in-out infinite}
+</style>
+<circle cx="22" cy="22" r="17" fill="#ECEFF1"/>
+<g class="fp">
+<path d="M14 28 Q14 14 22 14 Q30 14 30 28" stroke="#5C6BC0" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M17 28 Q17 18 22 18 Q27 18 27 28" stroke="#7986CB" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M20 28 Q20 22 22 22 Q24 22 24 28" stroke="#9FA8DA" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+<circle cx="22" cy="22" r="1.5" fill="#5C6BC0"/>
+</svg>

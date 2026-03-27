@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes seGlitch{0%,90%{transform:translate(0)}92%{transform:translate(2px,-1px)}94%{transform:translate(-1px,2px)}96%{transform:translate(1px)}98%,100%{transform:translate(0)}}
+.se{animation:seGlitch 2s step-end infinite}</style>
+<g class="se"><rect x="4" y="8" width="36" height="28" rx="6" fill="#EF5350"/>
+<text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#FFF">500</text></g>
+</svg>

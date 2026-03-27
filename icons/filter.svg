@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes fDrip{0%{transform:translateY(0);opacity:1}100%{transform:translateY(6px);opacity:0}}
+.fd{animation:fDrip 1.5s ease-in infinite}
+</style>
+<path d="M6 8 L38 8 L26 24 L26 34 L18 38 L18 24Z" fill="#78909C"/>
+<path d="M6 8 L38 8 L26 24 L18 24Z" fill="#90A4AE"/>
+<circle cx="12" cy="6" r="2.5" fill="#EF5350"/>
+<circle cx="22" cy="6" r="2.5" fill="#FFC107"/>
+<circle cx="32" cy="6" r="2.5" fill="#42A5F5"/>
+<circle class="fd" cx="22" cy="34" r="1.5" fill="#66BB6A"/>
+</svg>

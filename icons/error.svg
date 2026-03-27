@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes errPulse{0%,100%{r:16;opacity:1}50%{r:17;opacity:.8}}
+.ep{animation:errPulse 1s ease-in-out infinite}
+</style>
+<circle class="ep" cx="22" cy="22" r="16" fill="#EF5350"/>
+<path d="M15 15 L29 29 M29 15 L15 29" stroke="#FFF" stroke-width="4" stroke-linecap="round"/>
+</svg>

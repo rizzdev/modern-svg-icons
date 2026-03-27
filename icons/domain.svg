@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes domSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.ds{animation:domSpin 10s linear infinite;transform-origin:22px 22px}
+</style>
+<circle cx="22" cy="22" r="16" fill="#42A5F5"/>
+<g class="ds">
+<ellipse cx="22" cy="22" rx="16" ry="8" fill="none" stroke="#FFF" stroke-width="1.2"/>
+<ellipse cx="22" cy="22" rx="6" ry="16" fill="none" stroke="#FFF" stroke-width="1.2"/>
+</g>
+<line x1="6" y1="22" x2="38" y2="22" stroke="#FFF" stroke-width="1"/>
+<line x1="22" y1="6" x2="22" y2="38" stroke="#FFF" stroke-width="1"/>
+<circle cx="22" cy="22" r="3" fill="#FFC107"/>
+</svg>

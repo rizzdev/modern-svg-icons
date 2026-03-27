@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes txFlow{0%{stroke-dashoffset:16}100%{stroke-dashoffset:0}}
+.tf{stroke-dasharray:4 4;animation:txFlow 1.5s linear infinite}</style>
+<rect x="4" y="8" width="14" height="28" rx="3" fill="#42A5F5"/>
+<rect x="26" y="8" width="14" height="28" rx="3" fill="#66BB6A"/>
+<text x="11" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">A</text>
+<text x="33" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">B</text>
+<line class="tf" x1="18" y1="18" x2="26" y2="18" stroke="#FFC107" stroke-width="2"/>
+<line class="tf" x1="26" y1="26" x2="18" y2="26" stroke="#FFC107" stroke-width="2"/>
+<path d="M24 16 L26 18 L24 20" stroke="#FFC107" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M20 24 L18 26 L20 28" stroke="#FFC107" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes pktMove{0%{transform:translateX(-4px);opacity:0}30%{opacity:1}70%{opacity:1}100%{transform:translateX(4px);opacity:0}}
+.pm{animation:pktMove 1.5s ease-in-out infinite}</style>
+<g class="pm"><rect x="12" y="12" width="20" height="20" rx="3" fill="#42A5F5"/>
+<rect x="14" y="14" width="16" height="5" rx="1" fill="#1E88E5"/>
+<text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#FFF">HDR</text>
+<rect x="14" y="21" width="16" height="9" rx="1" fill="#BBDEFB"/>
+<text x="22" y="27" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#1565C0">DATA</text></g>
+</svg>

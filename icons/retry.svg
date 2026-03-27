@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes rtSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.rt{animation:rtSpin 1.5s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="16" fill="#FFC107"/>
+<g class="rt">
+<path d="M34 22 A12 12 0 1 1 22 10" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M22 10 L26 14 M22 10 L26 6" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="22" y="40" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#F57F17">retry #3</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes evFlash{0%,100%{opacity:1}50%{opacity:.4}}.ef{animation:evFlash 2s ease-in-out infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#37474F"/>
+<text x="8" y="20" font-family="monospace" font-size="4" fill="#66BB6A">PORT=</text>
+<text x="24" y="20" font-family="monospace" font-size="4" fill="#FFF">3000</text>
+<text x="8" y="28" font-family="monospace" font-size="4" fill="#66BB6A">KEY=</text>
+<g class="ef"><text x="22" y="28" font-family="monospace" font-size="4" fill="#EF5350">****</text></g></svg>

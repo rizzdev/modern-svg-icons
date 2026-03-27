@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes classGlow{0%,100%{opacity:.7}50%{opacity:1}}
+.cg{animation:classGlow 2.5s ease-in-out infinite}</style>
+<rect x="6" y="4" width="32" height="36" rx="3" fill="#FF7043"/>
+<rect class="cg" x="10" y="8" width="24" height="8" rx="2" fill="#BF360C"/>
+<text x="22" y="14" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">MyClass</text>
+<line x1="10" y1="18" x2="34" y2="18" stroke="#BF360C" stroke-width="1"/>
+<rect x="10" y="20" width="24" height="3" rx="1" fill="#FFCCBC"/>
+<rect x="10" y="25" width="24" height="3" rx="1" fill="#FFCCBC"/>
+<line x1="10" y1="30" x2="34" y2="30" stroke="#BF360C" stroke-width="1"/>
+<rect x="10" y="32" width="24" height="3" rx="1" fill="#FFCCBC"/>
+</svg>

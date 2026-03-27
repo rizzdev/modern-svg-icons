@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes refShuffle{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}.rs{animation:refShuffle 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<g class="rs"><rect x="8" y="8" width="12" height="6" rx="1" fill="#EF5350"/>
+<rect x="24" y="8" width="12" height="6" rx="1" fill="#42A5F5"/>
+<rect x="8" y="18" width="28" height="6" rx="1" fill="#66BB6A"/>
+<rect x="8" y="28" width="16" height="6" rx="1" fill="#FFC107"/>
+<rect x="28" y="28" width="8" height="6" rx="1" fill="#AB47BC"/></g></svg>

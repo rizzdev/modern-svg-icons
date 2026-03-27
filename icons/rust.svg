@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes rustGear{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.rg{animation:rustGear 6s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="17" fill="#000"/>
+<g class="rg"><circle cx="22" cy="22" r="12" fill="none" stroke="#F74C00" stroke-width="3"/>
+<circle cx="22" cy="8" r="2.5" fill="#F74C00"/>
+<circle cx="34" cy="28" r="2.5" fill="#F74C00"/>
+<circle cx="10" cy="28" r="2.5" fill="#F74C00"/></g>
+<text x="22" y="26" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#FFF">R</text>
+</svg>

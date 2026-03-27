@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes asGrow{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}.asg{animation:asGrow 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="asg">
+<rect x="8" y="14" width="8" height="16" rx="2" fill="#42A5F5"/>
+<rect x="18" y="14" width="8" height="16" rx="2" fill="#42A5F5"/>
+<rect x="28" y="14" width="8" height="16" rx="2" fill="#42A5F5" opacity=".4" stroke="#42A5F5" stroke-width="1" stroke-dasharray="2 2"/>
+</g>
+<path d="M34 10 L38 6 M38 6 L38 10 M38 6 L34 6" stroke="#66BB6A" stroke-width="2" fill="none" stroke-linecap="round"/></svg>

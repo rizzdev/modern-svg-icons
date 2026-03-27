@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes sprintRun{0%{transform:translateX(0)}100%{transform:translateX(6px)}}
+.sr{animation:sprintRun 1s ease-in-out infinite alternate}</style>
+<rect x="4" y="10" width="36" height="24" rx="4" fill="#42A5F5"/>
+<rect x="8" y="14" width="28" height="4" rx="2" fill="#1E88E5"/>
+<rect class="sr" x="8" y="14" width="16" height="4" rx="2" fill="#FFC107"/>
+<text x="8" y="24" font-family="monospace" font-size="3.5" fill="#FFF">Sprint 14</text>
+<text x="8" y="30" font-family="monospace" font-size="3.5" fill="#BBDEFB">5 of 8 done</text>
+</svg>

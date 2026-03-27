@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes joinMerge{0%,100%{opacity:.5}50%{opacity:1}}
+.jm{animation:joinMerge 2s ease-in-out infinite}</style>
+<circle cx="16" cy="22" r="12" fill="#42A5F5" opacity=".7"/>
+<circle cx="28" cy="22" r="12" fill="#EF5350" opacity=".7"/>
+<g class="jm"><ellipse cx="22" cy="22" rx="6" ry="12" fill="#AB47BC"/></g>
+</svg>

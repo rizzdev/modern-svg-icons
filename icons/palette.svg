@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes palPop{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.pp1{animation:palPop 2s ease-in-out infinite;transform-origin:10px 14px}
+.pp2{animation:palPop 2s ease-in-out .3s infinite;transform-origin:22px 14px}
+.pp3{animation:palPop 2s ease-in-out .6s infinite;transform-origin:34px 14px}
+.pp4{animation:palPop 2s ease-in-out .9s infinite;transform-origin:10px 30px}
+.pp5{animation:palPop 2s ease-in-out 1.2s infinite;transform-origin:22px 30px}</style>
+<g class="pp1"><circle cx="10" cy="14" r="7" fill="#EF5350"/></g>
+<g class="pp2"><circle cx="22" cy="14" r="7" fill="#42A5F5"/></g>
+<g class="pp3"><circle cx="34" cy="14" r="7" fill="#FFC107"/></g>
+<g class="pp4"><circle cx="10" cy="30" r="7" fill="#66BB6A"/></g>
+<g class="pp5"><circle cx="22" cy="30" r="7" fill="#AB47BC"/></g>
+<circle cx="34" cy="30" r="7" fill="#78909C"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes xmShake{0%,100%{transform:rotate(0)}25%{transform:rotate(3deg)}75%{transform:rotate(-3deg)}}
+.xm{animation:xmShake 1.5s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="xm"><circle cx="22" cy="22" r="16" fill="#EF5350"/>
+<path d="M14 14 L30 30 M30 14 L14 30" stroke="#FFF" stroke-width="4" stroke-linecap="round"/></g>
+</svg>

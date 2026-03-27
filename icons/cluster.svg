@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes clPulse{0%,100%{opacity:.6}50%{opacity:1}}
+.c1{animation:clPulse 2s ease-in-out infinite}
+.c2{animation:clPulse 2s ease-in-out .5s infinite}
+.c3{animation:clPulse 2s ease-in-out 1s infinite}
+</style>
+<circle class="c1" cx="22" cy="10" r="7" fill="#42A5F5"/>
+<circle class="c2" cx="10" cy="32" r="7" fill="#EF5350"/>
+<circle class="c3" cx="34" cy="32" r="7" fill="#66BB6A"/>
+<line x1="22" y1="17" x2="13" y2="26" stroke="#78909C" stroke-width="2"/>
+<line x1="22" y1="17" x2="31" y2="26" stroke="#78909C" stroke-width="2"/>
+<line x1="17" y1="32" x2="27" y2="32" stroke="#78909C" stroke-width="2"/>
+<circle cx="22" cy="10" r="3" fill="#FFF"/>
+<circle cx="10" cy="32" r="3" fill="#FFF"/>
+<circle cx="34" cy="32" r="3" fill="#FFF"/>
+</svg>

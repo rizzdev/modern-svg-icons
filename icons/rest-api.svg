@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes restFlow{0%{stroke-dashoffset:16}100%{stroke-dashoffset:0}}
+.rf{stroke-dasharray:4 4;animation:restFlow 1.5s linear infinite}
+</style>
+<rect x="4" y="6" width="16" height="32" rx="4" fill="#42A5F5"/>
+<rect x="24" y="6" width="16" height="32" rx="4" fill="#66BB6A"/>
+<text x="12" y="18" text-anchor="middle" font-family="monospace" font-size="4" font-weight="bold" fill="#FFF">GET</text>
+<text x="12" y="26" text-anchor="middle" font-family="monospace" font-size="4" font-weight="bold" fill="#FFF">POST</text>
+<text x="12" y="34" text-anchor="middle" font-family="monospace" font-size="4" font-weight="bold" fill="#FFF">PUT</text>
+<text x="32" y="18" text-anchor="middle" font-family="monospace" font-size="4" font-weight="bold" fill="#FFF">200</text>
+<text x="32" y="26" text-anchor="middle" font-family="monospace" font-size="4" font-weight="bold" fill="#FFF">201</text>
+<text x="32" y="34" text-anchor="middle" font-family="monospace" font-size="4" font-weight="bold" fill="#FFF">204</text>
+<line class="rf" x1="20" y1="16" x2="24" y2="16" stroke="#FFC107" stroke-width="2"/>
+<line class="rf" x1="20" y1="24" x2="24" y2="24" stroke="#FFC107" stroke-width="2"/>
+<line class="rf" x1="20" y1="32" x2="24" y2="32" stroke="#FFC107" stroke-width="2"/>
+</svg>

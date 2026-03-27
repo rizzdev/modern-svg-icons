@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes seedGrow{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.1)}}
+.sg{animation:seedGrow 2s ease-in-out infinite;transform-origin:22px 30px}</style>
+<g class="sg">
+<path d="M22 14 Q16 14 16 22 Q16 30 22 30 Q28 30 28 22 Q28 14 22 14Z" fill="#795548"/>
+<path d="M22 8 Q20 10 20 14" stroke="#66BB6A" stroke-width="2" fill="none" stroke-linecap="round"/>
+<circle cx="19" cy="8" r="3" fill="#66BB6A"/>
+</g>
+<rect x="8" y="32" width="28" height="6" rx="2" fill="#8D6E63"/>
+<rect x="8" y="32" width="28" height="3" rx="2" fill="#A1887F"/>
+</svg>

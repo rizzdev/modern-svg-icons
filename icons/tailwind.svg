@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes twWave{0%,100%{d:path("M6 20 Q14 14 22 20 Q30 26 38 20")}50%{d:path("M6 24 Q14 18 22 24 Q30 30 38 24")}}
+@keyframes twFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+.tf{animation:twFloat 2s ease-in-out infinite}</style>
+<g class="tf">
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#0EA5E9"/>
+<path d="M10 18 Q16 12 22 18 Q28 24 34 18" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M10 26 Q16 20 22 26 Q28 32 34 26" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes fadeAlt{0%,45%{opacity:1}50%,95%{opacity:.3}100%{opacity:1}}
+.da{animation:fadeAlt 3s ease-in-out infinite}
+.db{animation:fadeAlt 3s ease-in-out 1.5s infinite}
+</style>
+<rect x="4" y="3" width="36" height="38" rx="4" fill="#ECEFF1"/>
+<rect class="da" x="8" y="8" width="28" height="4" rx="1" fill="#EF9A9A"/>
+<rect class="da" x="8" y="14" width="20" height="4" rx="1" fill="#EF9A9A"/>
+<rect x="8" y="20" width="28" height="1" fill="#CFD8DC"/>
+<rect class="db" x="8" y="24" width="28" height="4" rx="1" fill="#A5D6A7"/>
+<rect class="db" x="8" y="30" width="22" height="4" rx="1" fill="#A5D6A7"/>
+<text x="6" y="11" font-family="monospace" font-size="4.5" fill="#C62828">−</text>
+<text x="6" y="17" font-family="monospace" font-size="4.5" fill="#C62828">−</text>
+<text x="6" y="27.5" font-family="monospace" font-size="4.5" fill="#2E7D32">+</text>
+<text x="6" y="33.5" font-family="monospace" font-size="4.5" fill="#2E7D32">+</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes epPulse{0%,100%{r:5}50%{r:6.5}}
+.ep{animation:epPulse 2s ease-in-out infinite}
+</style>
+<line x1="8" y1="22" x2="36" y2="22" stroke="#78909C" stroke-width="3" stroke-linecap="round"/>
+<circle cx="8" cy="22" r="5" fill="#42A5F5"/>
+<circle class="ep" cx="36" cy="22" r="5" fill="#66BB6A"/>
+<circle cx="36" cy="22" r="2.5" fill="#FFF"/>
+<path d="M16 18 L20 22 L16 26" stroke="#FFC107" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24" y1="18" x2="28" y2="22" stroke="#FFC107" stroke-width="2" fill="none"/>
+<text x="22" y="14" text-anchor="middle" font-family="monospace" font-size="4" fill="#78909C">/api/v1</text>
+</svg>

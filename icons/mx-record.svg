@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes mxGlow{0%,100%{opacity:.7}50%{opacity:1}}.mxg{animation:mxGlow 2s ease-in-out infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#FFC107"/>
+<g class="mxg">
+<text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#FFF">MX</text>
+<text x="22" y="30" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF8E1">mail.app</text>
+</g></svg>

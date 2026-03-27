@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes globeSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.gs{animation:globeSpin 10s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="16" fill="#42A5F5"/>
+<g class="gs">
+<ellipse cx="22" cy="22" rx="16" ry="8" fill="none" stroke="#FFF" stroke-width="1" opacity=".4"/>
+<ellipse cx="22" cy="22" rx="6" ry="16" fill="none" stroke="#FFF" stroke-width="1" opacity=".4"/>
+</g>
+<path d="M8 16 Q16 20 22 16 Q28 12 36 16" fill="#66BB6A" opacity=".6"/>
+<path d="M6 24 Q14 28 22 24 Q30 20 38 24" fill="#66BB6A" opacity=".5"/>
+<line x1="6" y1="22" x2="38" y2="22" stroke="#FFF" stroke-width=".5" opacity=".3"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes ltBar{0%{height:4}50%{height:22}100%{height:4}}
+.lt1{animation:ltBar 1.5s ease-in-out infinite}
+.lt2{animation:ltBar 1.5s ease-in-out .2s infinite}
+.lt3{animation:ltBar 1.5s ease-in-out .4s infinite}
+.lt4{animation:ltBar 1.5s ease-in-out .6s infinite}
+.lt5{animation:ltBar 1.5s ease-in-out .8s infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#263238"/>
+<rect class="lt1" x="7" y="12" width="5" rx="1" fill="#EF5350"/>
+<rect class="lt2" x="14" y="12" width="5" rx="1" fill="#FFC107"/>
+<rect class="lt3" x="21" y="12" width="5" rx="1" fill="#FFC107"/>
+<rect class="lt4" x="28" y="12" width="5" rx="1" fill="#66BB6A"/>
+<rect class="lt5" x="35" y="12" width="4" rx="1" fill="#66BB6A"/>
+<line x1="6" y1="36" x2="40" y2="36" stroke="#546E7A" stroke-width="1"/>
+</svg>

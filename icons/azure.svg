@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes azGlow{0%,100%{opacity:.8}50%{opacity:1}}
+.ag{animation:azGlow 2s ease-in-out infinite}</style>
+<g class="ag"><rect x="4" y="8" width="36" height="28" rx="5" fill="#0078D4"/>
+<path d="M14 14 L22 32 L32 14 L26 14 L22 24 L18 14Z" fill="#FFF"/></g>
+</svg>

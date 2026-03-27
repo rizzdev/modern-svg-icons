@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes dlDrop{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+.dd{animation:dlDrop 1.5s ease-in-out infinite}
+</style>
+<g class="dd">
+<line x1="22" y1="4" x2="22" y2="26" stroke="#42A5F5" stroke-width="4" stroke-linecap="round"/>
+<path d="M14 20 L22 28 L30 20" stroke="#42A5F5" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="8" y="34" width="28" height="4" rx="2" fill="#78909C"/>
+<rect x="6" y="30" width="4" height="8" rx="1" fill="#78909C"/>
+<rect x="34" y="30" width="4" height="8" rx="1" fill="#78909C"/>
+</svg>

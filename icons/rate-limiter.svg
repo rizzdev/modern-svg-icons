@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes rlFill{0%{width:0}70%{width:24;fill:#66BB6A}85%{width:28;fill:#FFC107}100%{width:28;fill:#EF5350}}.rlf{animation:rlFill 2.5s ease-in-out infinite}</style>
+<rect x="4" y="12" width="36" height="20" rx="5" fill="#37474F"/>
+<rect x="8" y="16" width="28" height="12" rx="3" fill="#263238"/>
+<rect class="rlf" x="8" y="16" height="12" rx="3" fill="#66BB6A"/>
+<text x="22" y="8" text-anchor="middle" font-family="monospace" font-size="4" font-weight="bold" fill="#78909C">LIMIT</text>
+<text x="22" y="38" text-anchor="middle" font-family="monospace" font-size="3" fill="#78909C">req/sec</text></svg>

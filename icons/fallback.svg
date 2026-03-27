@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes fbSwitch{0%,40%{opacity:1}50%,90%{opacity:.2}100%{opacity:1}}
+@keyframes fbSwitch2{0%,40%{opacity:.2}50%,90%{opacity:1}100%{opacity:.2}}
+.f1{animation:fbSwitch 3s ease-in-out infinite}
+.f2{animation:fbSwitch2 3s ease-in-out infinite}</style>
+<g class="f1"><rect x="4" y="10" width="16" height="24" rx="3" fill="#EF5350"/>
+<path d="M8 20 L16 24 M16 20 L8 24" stroke="#FFF" stroke-width="2" stroke-linecap="round"/></g>
+<g class="f2"><rect x="24" y="10" width="16" height="24" rx="3" fill="#66BB6A"/>
+<path d="M30 22 L32 24 L36 20" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path d="M20 18 L22 22 L20 26" stroke="#FFC107" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

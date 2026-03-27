@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes arSlide{0%,100%{transform:translateX(0)}50%{transform:translateX(3px)}}
+.ar{animation:arSlide 1.5s ease-in-out infinite}</style>
+<g class="ar"><path d="M38 22 L22 10 L22 18 L6 18 L6 26 L22 26 L22 34Z" fill="#42A5F5"/></g>
+</svg>

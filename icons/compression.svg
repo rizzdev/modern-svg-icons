@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes compShrink{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.7)}}.cs{animation:compShrink 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="cs"><rect x="8" y="4" width="28" height="36" rx="4" fill="#66BB6A"/>
+<path d="M14 12 L22 18 L30 12" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M14 20 L22 26 L30 20" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M14 28 L22 34 L30 28" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round"/></g></svg>

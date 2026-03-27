@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes gateOpen{0%,40%{transform:translateY(0)}50%,90%{transform:translateY(-4px)}100%{transform:translateY(0)}}
+.go{animation:gateOpen 3s ease-in-out infinite}
+</style>
+<rect x="8" y="8" width="28" height="28" rx="4" fill="#78909C"/>
+<g class="go"><rect x="8" y="8" width="28" height="14" rx="4" fill="#607D8B"/><rect x="8" y="18" width="28" height="4" fill="#607D8B"/></g>
+<path d="M16 28 L22 22 L28 28" stroke="#FFC107" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="22" y1="22" x2="22" y2="34" stroke="#FFC107" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="14" cy="12" r="2" fill="#EF5350"/>
+<circle cx="22" cy="12" r="2" fill="#66BB6A"/>
+<circle cx="30" cy="12" r="2" fill="#42A5F5"/>
+</svg>

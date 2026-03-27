@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes hstsShield{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}.hss{animation:hstsShield 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="hss"><path d="M22 4 L38 12 L38 24 Q38 38 22 42 Q6 38 6 24 L6 12Z" fill="#42A5F5"/>
+<text x="22" y="22" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">HSTS</text>
+<text x="22" y="32" text-anchor="middle" font-family="monospace" font-size="3" fill="#BBDEFB">strict</text></g></svg>

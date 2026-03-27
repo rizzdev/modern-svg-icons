@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes crSlide{0%,100%{transform:translateX(0)}50%{transform:translateX(1px)}}
+.cs{animation:crSlide 2s ease-in-out infinite}
+</style>
+<rect x="4" y="6" width="36" height="32" rx="4" fill="#0277BD"/>
+<g class="cs">
+<rect x="8" y="10" width="10" height="8" rx="2" fill="#4FC3F7"/>
+<rect x="20" y="10" width="10" height="8" rx="2" fill="#29B6F6"/>
+<rect x="8" y="20" width="10" height="8" rx="2" fill="#29B6F6"/>
+<rect x="20" y="20" width="10" height="8" rx="2" fill="#4FC3F7"/>
+</g>
+<rect x="32" y="10" width="6" height="18" rx="2" fill="#01579B"/>
+<circle cx="35" cy="14" r="1.5" fill="#4FC3F7"/>
+<circle cx="35" cy="19" r="1.5" fill="#4FC3F7"/>
+<circle cx="35" cy="24" r="1.5" fill="#4FC3F7"/>
+<rect x="8" y="32" width="28" height="3" rx="1" fill="#01579B"/>
+</svg>

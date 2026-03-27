@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes csvHighlight{0%,100%{fill:#E8F5E9}50%{fill:#C8E6C9}}
+.ch{animation:csvHighlight 2s ease-in-out infinite}
+</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#66BB6A"/>
+<rect x="8" y="8" width="28" height="28" rx="2" fill="#FFF"/>
+<line x1="18" y1="8" x2="18" y2="36" stroke="#C8E6C9" stroke-width="1"/>
+<line x1="30" y1="8" x2="30" y2="36" stroke="#C8E6C9" stroke-width="1"/>
+<line x1="8" y1="16" x2="36" y2="16" stroke="#C8E6C9" stroke-width="1"/>
+<line x1="8" y1="22" x2="36" y2="22" stroke="#C8E6C9" stroke-width="1"/>
+<line x1="8" y1="28" x2="36" y2="28" stroke="#C8E6C9" stroke-width="1"/>
+<rect class="ch" x="8" y="22" width="10" height="6"/>
+<text x="10" y="12.5" font-family="monospace" font-size="3.5" fill="#2E7D32">id</text>
+<text x="20" y="12.5" font-family="monospace" font-size="3.5" fill="#2E7D32">name</text>
+<text x="32" y="12.5" font-family="monospace" font-size="3.5" fill="#2E7D32">val</text>
+</svg>

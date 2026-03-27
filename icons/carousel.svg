@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes carSlide{0%,30%{transform:translateX(0)}35%,65%{transform:translateX(-14px)}70%,100%{transform:translateX(0)}}
+.cs{animation:carSlide 3s ease-in-out infinite}</style>
+<rect x="4" y="8" width="36" height="24" rx="3" fill="#ECEFF1" style="overflow:hidden"/>
+<g class="cs">
+<rect x="6" y="10" width="12" height="20" rx="2" fill="#42A5F5"/>
+<rect x="20" y="10" width="12" height="20" rx="2" fill="#FFC107"/>
+<rect x="34" y="10" width="12" height="20" rx="2" fill="#66BB6A"/>
+</g>
+<circle cx="18" cy="36" r="1.5" fill="#42A5F5"/>
+<circle cx="22" cy="36" r="1.5" fill="#CFD8DC"/>
+<circle cx="26" cy="36" r="1.5" fill="#CFD8DC"/>
+</svg>

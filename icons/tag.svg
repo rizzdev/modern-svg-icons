@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes tagSwing{0%,100%{transform:rotate(0)}25%{transform:rotate(3deg)}75%{transform:rotate(-3deg)}}
+.ts{animation:tagSwing 2s ease-in-out infinite;transform-origin:34px 6px}
+</style>
+<g class="ts">
+<path d="M6 22 L22 6 L38 6 L38 22 L22 38 Z" fill="#FFC107"/>
+<path d="M22 6 L38 6 L38 22" fill="#FFD54F"/>
+<circle cx="32" cy="12" r="3" fill="#FFF"/>
+<line x1="34" y1="4" x2="38" y2="2" stroke="#FFA000" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

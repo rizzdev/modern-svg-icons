@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes fmtAlign{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}.fa{animation:fmtAlign 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<g class="fa">
+<rect x="8" y="8" width="12" height="3" rx=".5" fill="#42A5F5"/>
+<rect x="12" y="13" width="16" height="3" rx=".5" fill="#78909C"/>
+<rect x="8" y="18" width="20" height="3" rx=".5" fill="#78909C"/>
+<rect x="12" y="23" width="14" height="3" rx=".5" fill="#FFC107"/>
+<rect x="8" y="28" width="24" height="3" rx=".5" fill="#78909C"/>
+<rect x="8" y="33" width="8" height="3" rx=".5" fill="#66BB6A"/>
+</g></svg>

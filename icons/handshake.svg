@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes hsGrip{0%,100%{transform:translateX(0)}50%{transform:translateX(1px)}}
+.hg{animation:hsGrip 1.5s ease-in-out infinite}</style>
+<g class="hg">
+<path d="M4 20 L14 20 Q18 20 18 24 L18 28 Q18 32 22 32 L30 32" stroke="#42A5F5" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M40 24 L30 24 Q26 24 26 20 L26 16 Q26 12 22 12 L14 12" stroke="#EF5350" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g>
+<circle cx="4" cy="20" r="3" fill="#42A5F5"/>
+<circle cx="40" cy="24" r="3" fill="#EF5350"/>
+</svg>

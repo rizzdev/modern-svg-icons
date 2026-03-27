@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes userWave{0%,100%{transform:rotate(0)}50%{transform:rotate(5deg)}}
+.uw{animation:userWave 2s ease-in-out infinite;transform-origin:22px 22px}
+</style>
+<g class="uw">
+<circle cx="22" cy="14" r="8" fill="#42A5F5"/>
+<path d="M8 38 Q8 26 22 26 Q36 26 36 38" fill="#42A5F5"/>
+<circle cx="22" cy="12" r="5" fill="#BBDEFB"/>
+<path d="M14 36 Q14 28 22 28 Q30 28 30 36" fill="#64B5F6"/>
+</g>
+</svg>

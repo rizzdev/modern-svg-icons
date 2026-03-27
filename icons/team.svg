@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes teamPulse{0%,100%{opacity:.7}50%{opacity:1}}
+.tp{animation:teamPulse 2s ease-in-out infinite}
+</style>
+<g class="tp">
+<circle cx="22" cy="10" r="5" fill="#42A5F5"/>
+<circle cx="10" cy="18" r="4" fill="#EF5350"/>
+<circle cx="34" cy="18" r="4" fill="#66BB6A"/>
+</g>
+<path d="M6 34 Q6 26 10 24 Q14 26 14 34" fill="#EF5350"/>
+<path d="M15 36 Q15 24 22 22 Q29 24 29 36" fill="#42A5F5"/>
+<path d="M30 34 Q30 26 34 24 Q38 26 38 34" fill="#66BB6A"/>
+</svg>

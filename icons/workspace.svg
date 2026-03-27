@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes wsGlow{0%,100%{opacity:.7}50%{opacity:1}}.wg{animation:wsGlow 2.5s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<g class="wg"><rect x="6" y="6" width="20" height="6" rx="2" fill="#42A5F5"/>
+<rect x="28" y="6" width="10" height="6" rx="2" fill="#78909C"/>
+<rect x="6" y="14" width="10" height="24" rx="2" fill="#66BB6A"/>
+<rect x="18" y="14" width="20" height="24" rx="2" fill="#FFF" stroke="#CFD8DC" stroke-width="1"/></g></svg>

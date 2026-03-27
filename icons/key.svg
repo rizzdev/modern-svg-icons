@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes keyTurn{0%,100%{transform:rotate(0)}50%{transform:rotate(15deg)}}
+.kt{animation:keyTurn 2s ease-in-out infinite;transform-origin:16px 16px}
+</style>
+<g class="kt">
+<circle cx="16" cy="16" r="8" fill="#FFC107"/>
+<circle cx="16" cy="16" r="4" fill="#F57F17"/>
+<rect x="22" y="14" width="18" height="4" rx="2" fill="#FFC107"/>
+<rect x="34" y="14" width="4" height="8" rx="1" fill="#FFD54F"/>
+<rect x="28" y="14" width="3" height="6" rx="1" fill="#FFD54F"/>
+</g>
+</svg>

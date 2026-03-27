@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes vmBoot{0%,100%{opacity:.5}50%{opacity:1}}
+.vb{animation:vmBoot 2s ease-in-out infinite}
+</style>
+<rect x="4" y="6" width="36" height="32" rx="4" fill="#78909C"/>
+<rect class="vb" x="8" y="10" width="14" height="12" rx="2" fill="#42A5F5"/>
+<rect class="vb" x="24" y="10" width="14" height="12" rx="2" fill="#66BB6A"/>
+<rect class="vb" x="8" y="24" width="14" height="12" rx="2" fill="#EF5350"/>
+<rect class="vb" x="24" y="24" width="14" height="12" rx="2" fill="#FFC107"/>
+<text x="15" y="18" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">VM1</text>
+<text x="31" y="18" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">VM2</text>
+<text x="15" y="32" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">VM3</text>
+<text x="31" y="32" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">VM4</text>
+</svg>

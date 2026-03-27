@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes auBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.au{animation:auBounce 1.5s ease-in-out infinite}</style>
+<g class="au"><path d="M22 6 L34 22 L26 22 L26 38 L18 38 L18 22 L10 22Z" fill="#66BB6A"/></g>
+</svg>

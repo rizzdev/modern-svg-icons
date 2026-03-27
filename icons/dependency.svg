@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes depConnect{0%{stroke-dashoffset:10}100%{stroke-dashoffset:0}}.dc{stroke-dasharray:3 3;animation:depConnect 1.5s linear infinite}</style>
+<circle cx="22" cy="10" r="6" fill="#42A5F5"/>
+<circle cx="10" cy="34" r="6" fill="#FFC107"/>
+<circle cx="34" cy="34" r="6" fill="#EF5350"/>
+<circle cx="22" cy="22" r="4" fill="#66BB6A"/>
+<line class="dc" x1="22" y1="16" x2="22" y2="18" stroke="#78909C" stroke-width="2"/>
+<line class="dc" x1="18" y1="24" x2="14" y2="30" stroke="#78909C" stroke-width="2"/>
+<line class="dc" x1="26" y1="24" x2="30" y2="30" stroke="#78909C" stroke-width="2"/></svg>

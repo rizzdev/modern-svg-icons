@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes comType{0%,100%{width:0}50%{width:18}}
+.ct{animation:comType 2s ease-in-out infinite}</style>
+<path d="M4 6 L40 6 Q42 6 42 8 L42 28 Q42 30 40 30 L12 30 L6 36 L6 30 L4 30 Q2 30 2 28 L2 8 Q2 6 4 6Z" fill="#42A5F5"/>
+<rect x="8" y="12" width="24" height="2" rx=".5" fill="#FFF" opacity=".7"/>
+<rect class="ct" x="8" y="18" height="2" rx=".5" fill="#FFF" opacity=".5"/>
+<rect x="8" y="24" width="16" height="2" rx=".5" fill="#FFF" opacity=".3"/>
+</svg>

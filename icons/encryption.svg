@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes encShuffle{0%,100%{opacity:1}50%{opacity:.3}}
+.e1{animation:encShuffle 1.5s ease-in-out infinite}
+.e2{animation:encShuffle 1.5s ease-in-out .5s infinite}
+.e3{animation:encShuffle 1.5s ease-in-out 1s infinite}
+</style>
+<rect x="4" y="6" width="36" height="32" rx="5" fill="#7E57C2"/>
+<text class="e1" x="12" y="20" font-family="monospace" font-size="6" fill="#D1C4E9">a3f</text>
+<text class="e2" x="26" y="20" font-family="monospace" font-size="6" fill="#D1C4E9">9b2</text>
+<text class="e3" x="12" y="30" font-family="monospace" font-size="6" fill="#D1C4E9">x7k</text>
+<text x="26" y="30" font-family="monospace" font-size="6" fill="#D1C4E9">4e1</text>
+<circle cx="36" cy="8" r="4" fill="#FFC107"/>
+<path d="M34.5 8 L36 9.5 L38 6.5" stroke="#7E57C2" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

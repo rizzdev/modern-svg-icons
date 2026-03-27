@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes psRadiate{0%{r:3;opacity:1}100%{r:10;opacity:0}}.psr{animation:psRadiate 1.5s ease-out infinite}</style>
+<circle cx="22" cy="14" r="6" fill="#FFC107"/>
+<text x="22" y="16" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">PUB</text>
+<circle class="psr" cx="22" cy="14" r="3" fill="none" stroke="#FFC107" stroke-width="1"/>
+<rect x="4" y="30" width="10" height="10" rx="2" fill="#42A5F5"/>
+<rect x="17" y="30" width="10" height="10" rx="2" fill="#66BB6A"/>
+<rect x="30" y="30" width="10" height="10" rx="2" fill="#EF5350"/>
+<line x1="22" y1="20" x2="9" y2="30" stroke="#78909C" stroke-width="1.5"/>
+<line x1="22" y1="20" x2="22" y2="30" stroke="#78909C" stroke-width="1.5"/>
+<line x1="22" y1="20" x2="35" y2="30" stroke="#78909C" stroke-width="1.5"/></svg>

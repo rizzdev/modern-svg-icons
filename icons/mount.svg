@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes mntClick{0%,80%{transform:translateY(0)}85%{transform:translateY(2px)}100%{transform:translateY(0)}}.mc{animation:mntClick 2.5s ease-in-out infinite}</style>
+<rect x="10" y="22" width="24" height="18" rx="3" fill="#78909C"/>
+<rect x="14" y="26" width="16" height="4" rx="1" fill="#CFD8DC"/>
+<rect x="14" y="32" width="10" height="4" rx="1" fill="#CFD8DC"/>
+<g class="mc"><rect x="12" y="4" width="20" height="16" rx="3" fill="#42A5F5"/>
+<rect x="16" y="8" width="12" height="3" rx="1" fill="#FFF" opacity=".5"/>
+<rect x="16" y="13" width="8" height="3" rx="1" fill="#FFF" opacity=".3"/></g>
+<path d="M18 20 L22 22 L26 20" stroke="#FFC107" stroke-width="2" fill="none" stroke-linecap="round"/></svg>

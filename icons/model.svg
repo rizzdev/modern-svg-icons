@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes modGlow{0%,100%{r:6}50%{r:7.5}}
+.mg{animation:modGlow 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#7E57C2"/>
+<rect x="8" y="8" width="28" height="28" rx="3" fill="#5E35B1"/>
+<circle class="mg" cx="22" cy="22" r="6" fill="#EDE7F6"/>
+<path d="M19 22 L21 24 L25 19" stroke="#5E35B1" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="10" y="10" width="8" height="3" rx="1" fill="#B39DDB"/>
+<rect x="26" y="10" width="8" height="3" rx="1" fill="#B39DDB"/>
+<rect x="10" y="31" width="8" height="3" rx="1" fill="#B39DDB"/>
+<rect x="26" y="31" width="8" height="3" rx="1" fill="#B39DDB"/>
+</svg>

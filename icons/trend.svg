@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes trendDraw{0%{stroke-dashoffset:60}100%{stroke-dashoffset:0}}
+.td{stroke-dasharray:60;animation:trendDraw 2s ease-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<path class="td" d="M8 34 L16 26 L22 30 L30 14 L38 10" stroke="#66BB6A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="38" cy="10" r="3" fill="#66BB6A"/>
+<path d="M34 8 L38 10 L38 6" stroke="#66BB6A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

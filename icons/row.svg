@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes rowSlide{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
+.rs{animation:rowSlide 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<rect x="6" y="8" width="32" height="6" rx="2" fill="#CFD8DC"/>
+<g class="rs"><rect x="6" y="17" width="32" height="6" rx="2" fill="#42A5F5"/></g>
+<rect x="6" y="26" width="32" height="6" rx="2" fill="#CFD8DC"/>
+<rect x="6" y="34" width="32" height="4" rx="2" fill="#CFD8DC"/>
+</svg>

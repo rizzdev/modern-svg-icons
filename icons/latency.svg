@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes latPing{0%{r:2;opacity:1}100%{r:10;opacity:0}}
+.lp{animation:latPing 1.5s ease-out infinite}
+</style>
+<rect x="4" y="8" width="36" height="28" rx="4" fill="#263238"/>
+<circle class="lp" cx="14" cy="22" r="2" fill="#FFC107"/>
+<circle cx="14" cy="22" r="2" fill="#FFC107"/>
+<text x="24" y="19" font-family="monospace" font-size="5" fill="#66BB6A">12ms</text>
+<text x="24" y="26" font-family="monospace" font-size="5" fill="#FFC107">45ms</text>
+<text x="24" y="33" font-family="monospace" font-size="5" fill="#EF5350">200ms</text>
+</svg>

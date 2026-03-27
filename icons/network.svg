@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes netPulse{0%{stroke-dashoffset:12}100%{stroke-dashoffset:0}}
+.np{stroke-dasharray:3 3;animation:netPulse 1.5s linear infinite}
+</style>
+<circle cx="22" cy="22" r="5" fill="#FFC107"/>
+<circle cx="8" cy="10" r="4" fill="#42A5F5"/>
+<circle cx="36" cy="10" r="4" fill="#EF5350"/>
+<circle cx="8" cy="34" r="4" fill="#66BB6A"/>
+<circle cx="36" cy="34" r="4" fill="#AB47BC"/>
+<line x1="18" y1="19" x2="11" y2="13" class="np" stroke="#42A5F5" stroke-width="2"/>
+<line x1="26" y1="19" x2="33" y2="13" class="np" stroke="#EF5350" stroke-width="2"/>
+<line x1="18" y1="25" x2="11" y2="31" class="np" stroke="#66BB6A" stroke-width="2"/>
+<line x1="26" y1="25" x2="33" y2="31" class="np" stroke="#AB47BC" stroke-width="2"/>
+</svg>

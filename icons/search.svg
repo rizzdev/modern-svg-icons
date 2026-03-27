@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes searchBob{0%,100%{transform:translate(0,0)}50%{transform:translate(1px,1px)}}
+.sb{animation:searchBob 1.5s ease-in-out infinite}
+</style>
+<g class="sb">
+<circle cx="18" cy="18" r="12" fill="#42A5F5"/>
+<circle cx="18" cy="18" r="8" fill="#BBDEFB"/>
+<circle cx="15" cy="15" r="2" fill="#FFF" opacity=".6"/>
+<line x1="27" y1="27" x2="38" y2="38" stroke="#FFC107" stroke-width="5" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes bmPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.bm{animation:bmPulse 2s ease-in-out infinite;transform-origin:22px 22px}
+</style>
+<g class="bm">
+<path d="M10 4 L34 4 L34 40 L22 32 L10 40Z" fill="#42A5F5"/>
+<path d="M10 4 L22 4 L22 32 L10 40Z" fill="#64B5F6"/>
+</g>
+<circle cx="22" cy="16" r="4" fill="#FFC107"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes joyWobble{0%,100%{transform:rotate(0)}25%{transform:rotate(5deg)}75%{transform:rotate(-5deg)}}
+.jw{animation:joyWobble 1.5s ease-in-out infinite;transform-origin:22px 32px}</style>
+<rect x="6" y="28" width="32" height="12" rx="6" fill="#455A64"/>
+<g class="jw"><rect x="18" y="10" width="8" height="22" rx="4" fill="#EF5350"/>
+<circle cx="22" cy="10" r="6" fill="#F44336"/><circle cx="22" cy="10" r="3" fill="#EF9A9A"/></g>
+</svg>

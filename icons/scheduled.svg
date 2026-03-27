@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes schTick{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.st{animation:schTick 4s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="16" fill="#5C6BC0"/>
+<circle cx="22" cy="22" r="12" fill="#3949AB"/>
+<g class="st"><line x1="22" y1="22" x2="22" y2="14" stroke="#FFF" stroke-width="2" stroke-linecap="round"/></g>
+<line x1="22" y1="22" x2="28" y2="26" stroke="#C5CAE9" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="22" cy="22" r="2" fill="#FFF"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes blkPulse{0%,100%{opacity:.7}50%{opacity:1}}
+.bk{animation:blkPulse 1s ease-in-out infinite}</style>
+<circle cx="22" cy="22" r="16" fill="#EF5350"/>
+<g class="bk"><rect x="12" y="20" width="20" height="4" rx="2" fill="#FFF"/></g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes skShimmer{0%{opacity:.3}50%{opacity:.7}100%{opacity:.3}}.sk{animation:skShimmer 1.5s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<rect class="sk" x="8" y="8" width="12" height="12" rx="2" fill="#CFD8DC"/>
+<rect class="sk" x="24" y="8" width="14" height="4" rx="1" fill="#CFD8DC"/>
+<rect class="sk" x="24" y="14" width="10" height="4" rx="1" fill="#CFD8DC"/>
+<rect class="sk" x="8" y="24" width="28" height="4" rx="1" fill="#CFD8DC"/>
+<rect class="sk" x="8" y="30" width="22" height="4" rx="1" fill="#CFD8DC"/>
+<rect class="sk" x="8" y="36" width="16" height="3" rx="1" fill="#CFD8DC"/></svg>

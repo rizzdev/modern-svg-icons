@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
+.cd{animation:drift 4s ease-in-out infinite}
+</style>
+<g class="cd">
+<ellipse cx="22" cy="24" rx="16" ry="10" fill="#42A5F5"/>
+<circle cx="14" cy="18" r="8" fill="#64B5F6"/>
+<circle cx="26" cy="14" r="10" fill="#42A5F5"/>
+<circle cx="34" cy="20" r="6" fill="#64B5F6"/>
+<circle cx="17" cy="21" r="4" fill="#90CAF9" opacity=".5"/>
+</g>
+</svg>

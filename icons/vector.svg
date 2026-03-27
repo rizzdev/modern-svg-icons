@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes vecArrow{0%{stroke-dashoffset:20}100%{stroke-dashoffset:0}}
+.va{stroke-dasharray:5 5;animation:vecArrow 1.5s linear infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#263238"/>
+<line class="va" x1="8" y1="36" x2="36" y2="8" stroke="#42A5F5" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="36" cy="8" r="3" fill="#FFC107"/>
+<circle cx="8" cy="36" r="3" fill="#EF5350"/>
+<text x="22" y="28" font-family="monospace" font-size="4" fill="#90A4AE">[.23,.87]</text>
+</svg>

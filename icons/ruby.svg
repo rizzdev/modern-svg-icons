@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes rubyShine{0%,100%{opacity:.7}50%{opacity:1}}
+.rs{animation:rubyShine 2s ease-in-out infinite}</style>
+<g class="rs"><polygon points="22,4 38,16 34,38 10,38 6,16" fill="#CC342D"/>
+<polygon points="22,4 22,38 10,38 6,16" fill="#E05046"/>
+<polygon points="22,12 30,18 28,30 16,30 14,18" fill="#FFF" opacity=".2"/></g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes forkSplit{0%,100%{opacity:.7}50%{opacity:1}}
+.fs{animation:forkSplit 2s ease-in-out infinite}
+</style>
+<circle cx="22" cy="8" r="4" fill="#42A5F5"/>
+<circle class="fs" cx="12" cy="36" r="4" fill="#EF5350"/>
+<circle class="fs" cx="32" cy="36" r="4" fill="#66BB6A"/>
+<line x1="22" y1="12" x2="22" y2="22" stroke="#42A5F5" stroke-width="3" stroke-linecap="round"/>
+<path d="M22 22 Q22 30 12 32" stroke="#EF5350" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M22 22 Q22 30 32 32" stroke="#66BB6A" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

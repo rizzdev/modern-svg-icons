@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes yaGlow{0%,100%{opacity:.7}50%{opacity:1}}
+.yg{animation:yaGlow 2s ease-in-out infinite}</style>
+<g class="yg"><rect x="4" y="4" width="36" height="36" rx="5" fill="#CB171E"/>
+<text x="8" y="16" font-family="monospace" font-size="5" fill="#FFF">key:</text>
+<text x="12" y="24" font-family="monospace" font-size="5" fill="#FFD54F">  val</text>
+<text x="8" y="32" font-family="monospace" font-size="5" fill="#FFF">arr:</text>
+<text x="12" y="38" font-family="monospace" font-size="5" fill="#FFD54F">  - x</text></g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes e2eFlow{0%{stroke-dashoffset:40}100%{stroke-dashoffset:0}}
+.ef{stroke-dasharray:5 5;animation:e2eFlow 2s linear infinite}</style>
+<circle cx="8" cy="22" r="5" fill="#42A5F5"/>
+<circle cx="22" cy="22" r="5" fill="#FFC107"/>
+<circle cx="36" cy="22" r="5" fill="#66BB6A"/>
+<line class="ef" x1="13" y1="22" x2="17" y2="22" stroke="#78909C" stroke-width="2"/>
+<line class="ef" x1="27" y1="22" x2="31" y2="22" stroke="#78909C" stroke-width="2"/>
+<text x="8" y="24" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#FFF">UI</text>
+<text x="22" y="24" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#FFF">API</text>
+<text x="36" y="24" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#FFF">DB</text>
+<text x="22" y="12" text-anchor="middle" font-family="monospace" font-size="4" font-weight="bold" fill="#78909C">E2E</text>
+</svg>

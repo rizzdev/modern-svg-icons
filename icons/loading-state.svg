@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes lsSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.lss{animation:lsSpin 1s linear infinite;transform-origin:22px 18px}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#ECEFF1"/>
+<g class="lss"><circle cx="22" cy="18" r="6" fill="none" stroke="#CFD8DC" stroke-width="2.5"/>
+<path d="M22 12 A6 6 0 0 1 28 18" stroke="#42A5F5" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<rect x="12" y="28" width="20" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="16" y="33" width="12" height="2" rx="1" fill="#CFD8DC"/></svg>

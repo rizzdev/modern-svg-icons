@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes mockWiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(2deg)}75%{transform:rotate(-2deg)}}
+.mw{animation:mockWiggle 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="mw"><rect x="6" y="6" width="32" height="32" rx="5" fill="#AB47BC" stroke="#7B1FA2" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="22" y="24" text-anchor="middle" font-family="monospace" font-size="7" font-weight="bold" fill="#FFF">MOCK</text></g>
+</svg>

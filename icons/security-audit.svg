@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes saCheck{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}.sac{animation:saCheck 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="sac"><path d="M22 4 L38 12 L38 24 Q38 38 22 42 Q6 38 6 24 L6 12Z" fill="#42A5F5"/>
+<rect x="12" y="14" width="20" height="3" rx="1" fill="#FFF" opacity=".6"/>
+<rect x="12" y="20" width="20" height="3" rx="1" fill="#FFF" opacity=".4"/>
+<rect x="12" y="26" width="20" height="3" rx="1" fill="#FFF" opacity=".6"/>
+<circle cx="32" cy="32" r="5" fill="#66BB6A"/>
+<path d="M30 32 L31.5 33.5 L34 30.5" stroke="#FFF" stroke-width="1.5" fill="none" stroke-linecap="round"/></g></svg>

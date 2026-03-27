@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes shieldPulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.03);opacity:1}}
+.sp{animation:shieldPulse 2s ease-in-out infinite;transform-origin:22px 22px}
+</style>
+<g class="sp">
+<path d="M22 4 L38 12 L38 24 Q38 38 22 42 Q6 38 6 24 L6 12Z" fill="#42A5F5"/>
+<path d="M22 4 L22 42 Q6 38 6 24 L6 12Z" fill="#64B5F6"/>
+<path d="M18 22 L21 25 L27 18" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

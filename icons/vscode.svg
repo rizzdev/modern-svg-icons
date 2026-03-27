@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes vsGlow{0%,100%{opacity:.8}50%{opacity:1}}
+.vg{animation:vsGlow 2s ease-in-out infinite}</style>
+<g class="vg"><rect x="4" y="4" width="36" height="36" rx="5" fill="#007ACC"/>
+<path d="M12 12 L28 6 L28 38 L12 32 L30 22 L12 12Z" fill="#FFF" opacity=".9"/></g>
+</svg>

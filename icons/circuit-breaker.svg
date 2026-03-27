@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes cbToggle{0%,40%{fill:#66BB6A}50%,90%{fill:#EF5350}100%{fill:#66BB6A}}
+.ct{animation:cbToggle 3s step-end infinite}</style>
+<circle cx="22" cy="22" r="16" fill="#263238"/>
+<circle class="ct" cx="22" cy="22" r="10"/>
+<line x1="10" y1="22" x2="6" y2="22" stroke="#78909C" stroke-width="3" stroke-linecap="round"/>
+<line x1="34" y1="22" x2="38" y2="22" stroke="#78909C" stroke-width="3" stroke-linecap="round"/>
+<path d="M16 22 Q19 22 22 18 Q25 14 28 22" stroke="#FFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

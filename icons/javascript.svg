@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes jsBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+.jb{animation:jsBounce 2s ease-in-out infinite}</style>
+<g class="jb">
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#F7DF1E"/>
+<text x="32" y="34" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#323330">JS</text>
+</g>
+</svg>

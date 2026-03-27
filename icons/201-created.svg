@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes crPop{0%{transform:scale(0)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+.cp{animation:crPop 2s ease-out infinite;transform-origin:22px 22px}</style>
+<g class="cp"><rect x="4" y="8" width="36" height="28" rx="6" fill="#66BB6A"/>
+<text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#FFF">201</text></g>
+<circle cx="36" cy="10" r="4" fill="#FFC107"/>
+<text x="36" y="12" text-anchor="middle" font-family="sans-serif" font-size="5" font-weight="bold" fill="#FFF">+</text>
+</svg>

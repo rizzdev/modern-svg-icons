@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes leafFloat{0%,100%{transform:rotate(0) translateY(0)}50%{transform:rotate(5deg) translateY(-2px)}}
+.lf{animation:leafFloat 3s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="lf"><path d="M22 4 Q38 12 36 28 Q34 38 22 40 Q10 38 8 28 Q6 12 22 4Z" fill="#66BB6A"/>
+<path d="M22 4 Q22 22 22 40" stroke="#43A047" stroke-width="2" fill="none"/>
+<path d="M22 14 L30 10" stroke="#43A047" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M22 22 L14 18" stroke="#43A047" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M22 30 L30 26" stroke="#43A047" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
+</svg>

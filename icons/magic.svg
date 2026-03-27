@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes sparkle{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
+.sk1{animation:sparkle 1.5s ease-in-out infinite;transform-origin:10px 10px}
+.sk2{animation:sparkle 1.5s ease-in-out .5s infinite;transform-origin:34px 8px}
+.sk3{animation:sparkle 1.5s ease-in-out 1s infinite;transform-origin:30px 34px}
+</style>
+<path d="M18 40 L22 4 L26 40Z" fill="#AB47BC"/>
+<path d="M4 26 L40 22 L4 18Z" fill="#CE93D8"/>
+<circle cx="22" cy="22" r="4" fill="#FFC107"/>
+<g class="sk1"><polygon points="10,6 11,9 14,10 11,11 10,14 9,11 6,10 9,9" fill="#FFC107"/></g>
+<g class="sk2"><polygon points="34,4 35,7 38,8 35,9 34,12 33,9 30,8 33,7" fill="#42A5F5"/></g>
+<g class="sk3"><polygon points="30,30 31,33 34,34 31,35 30,38 29,35 26,34 29,33" fill="#66BB6A"/></g>
+</svg>

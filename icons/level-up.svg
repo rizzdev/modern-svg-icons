@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes lvUp{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-8px);opacity:0}}
+.lu{animation:lvUp 1.5s ease-out infinite}</style>
+<circle cx="22" cy="22" r="16" fill="#FFC107"/>
+<circle cx="22" cy="22" r="11" fill="#FFD54F"/>
+<g class="lu"><path d="M16 20 L22 12 L28 20" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="22" y="30" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="bold" fill="#F57F17">UP</text>
+</svg>

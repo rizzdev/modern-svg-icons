@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes blink1{0%,90%{fill:#66BB6A}95%,100%{fill:#FFC107}}
+@keyframes blink2{0%,100%{fill:#66BB6A}50%{fill:#42A5F5}}
+.lb1{animation:blink1 2s step-end infinite}
+.lb2{animation:blink2 1.5s step-end infinite}
+</style>
+<rect x="6" y="4" width="32" height="36" rx="4" fill="#607D8B"/>
+<rect x="6" y="4" width="32" height="12" rx="4" fill="#78909C"/>
+<rect x="6" y="14" width="32" height="2" fill="#546E7A"/>
+<rect x="10" y="8" width="16" height="3" rx="1" fill="#CFD8DC"/>
+<circle class="lb1" cx="32" cy="9.5" r="2" fill="#66BB6A"/>
+<rect x="10" y="20" width="16" height="3" rx="1" fill="#CFD8DC"/>
+<circle class="lb2" cx="32" cy="21.5" r="2" fill="#66BB6A"/>
+<rect x="10" y="30" width="16" height="3" rx="1" fill="#CFD8DC"/>
+<circle cx="32" cy="31.5" r="2" fill="#EF5350"/>
+<rect x="18" y="40" width="8" height="2" rx="1" fill="#455A64"/>
+</svg>

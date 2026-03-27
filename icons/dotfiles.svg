@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes dfGlow{0%,100%{opacity:.5}50%{opacity:1}}
+.dg{animation:dfGlow 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#37474F"/>
+<g class="dg">
+<circle cx="10" cy="12" r="2" fill="#66BB6A"/>
+<text x="16" y="14" font-family="monospace" font-size="4" fill="#A5D6A7">.zshrc</text>
+<circle cx="10" cy="20" r="2" fill="#42A5F5"/>
+<text x="16" y="22" font-family="monospace" font-size="4" fill="#90CAF9">.gitconfig</text>
+<circle cx="10" cy="28" r="2" fill="#FFC107"/>
+<text x="16" y="30" font-family="monospace" font-size="4" fill="#FFE082">.vimrc</text>
+<circle cx="10" cy="36" r="2" fill="#EF5350"/>
+<text x="16" y="38" font-family="monospace" font-size="4" fill="#EF9A9A">.env</text>
+</g>
+</svg>

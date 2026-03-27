@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes stActive{0%,25%{fill:#42A5F5}33%,58%{fill:#CFD8DC}66%,100%{fill:#CFD8DC}}
+@keyframes stActive2{0%,25%{fill:#CFD8DC}33%,58%{fill:#42A5F5}66%,100%{fill:#CFD8DC}}
+@keyframes stActive3{0%,58%{fill:#CFD8DC}66%,100%{fill:#42A5F5}}
+.st1{animation:stActive 3s step-end infinite}.st2{animation:stActive2 3s step-end infinite}.st3{animation:stActive3 3s step-end infinite}</style>
+<line x1="14" y1="22" x2="30" y2="22" stroke="#CFD8DC" stroke-width="2"/>
+<circle class="st1" cx="10" cy="22" r="6"/>
+<circle class="st2" cx="22" cy="22" r="6"/>
+<circle class="st3" cx="34" cy="22" r="6"/>
+<text x="10" y="24" text-anchor="middle" font-family="sans-serif" font-size="5" font-weight="bold" fill="#FFF">1</text>
+<text x="22" y="24" text-anchor="middle" font-family="sans-serif" font-size="5" font-weight="bold" fill="#FFF">2</text>
+<text x="34" y="24" text-anchor="middle" font-family="sans-serif" font-size="5" font-weight="bold" fill="#FFF">3</text></svg>

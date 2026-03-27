@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes reqSend{0%{transform:translateX(0);opacity:1}80%{transform:translateX(16px);opacity:.3}100%{transform:translateX(0);opacity:1}}
+.rs{animation:reqSend 1.5s ease-in-out infinite}
+</style>
+<rect x="4" y="12" width="14" height="20" rx="3" fill="#42A5F5"/>
+<rect x="26" y="12" width="14" height="20" rx="3" fill="#66BB6A"/>
+<g class="rs"><path d="M18 20 L24 22 L18 24" fill="#FFC107"/></g>
+<text x="11" y="24" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">REQ</text>
+<text x="33" y="24" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">RES</text>
+</svg>

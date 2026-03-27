@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes mrPulse{0%,100%{opacity:.5}50%{opacity:1}}.m1{animation:mrPulse 2s ease-in-out infinite}.m2{animation:mrPulse 2s ease-in-out .4s infinite}.m3{animation:mrPulse 2s ease-in-out .8s infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#37474F"/>
+<rect class="m1" x="6" y="6" width="14" height="14" rx="2" fill="#42A5F5"/>
+<rect class="m2" x="24" y="6" width="14" height="14" rx="2" fill="#EF5350"/>
+<rect class="m3" x="6" y="24" width="14" height="14" rx="2" fill="#66BB6A"/>
+<rect x="24" y="24" width="14" height="14" rx="2" fill="#FFC107"/>
+<circle cx="22" cy="22" r="4" fill="#FFF"/></svg>

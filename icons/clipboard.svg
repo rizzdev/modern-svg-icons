@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes cbCopy{0%,80%{transform:translateY(0)}85%{transform:translateY(-2px)}100%{transform:translateY(0)}}
+.cc{animation:cbCopy 2.5s ease-in-out infinite}</style>
+<rect x="8" y="6" width="28" height="34" rx="3" fill="#ECEFF1"/>
+<rect x="14" y="2" width="16" height="8" rx="3" fill="#78909C"/>
+<rect x="18" y="4" width="8" height="4" rx="2" fill="#CFD8DC"/>
+<g class="cc">
+<rect x="12" y="14" width="20" height="3" rx="1" fill="#42A5F5"/>
+<rect x="12" y="19" width="16" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="12" y="24" width="20" height="3" rx="1" fill="#CFD8DC"/>
+<rect x="12" y="29" width="12" height="3" rx="1" fill="#CFD8DC"/>
+</g>
+</svg>

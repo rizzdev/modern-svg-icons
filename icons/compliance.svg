@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes compCheck{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.cc{animation:compCheck 2s ease-in-out infinite;transform-origin:22px 22px}
+</style>
+<g class="cc">
+<path d="M22 4 L38 12 L38 24 Q38 38 22 42 Q6 38 6 24 L6 12Z" fill="#66BB6A"/>
+<path d="M22 4 L22 42 Q6 38 6 24 L6 12Z" fill="#81C784"/>
+<rect x="14" y="14" width="16" height="3" rx="1" fill="#FFF" opacity=".8"/>
+<rect x="14" y="20" width="16" height="3" rx="1" fill="#FFF" opacity=".6"/>
+<rect x="14" y="26" width="16" height="3" rx="1" fill="#FFF" opacity=".4"/>
+<path d="M17 32 L20 35 L27 28" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

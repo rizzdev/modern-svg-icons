@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes swSlash{0%,100%{transform:rotate(0)}50%{transform:rotate(-10deg)}}
+.ss{animation:swSlash 1.5s ease-in-out infinite;transform-origin:28px 28px}</style>
+<g class="ss">
+<rect x="26" y="4" width="4" height="20" rx="1" fill="#90A4AE"/>
+<rect x="28" y="2" width="2" height="4" rx="1" fill="#CFD8DC"/>
+<rect x="22" y="24" width="12" height="4" rx="1" fill="#795548"/>
+<rect x="24" y="28" width="8" height="10" rx="1" fill="#8D6E63"/>
+<rect x="26" y="38" width="4" height="4" rx="2" fill="#FFC107"/>
+</g>
+</svg>

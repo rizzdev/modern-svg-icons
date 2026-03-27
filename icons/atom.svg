@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes atomSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.as{animation:atomSpin 3s linear infinite;transform-origin:22px 22px}</style>
+<g class="as">
+<ellipse cx="22" cy="22" rx="16" ry="6" fill="none" stroke="#42A5F5" stroke-width="1.5"/>
+<ellipse cx="22" cy="22" rx="16" ry="6" fill="none" stroke="#EF5350" stroke-width="1.5" transform="rotate(60 22 22)"/>
+<ellipse cx="22" cy="22" rx="16" ry="6" fill="none" stroke="#66BB6A" stroke-width="1.5" transform="rotate(120 22 22)"/>
+</g>
+<circle cx="22" cy="22" r="4" fill="#FFC107"/>
+</svg>

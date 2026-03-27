@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes etGlow{0%,100%{opacity:.5}50%{opacity:1}}.etg{animation:etGlow 2s ease-in-out infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#5C6BC0"/>
+<g class="etg"><text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">ETag</text>
+<rect x="8" y="22" width="28" height="6" rx="2" fill="#3949AB"/>
+<text x="22" y="27" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#C5CAE9">W/"abc123"</text></g></svg>

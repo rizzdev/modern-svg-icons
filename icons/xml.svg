@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes xmlFade{0%{opacity:.4}50%{opacity:1}100%{opacity:.4}}
+.xf1{animation:xmlFade 2s ease-in-out infinite}
+.xf2{animation:xmlFade 2s ease-in-out .5s infinite}
+</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#FF7043"/>
+<text class="xf1" x="8" y="15" font-family="monospace" font-size="5" fill="#FFF">&lt;root&gt;</text>
+<text class="xf2" x="12" y="23" font-family="monospace" font-size="5" fill="#FFE0B2">&lt;item/&gt;</text>
+<text class="xf1" x="8" y="31" font-family="monospace" font-size="5" fill="#FFF">&lt;/root&gt;</text>
+</svg>

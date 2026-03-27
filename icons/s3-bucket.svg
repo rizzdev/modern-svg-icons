@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes s3Float{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+.sf{animation:s3Float 2s ease-in-out infinite}</style>
+<g class="sf">
+<ellipse cx="22" cy="34" rx="14" ry="5" fill="#3F8624"/>
+<rect x="8" y="14" width="28" height="20" fill="#569A31"/>
+<ellipse cx="22" cy="14" rx="14" ry="5" fill="#8CC63F"/>
+<text x="22" y="28" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="bold" fill="#FFF">S3</text>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes kbPress{0%,80%{fill:#CFD8DC}85%{fill:#42A5F5}100%{fill:#CFD8DC}}
+.kp1{animation:kbPress 1.5s step-end infinite}
+.kp2{animation:kbPress 1.5s step-end .3s infinite}</style>
+<rect x="2" y="12" width="40" height="24" rx="4" fill="#78909C"/>
+<rect class="kp1" x="5" y="15" width="5" height="5" rx="1"/>
+<rect x="11" y="15" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect class="kp2" x="17" y="15" width="5" height="5" rx="1"/>
+<rect x="23" y="15" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="29" y="15" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="35" y="15" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="5" y="22" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="11" y="22" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="17" y="22" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="23" y="22" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="29" y="22" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="35" y="22" width="5" height="5" rx="1" fill="#CFD8DC"/>
+<rect x="11" y="29" width="22" height="5" rx="1" fill="#CFD8DC"/>
+</svg>

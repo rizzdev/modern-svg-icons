@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes bwUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes bwDn{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+.bu{animation:bwUp 1.5s ease-in-out infinite}
+.bd{animation:bwDn 1.5s ease-in-out infinite}
+</style>
+<rect x="4" y="6" width="36" height="32" rx="5" fill="#5C6BC0"/>
+<g class="bu"><path d="M16 12 L16 30" stroke="#66BB6A" stroke-width="4" stroke-linecap="round"/>
+<path d="M12 18 L16 12 L20 18" stroke="#66BB6A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g class="bd"><path d="M28 12 L28 30" stroke="#EF5350" stroke-width="4" stroke-linecap="round"/>
+<path d="M24 24 L28 30 L32 24" stroke="#EF5350" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

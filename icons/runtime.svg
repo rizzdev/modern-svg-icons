@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes rtSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.rt{animation:rtSpin 2s linear infinite;transform-origin:22px 22px}
+</style>
+<circle cx="22" cy="22" r="17" fill="#66BB6A"/>
+<g class="rt">
+<circle cx="22" cy="8" r="3" fill="#FFF"/>
+<circle cx="22" cy="36" r="3" fill="#FFF"/>
+<circle cx="8" cy="22" r="3" fill="#FFF"/>
+<circle cx="36" cy="22" r="3" fill="#FFF"/>
+</g>
+<circle cx="22" cy="22" r="7" fill="#2E7D32"/>
+<path d="M19 22 L25 18 L25 26Z" fill="#FFF"/>
+</svg>

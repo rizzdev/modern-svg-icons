@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes tmpGlow{0%,100%{opacity:.6}50%{opacity:1}}.tg{animation:tmpGlow 2s ease-in-out infinite}</style>
+<g class="tg"><rect x="6" y="4" width="32" height="36" rx="4" fill="#FFF" stroke="#42A5F5" stroke-width="2" stroke-dasharray="4 3"/>
+<rect x="10" y="10" width="24" height="4" rx="1" fill="#42A5F5" opacity=".3"/>
+<rect x="10" y="18" width="10" height="10" rx="1" fill="#42A5F5" opacity=".2"/>
+<rect x="22" y="18" width="12" height="4" rx="1" fill="#42A5F5" opacity=".2"/>
+<rect x="22" y="24" width="12" height="4" rx="1" fill="#42A5F5" opacity=".2"/>
+<rect x="10" y="32" width="24" height="4" rx="1" fill="#42A5F5" opacity=".3"/></g></svg>

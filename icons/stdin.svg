@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes siCur{0%,100%{opacity:1}50%{opacity:0}}.sic{animation:siCur .8s step-end infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#263238"/>
+<text x="8" y="16" font-family="monospace" font-size="4" fill="#78909C">Enter name:</text>
+<text x="8" y="26" font-family="monospace" font-size="4" fill="#42A5F5">> </text>
+<text x="14" y="26" font-family="monospace" font-size="4" fill="#FFF">Andrew</text>
+<rect class="sic" x="32" y="22" width="3" height="5" rx=".5" fill="#FFC107"/></svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes gcpSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.gs{animation:gcpSpin 6s linear infinite;transform-origin:22px 22px}</style>
+<circle cx="22" cy="22" r="16" fill="#FFF"/>
+<g class="gs">
+<circle cx="22" cy="8" r="4" fill="#4285F4"/>
+<circle cx="34" cy="28" r="4" fill="#34A853"/>
+<circle cx="10" cy="28" r="4" fill="#FBBC04"/>
+<circle cx="34" cy="16" r="4" fill="#EA4335"/>
+</g>
+<circle cx="22" cy="22" r="5" fill="#4285F4"/>
+</svg>

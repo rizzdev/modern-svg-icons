@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes lamZap{0%,80%{opacity:.7}85%{opacity:1}100%{opacity:.7}}
+.lz{animation:lamZap 1.5s ease-in-out infinite}</style>
+<g class="lz"><rect x="4" y="4" width="36" height="36" rx="5" fill="#FF9900"/>
+<text x="22" y="30" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#FFF">λ</text></g>
+</svg>

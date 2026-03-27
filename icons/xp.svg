@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes xpFill{0%{width:4}80%{width:28}100%{width:4}}
+.xf{animation:xpFill 3s ease-in-out infinite}</style>
+<rect x="4" y="14" width="36" height="16" rx="4" fill="#455A64"/>
+<rect x="6" y="16" width="32" height="12" rx="3" fill="#263238"/>
+<rect class="xf" x="6" y="16" height="12" rx="3" fill="#42A5F5"/>
+<text x="22" y="25" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">XP</text>
+<text x="22" y="10" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFC107">Lv.42</text>
+</svg>

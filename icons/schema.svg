@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes schPulse{0%,100%{stroke-width:1.5}50%{stroke-width:2.5}}
+.sp{animation:schPulse 2s ease-in-out infinite}
+</style>
+<rect x="4" y="4" width="14" height="10" rx="2" fill="#42A5F5"/>
+<rect x="4" y="18" width="14" height="10" rx="2" fill="#EF5350"/>
+<rect x="4" y="32" width="14" height="10" rx="2" fill="#66BB6A"/>
+<rect x="26" y="12" width="14" height="10" rx="2" fill="#FFC107"/>
+<rect x="26" y="28" width="14" height="10" rx="2" fill="#AB47BC"/>
+<line class="sp" x1="18" y1="9" x2="26" y2="17" stroke="#78909C"/>
+<line class="sp" x1="18" y1="23" x2="26" y2="17" stroke="#78909C"/>
+<line class="sp" x1="18" y1="23" x2="26" y2="33" stroke="#78909C"/>
+<line class="sp" x1="18" y1="37" x2="26" y2="33" stroke="#78909C"/>
+</svg>

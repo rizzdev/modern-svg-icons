@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes scan{0%{transform:translateY(0);opacity:.8}50%{transform:translateY(20px);opacity:.3}100%{transform:translateY(0);opacity:.8}}
+.sc{animation:scan 2s ease-in-out infinite}
+</style>
+<rect x="5" y="3" width="34" height="38" rx="4" fill="#37474F"/>
+<rect class="sc" x="8" y="6" width="28" height="3" rx="1" fill="#29B6F6" opacity=".6"/>
+<circle cx="16" cy="18" r="2" fill="#EF5350"/>
+<rect x="20" y="16.5" width="14" height="3" rx="1" fill="#78909C"/>
+<circle cx="16" cy="26" r="2" fill="#FFC107"/>
+<rect x="20" y="24.5" width="10" height="3" rx="1" fill="#78909C"/>
+<circle cx="16" cy="34" r="2" fill="#66BB6A"/>
+<rect x="20" y="32.5" width="12" height="3" rx="1" fill="#78909C"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1.5px)}}
+.dk{animation:bob 2s ease-in-out infinite}
+</style>
+<g class="dk">
+<path d="M4 22 Q4 16 14 16 L14 12 Q14 10 18 10 L36 10 Q40 10 40 14 L40 22 Q40 34 22 34 Q4 34 4 22Z" fill="#2196F3"/>
+<rect x="16" y="12" width="4" height="4" rx=".5" fill="#BBDEFB"/>
+<rect x="21" y="12" width="4" height="4" rx=".5" fill="#BBDEFB"/>
+<rect x="26" y="12" width="4" height="4" rx=".5" fill="#BBDEFB"/>
+<rect x="31" y="12" width="4" height="4" rx=".5" fill="#BBDEFB"/>
+<rect x="16" y="17" width="4" height="4" rx=".5" fill="#BBDEFB"/>
+<rect x="21" y="17" width="4" height="4" rx=".5" fill="#BBDEFB"/>
+<rect x="26" y="17" width="4" height="4" rx=".5" fill="#BBDEFB"/>
+<rect x="21" y="22" width="4" height="4" rx=".5" fill="#BBDEFB"/>
+<ellipse cx="22" cy="38" rx="16" ry="3" fill="#1565C0" opacity=".3"/>
+</g>
+</svg>

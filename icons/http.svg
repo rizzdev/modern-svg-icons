@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes httpFlow{0%{stroke-dashoffset:16}100%{stroke-dashoffset:0}}
+.hf{stroke-dasharray:4 4;animation:httpFlow 1.5s linear infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#42A5F5"/>
+<text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="6" font-weight="bold" fill="#FFF">HTTP</text>
+<line class="hf" x1="8" y1="24" x2="36" y2="24" stroke="#FFF" stroke-width="1.5"/>
+<text x="22" y="32" text-anchor="middle" font-family="monospace" font-size="4" fill="#BBDEFB">/api/v2</text>
+</svg>

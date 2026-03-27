@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes pySlither{0%,100%{transform:rotate(0)}50%{transform:rotate(3deg)}}
+.ps{animation:pySlither 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="ps"><rect x="4" y="4" width="36" height="36" rx="5" fill="#3776AB"/>
+<text x="22" y="28" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFD43B">Py</text></g>
+</svg>

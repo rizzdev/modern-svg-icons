@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes nsPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+.np{animation:nsPulse 2s ease-in-out infinite;transform-origin:22px 22px}</style>
+<g class="np"><rect x="4" y="6" width="36" height="32" rx="5" fill="#FF7043"/>
+<text x="22" y="20" text-anchor="middle" font-family="monospace" font-size="6" font-weight="bold" fill="#FFF">No</text>
+<text x="22" y="30" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#FFF">SQL</text></g>
+</svg>

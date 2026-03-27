@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes sqiFlash{0%,100%{opacity:.7}50%{opacity:1}}.sqi{animation:sqiFlash 1s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#EF5350"/>
+<g class="sqi"><text x="22" y="16" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">OR 1=1</text>
+<text x="22" y="24" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFCDD2">DROP *</text>
+<text x="22" y="32" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">--;</text></g></svg>

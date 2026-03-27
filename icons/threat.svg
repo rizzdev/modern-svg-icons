@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes threatPulse{0%,100%{r:14;opacity:.6}50%{r:16;opacity:.9}}
+.tp{animation:threatPulse 1s ease-in-out infinite}
+</style>
+<circle class="tp" cx="22" cy="22" r="14" fill="none" stroke="#EF5350" stroke-width="2"/>
+<circle cx="22" cy="22" r="10" fill="#EF5350"/>
+<path d="M22 14 L22 24" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+<circle cx="22" cy="28" r="2" fill="#FFF"/>
+</svg>

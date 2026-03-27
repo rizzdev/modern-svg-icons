@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes ctCycle{0%,30%{opacity:1}35%,65%{opacity:0}70%,100%{opacity:1}}
+@keyframes ctCycle2{0%,30%{opacity:0}35%,65%{opacity:1}70%,100%{opacity:0}}
+.ct1{animation:ctCycle 3s ease-in-out infinite}.ct2{animation:ctCycle2 3s ease-in-out infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#42A5F5"/>
+<g class="ct1"><text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">application/</text>
+<text x="22" y="32" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">json</text></g>
+<g class="ct2"><text x="22" y="26" text-anchor="middle" font-family="monospace" font-size="4" fill="#FFF">text/</text>
+<text x="22" y="32" text-anchor="middle" font-family="monospace" font-size="5" font-weight="bold" fill="#FFF">html</text></g></svg>

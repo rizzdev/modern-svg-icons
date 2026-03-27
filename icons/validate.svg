@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes valCheck{0%,60%{transform:scale(0)}70%{transform:scale(1.2)}100%{transform:scale(1)}}
+.vc{animation:valCheck 2s ease-out infinite;transform-origin:22px 22px}
+</style>
+<circle cx="22" cy="22" r="16" fill="#66BB6A"/>
+<g class="vc"><path d="M14 22 L19 27 L30 16" stroke="#FFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

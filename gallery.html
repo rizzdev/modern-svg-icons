@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EzToolz Icon Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#0c0c0e;
+  --surface:#16161a;
+  --surface2:#1e1e24;
+  --border:#2a2a32;
+  --text:#e4e4e8;
+  --text2:#8b8b96;
+  --accent:#42A5F5;
+  --accent2:#66BB6A;
+  --accent3:#FFC107;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Outfit',sans-serif;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* Subtle grid bg */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px),
+    linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px);
+  background-size:60px 60px;
+  pointer-events:none;
+  z-index:0;
+}
+
+.app{position:relative;z-index:1;max-width:1400px;margin:0 auto;padding:40px 32px 80px}
+
+/* Header */
+.header{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  margin-bottom:40px;
+  flex-wrap:wrap;
+  gap:16px;
+}
+.header h1{
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:-.02em;
+  background:linear-gradient(135deg,var(--accent),var(--accent2),var(--accent3));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.header .count{
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  color:var(--text2);
+  background:var(--surface);
+  padding:6px 14px;
+  border-radius:20px;
+  border:1px solid var(--border);
+}
+
+/* Search + filter bar */
+.controls{
+  display:flex;
+  gap:12px;
+  margin-bottom:32px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.search-wrap{
+  position:relative;
+  flex:1;
+  min-width:240px;
+}
+.search-wrap svg{
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-50%);
+  width:16px;height:16px;
+  stroke:var(--text2);
+  fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+}
+.search-wrap input{
+  width:100%;
+  padding:12px 14px 12px 42px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  color:var(--text);
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  outline:none;
+  transition:border-color .2s;
+}
+.search-wrap input:focus{border-color:var(--accent)}
+.search-wrap input::placeholder{color:var(--text2)}
+
+.filter-pills{display:flex;gap:6px;flex-wrap:wrap}
+.pill{
+  padding:8px 16px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:500;
+  background:var(--surface);
+  border:1px solid var(--border);
+  color:var(--text2);
+  cursor:pointer;
+  transition:all .2s;
+  user-select:none;
+}
+.pill:hover{border-color:var(--text2)}
+.pill.active{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+  gap:12px;
+}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px 8px 12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  transition:all .2s;
+  position:relative;
+  overflow:hidden;
+}
+.card:hover{
+  border-color:var(--accent);
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(66,165,245,.1);
+}
+.card:active{transform:translateY(0)}
+
+.card .icon-wrap{
+  width:56px;height:56px;
+  display:flex;align-items:center;justify-content:center;
+}
+.card .icon-wrap img{
+  width:48px;height:48px;
+  object-fit:contain;
+}
+
+.card .name{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  color:var(--text2);
+  text-align:center;
+  line-height:1.3;
+  word-break:break-all;
+}
+
+/* Copied toast */
+.card .toast{
+  position:absolute;
+  inset:0;
+  background:rgba(66,187,106,.9);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  font-weight:700;
+  color:#fff;
+  border-radius:14px;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .15s;
+}
+.card .toast.show{opacity:1}
+
+/* Empty state */
+.empty{
+  grid-column:1/-1;
+  text-align:center;
+  padding:80px 20px;
+  color:var(--text2);
+  font-size:15px;
+}
+
+/* Floating stats bar */
+.stats-bar{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--surface2);
+  border:1px solid var(--border);
+  padding:10px 24px;
+  border-radius:24px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  color:var(--text2);
+  backdrop-filter:blur(12px);
+  z-index:10;
+  display:flex;
+  gap:20px;
+}
+.stats-bar span{color:var(--accent)}
+
+@media(max-width:600px){
+  .app{padding:20px 16px 80px}
+  .header h1{font-size:22px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:8px}
+  .card{padding:12px 6px 8px}
+  .card .icon-wrap{width:44px;height:44px}
+  .card .icon-wrap img{width:40px;height:40px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <h1>EzToolz Icon Gallery</h1>
+    <div class="count" id="countBadge">514 icons</div>
+  </div>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="search" placeholder="Search icons..." autocomplete="off">
+    </div>
+    <div class="filter-pills" id="filters"></div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="stats-bar">
+  <div>showing <span id="visCount">140</span></div>
+  <div>click to copy URL</div>
+</div>
+
+<script>
+const BASE = 'https://pub-c8881e7b708145c5a525ff9d44814ec2.r2.dev/emojis';
+
+const categories = {
+  'Dev Tools': ['terminal','code','git','bug','deploy','commit','branch','merge','pull-request','build','test','lint','package','npm','debug','console','diff','repo','fork','tag','release','pipeline','ci-cd','docker','container','compiler','runtime','stack-trace','breakpoint','variable','hot-reload','minify','bundle','transpile','refactor','snippet','dependency','monorepo','workspace','changelog','version','scaffold','template','env-variable','stdout','stderr','stdin','cli','repl','formatter','linter','prettier','devtools','sourcemap','tree-shaking'],
+  'Infrastructure': ['server','cloud','database','dns-lookup','network','firewall','load-balancer','cdn','storage','backup','cluster','node','proxy','gateway','cache','queue','monitor','log','uptime','latency','bandwidth','ip-address','domain','ssl-cert','hosting','vm','kubernetes','microservice','container-registry','nginx-conf','load-test-infra','health-check','service-mesh','autoscale','cname','a-record','mx-record','nameserver','ingress','egress','vpc','subnet','region','volume','mount','ssl-tls','waf','message-queue','pub-sub','event-bus','sla','rate-limiter','failover'],
+  'Security': ['lock','unlock','shield','key','auth','encryption','password','token','certificate','vulnerability','scan','audit','mfa','fingerprint','access-control','permission','firewall-rule','threat','malware','patch','compliance','oauth','jwt','api-key','secret','ddos','xss','sql-injection','csrf','rate-limit-security','waf-rule','sandbox','cors-policy','csp','hsts','ip-block','captcha','pen-test','zero-trust','vpn','sso','rbac','session','cookie','ssh-key','pgp','hash-password','two-factor','vault','security-audit'],
+  'Data & API': ['webhook','endpoint','json','rest-api','graphql','request','response','payload','header','query','mutation','schema','rate-limit','pagination','websocket','streaming','batch','transform','filter','sort','validate','parse','serialize','csv','xml','grpc','protobuf','soap','openapi','swagger','postman','cursor-pagination','etag','idempotent','content-type','multipart','sse','api-version','throttle','bulk-api','data-sync','migration-api','webhook-outgoing','caching-strategy','compression','base-url','oauth-flow','api-gateway'],
+  'Frontend & UI': ['browser','responsive','mobile','tablet','desktop','dark-mode','light-mode','component','layout','form','button','modal','dropdown','tooltip','animation','css','html','javascript','typescript','react-icon','vue','svelte','tailwind','grid-layout','input','carousel','accordion','tab-bar','sidebar','navbar','breadcrumb','badge','avatar','progress-bar','spinner','skeleton','toast-notification','chip','toggle','divider','stepper','pagination-ui','empty-state','error-state','loading-state','dark-theme','light-theme'],
+  'Backend & Languages': ['python','rust','go-lang','java','node-js','php','ruby','function','class-icon','loop','array','async','middleware','migration','csharp','swift','kotlin','scala','elixir','dart','lua','perl','haskell','sql-lang','bash-lang','powershell','regex-lang','zig','wasm','graphql-lang','deno','bun','promise','callback','orm','seed-db','object-oriented','interface','enum'],
+  'Cloud & DevOps': ['aws','gcp','azure','terraform','nginx','redis','postgres','mongo','elastic','grafana','lambda','s3-bucket','cloudflare-icon','vercel','netlify','fly-io','digitalocean'],
+  'AI & ML': ['ai-brain','neural-network','model','training','prompt','embedding','vector','gpu','chatbot','agent','inference','fine-tune','dataset','nlp','transformer','rag','attention','loss-function','batch-size','epoch','backprop','tokenizer','llm','diffusion','temperature','context-window','hallucination','benchmark-ai','safety','api-endpoint-ai','multimodal','reinforcement','vision-ai'],
+  'Database & Storage': ['sql','nosql','table','row','column','index','join','transaction','rollback','replication','sharding','connection-pool','view-db','trigger','stored-procedure'],
+  'Networking': ['tcp','udp','http','https','ssh','ping','traceroute','packet','port','handshake','dns-record','subdomain','reverse-proxy','cors'],
+  'Testing & QA': ['unit-test','integration-test','e2e-test','coverage','mock','fixture','snapshot','load-test','benchmark','green-build','red-build','flaky-test'],
+  'HTTP Codes': ['200-ok','201-created','301-redirect','400-bad-request','401-unauthorized','403-forbidden','404-not-found','500-server-error','502-bad-gateway','503-unavailable','timeout','retry','fallback','circuit-breaker'],
+  'Design & UX': ['wireframe','prototype','figma','color-picker','typography','accessibility','design-system','palette'],
+  'DevEx': ['vscode','vim','tmux','dotfiles','clipboard','focus-mode','keyboard'],
+  'Math & Crypto': ['calculator','binary','base64','sha256','blockchain','checksum','nonce'],
+  'Status & Workflow': ['todo','in-progress','done','blocked','review','approved','rejected','scheduled','archived','draft','published','deprecated','beta','stable','urgent'],
+  'Files & Media': ['file','folder','image','video','audio','pdf','markdown','yaml','env','zip'],
+  'Analytics': ['chart','dashboard','funnel','trend','report'],
+  'Collaboration': ['comment','mention','kanban','sprint','milestone','roadmap','brainstorm'],
+  'Gaming': ['joystick','pixel-sword','health-bar','xp','level-up','trophy','dice','coin','gem','potion'],
+  'Nature': ['tree','leaf','seed','globe','compass','atom','dna'],
+  'Arrows & Symbols': ['arrow-up','arrow-down','arrow-right','arrow-left','arrow-loop','infinity','plus','minus','checkmark','crossmark'],
+  'General': ['settings','search','download','upload','notification','bookmark','link','refresh','copy','trash','clock','warning','error','success','info','email','chat','user','team','star','heart','lightning','fire','magic','hash','regex','config','plugin','api','webhook-incoming','cron']
+};
+
+// Build lookup: icon name → category
+const iconCat = {};
+Object.entries(categories).forEach(([cat, names]) => {
+  names.forEach(n => iconCat[n] = cat);
+});
+const allIcons = Object.values(categories).flat();
+
+// Render filter pills
+const filtersEl = document.getElementById('filters');
+const cats = ['All', ...Object.keys(categories)];
+cats.forEach(cat => {
+  const pill = document.createElement('div');
+  pill.className = 'pill' + (cat === 'All' ? ' active' : '');
+  pill.textContent = cat;
+  pill.onclick = () => {
+    document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    activeFilter = cat;
+    render();
+  };
+  filtersEl.appendChild(pill);
+});
+
+let activeFilter = 'All';
+const searchEl = document.getElementById('search');
+const gridEl = document.getElementById('grid');
+
+function render() {
+  const q = searchEl.value.toLowerCase().trim();
+  const filtered = allIcons.filter(name => {
+    if (activeFilter !== 'All' && iconCat[name] !== activeFilter) return false;
+    if (q && !name.includes(q)) return false;
+    return true;
+  });
+
+  gridEl.innerHTML = '';
+  if (filtered.length === 0) {
+    gridEl.innerHTML = '<div class="empty">No icons match your search</div>';
+  } else {
+    filtered.forEach((name, i) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.style.animationDelay = `${i * 15}ms`;
+      card.innerHTML = `
+        <div class="icon-wrap"><img src="${BASE}/${name}.svg" alt="${name}" loading="lazy"></div>
+        <div class="name">${name}</div>
+        <div class="toast">Copied!</div>
+      `;
+      card.onclick = () => {
+        const url = `${BASE}/${name}.svg`;
+        navigator.clipboard.writeText(url).then(() => {
+          const toast = card.querySelector('.toast');
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 800);
+        });
+      };
+      gridEl.appendChild(card);
+    });
+  }
+
+  document.getElementById('visCount').textContent = filtered.length;
+  document.getElementById('countBadge').textContent = `${allIcons.length} icons`;
+}
+
+searchEl.addEventListener('input', render);
+render();
+</script>
+</body>
+</html>

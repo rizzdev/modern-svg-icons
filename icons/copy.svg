@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes copyPop{0%,80%{transform:translate(0,0)}85%{transform:translate(2px,-2px)}100%{transform:translate(0,0)}}
+.cp{animation:copyPop 2.5s ease-in-out infinite}
+</style>
+<rect x="10" y="10" width="24" height="28" rx="3" fill="#78909C"/>
+<g class="cp">
+<rect x="6" y="6" width="24" height="28" rx="3" fill="#42A5F5"/>
+<rect x="10" y="12" width="16" height="3" rx="1" fill="#FFF" opacity=".7"/>
+<rect x="10" y="17" width="12" height="3" rx="1" fill="#FFF" opacity=".5"/>
+<rect x="10" y="22" width="14" height="3" rx="1" fill="#FFF" opacity=".5"/>
+<rect x="10" y="27" width="10" height="3" rx="1" fill="#FFF" opacity=".3"/>
+</g>
+</svg>

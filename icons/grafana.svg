@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes grafLine{0%,100%{opacity:.6}50%{opacity:1}}
+.gl{animation:grafLine 2s ease-in-out infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#1A1A1A"/>
+<g class="gl">
+<path d="M8 30 L14 22 L20 26 L28 14 L36 18" stroke="#F46800" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 34 L16 28 L24 30 L32 20 L36 24" stroke="#E0B400" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/>
+</g>
+</svg>

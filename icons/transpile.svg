@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes tpArrow{0%{stroke-dashoffset:12}100%{stroke-dashoffset:0}}.ta{stroke-dasharray:3 3;animation:tpArrow 1.5s linear infinite}</style>
+<rect x="4" y="10" width="14" height="24" rx="3" fill="#3178C6"/>
+<rect x="26" y="10" width="14" height="24" rx="3" fill="#F7DF1E"/>
+<text x="11" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">TS</text>
+<text x="33" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#323330">JS</text>
+<line class="ta" x1="18" y1="22" x2="26" y2="22" stroke="#78909C" stroke-width="2"/></svg>

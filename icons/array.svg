@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes arrShift{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
+.as{animation:arrShift 2s ease-in-out infinite}</style>
+<g class="as">
+<rect x="4" y="14" width="8" height="16" rx="2" fill="#42A5F5"/>
+<rect x="14" y="14" width="8" height="16" rx="2" fill="#EF5350"/>
+<rect x="24" y="14" width="8" height="16" rx="2" fill="#FFC107"/>
+<rect x="34" y="14" width="8" height="16" rx="2" fill="#66BB6A"/>
+<text x="8" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">0</text>
+<text x="18" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">1</text>
+<text x="28" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">2</text>
+<text x="38" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFF">3</text>
+</g>
+</svg>

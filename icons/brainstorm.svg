@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes bsPop{0%,100%{r:3}50%{r:4.5}}
+.bs1{animation:bsPop 1.5s ease-in-out infinite}
+.bs2{animation:bsPop 1.5s ease-in-out .3s infinite}
+.bs3{animation:bsPop 1.5s ease-in-out .6s infinite}</style>
+<circle cx="22" cy="22" r="8" fill="#FFC107"/>
+<circle class="bs1" cx="10" cy="10" r="3" fill="#42A5F5"/>
+<circle class="bs2" cx="34" cy="10" r="3" fill="#EF5350"/>
+<circle class="bs3" cx="10" cy="34" r="3" fill="#66BB6A"/>
+<circle class="bs1" cx="34" cy="34" r="3" fill="#AB47BC"/>
+<line x1="10" y1="13" x2="18" y2="18" stroke="#90A4AE" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="34" y1="13" x2="26" y2="18" stroke="#90A4AE" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="10" y1="31" x2="18" y2="26" stroke="#90A4AE" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="34" y1="31" x2="26" y2="26" stroke="#90A4AE" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="22" y="24" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#FFF">💡</text>
+</svg>

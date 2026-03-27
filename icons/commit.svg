@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes pulse{0%,100%{r:3.5;opacity:1}50%{r:5;opacity:.7}}
+.cp{animation:pulse 1.5s ease-in-out infinite}
+</style>
+<circle cx="22" cy="22" r="16" fill="#AB47BC"/>
+<circle cx="22" cy="22" r="8" fill="#CE93D8"/>
+<circle class="cp" cx="22" cy="22" r="3.5" fill="#FFF"/>
+<line x1="22" y1="2" x2="22" y2="14" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+<line x1="22" y1="30" x2="22" y2="42" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+</svg>

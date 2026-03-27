@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes idxFlash{0%,100%{opacity:.4}50%{opacity:1}}
+.if1{animation:idxFlash 1.5s ease-in-out infinite}
+.if2{animation:idxFlash 1.5s ease-in-out .3s infinite}
+.if3{animation:idxFlash 1.5s ease-in-out .6s infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#263238"/>
+<rect x="8" y="8" width="28" height="4" rx="1" fill="#455A64"/>
+<rect x="8" y="14" width="28" height="4" rx="1" fill="#455A64"/>
+<rect x="8" y="20" width="28" height="4" rx="1" fill="#455A64"/>
+<rect x="8" y="26" width="28" height="4" rx="1" fill="#455A64"/>
+<rect x="8" y="32" width="28" height="4" rx="1" fill="#455A64"/>
+<circle class="if1" cx="12" cy="10" r="2" fill="#FFC107"/>
+<circle class="if2" cx="12" cy="22" r="2" fill="#FFC107"/>
+<circle class="if3" cx="12" cy="34" r="2" fill="#FFC107"/>
+<line x1="14" y1="10" x2="14" y2="22" stroke="#FFC107" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="14" y1="22" x2="14" y2="34" stroke="#FFC107" stroke-width="1" stroke-dasharray="2 2"/>
+</svg>

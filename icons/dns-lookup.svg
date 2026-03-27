@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes resolve{0%{opacity:0}30%,70%{opacity:1}100%{opacity:0}}
+.rv{animation:resolve 2.5s ease-in-out infinite}
+</style>
+<circle cx="22" cy="22" r="17" fill="#5C6BC0"/>
+<text x="22" y="18" text-anchor="middle" font-family="monospace" font-size="6" font-weight="bold" fill="#FFF">DNS</text>
+<g class="rv"><rect x="10" y="24" width="24" height="6" rx="2" fill="#3949AB"/>
+<text x="22" y="29" text-anchor="middle" font-family="monospace" font-size="4.5" fill="#C5CAE9">1.2.3.4</text></g>
+<circle cx="10" cy="10" r="3" fill="#FFC107"/>
+<circle cx="34" cy="10" r="3" fill="#66BB6A"/>
+<circle cx="10" cy="34" r="3" fill="#EF5350"/>
+<circle cx="34" cy="34" r="3" fill="#42A5F5"/>
+</svg>

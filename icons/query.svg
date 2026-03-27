@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes qCursor{0%,100%{opacity:1}50%{opacity:0}}
+.qc{animation:qCursor .8s step-end infinite}
+</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#263238"/>
+<text x="8" y="18" font-family="monospace" font-size="4.5" fill="#42A5F5">SELECT</text>
+<text x="8" y="24" font-family="monospace" font-size="4.5" fill="#CE93D8">  * FROM</text>
+<text x="8" y="30" font-family="monospace" font-size="4.5" fill="#66BB6A">  users</text>
+<rect class="qc" x="28" y="27" width="4" height="5" rx=".5" fill="#FFC107" opacity=".8"/>
+</svg>

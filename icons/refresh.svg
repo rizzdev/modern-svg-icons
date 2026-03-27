@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes refSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.rs{animation:refSpin 1.5s linear infinite;transform-origin:22px 22px}
+</style>
+<g class="rs">
+<path d="M34 22 A12 12 0 1 1 22 10" stroke="#42A5F5" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M22 10 L26 6 M22 10 L26 14" stroke="#42A5F5" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

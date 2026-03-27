@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes linkPull{0%,100%{transform:translate(0,0)}50%{transform:translate(1px,-1px)}}
+.lp1{animation:linkPull 2s ease-in-out infinite}
+.lp2{animation:linkPull 2s ease-in-out 1s infinite}
+</style>
+<g class="lp1">
+<rect x="4" y="14" width="20" height="8" rx="4" fill="#42A5F5"/>
+<circle cx="10" cy="18" r="2" fill="#FFF"/>
+</g>
+<g class="lp2">
+<rect x="20" y="22" width="20" height="8" rx="4" fill="#66BB6A"/>
+<circle cx="34" cy="26" r="2" fill="#FFF"/>
+</g>
+<rect x="18" y="18" width="8" height="8" rx="3" fill="#FFC107"/>
+</svg>

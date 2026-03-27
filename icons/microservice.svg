@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes msPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.m1{animation:msPulse 2s ease-in-out infinite;transform-origin:12px 12px}
+.m2{animation:msPulse 2s ease-in-out .4s infinite;transform-origin:32px 12px}
+.m3{animation:msPulse 2s ease-in-out .8s infinite;transform-origin:22px 32px}
+</style>
+<g class="m1"><rect x="5" y="5" width="14" height="14" rx="3" fill="#42A5F5"/></g>
+<g class="m2"><rect x="25" y="5" width="14" height="14" rx="3" fill="#EF5350"/></g>
+<g class="m3"><rect x="15" y="25" width="14" height="14" rx="3" fill="#66BB6A"/></g>
+<line x1="19" y1="12" x2="25" y2="12" stroke="#78909C" stroke-width="1.5" stroke-dasharray="2 2"/>
+<line x1="15" y1="19" x2="19" y2="25" stroke="#78909C" stroke-width="1.5" stroke-dasharray="2 2"/>
+<line x1="29" y1="19" x2="25" y2="25" stroke="#78909C" stroke-width="1.5" stroke-dasharray="2 2"/>
+<circle cx="12" cy="12" r="3" fill="#FFF"/>
+<circle cx="32" cy="12" r="3" fill="#FFF"/>
+<circle cx="22" cy="32" r="3" fill="#FFF"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes brainPulse{0%,100%{opacity:.6}50%{opacity:1}}
+.bp1{animation:brainPulse 1.5s ease-in-out infinite}
+.bp2{animation:brainPulse 1.5s ease-in-out .5s infinite}</style>
+<circle cx="22" cy="22" r="16" fill="#AB47BC"/>
+<path d="M14 22 Q14 14 22 14 Q30 14 30 22" stroke="#E1BEE7" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M16 26 Q16 18 22 18 Q28 18 28 26" stroke="#CE93D8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<circle class="bp1" cx="16" cy="28" r="2" fill="#FFC107"/>
+<circle class="bp2" cx="28" cy="28" r="2" fill="#42A5F5"/>
+<circle class="bp1" cx="22" cy="16" r="2" fill="#66BB6A"/>
+<line x1="16" y1="28" x2="22" y2="16" stroke="#E1BEE7" stroke-width="1" opacity=".5"/>
+<line x1="28" y1="28" x2="22" y2="16" stroke="#E1BEE7" stroke-width="1" opacity=".5"/>
+</svg>

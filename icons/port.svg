@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes portGlow{0%,100%{fill:#455A64}50%{fill:#66BB6A}}
+.pg1{animation:portGlow 2s step-end infinite}
+.pg2{animation:portGlow 2s step-end .5s infinite}
+.pg3{animation:portGlow 2s step-end 1s infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="4" fill="#37474F"/>
+<rect class="pg1" x="8" y="8" width="8" height="8" rx="2"/>
+<rect class="pg2" x="18" y="8" width="8" height="8" rx="2"/>
+<rect class="pg3" x="28" y="8" width="8" height="8" rx="2"/>
+<rect x="8" y="18" width="8" height="8" rx="2" fill="#455A64"/>
+<rect x="18" y="18" width="8" height="8" rx="2" fill="#455A64"/>
+<rect x="28" y="18" width="8" height="8" rx="2" fill="#455A64"/>
+<text x="22" y="36" text-anchor="middle" font-family="monospace" font-size="4" fill="#90A4AE">:8080</text>
+</svg>

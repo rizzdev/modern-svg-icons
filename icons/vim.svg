@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>@keyframes vimBlink{0%,100%{opacity:1}50%{opacity:0}}
+.vb{animation:vimBlink .6s step-end infinite}</style>
+<rect x="4" y="4" width="36" height="36" rx="5" fill="#019833"/>
+<text x="22" y="20" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#FFF">Vim</text>
+<rect x="8" y="28" width="28" height="3" rx="1" fill="#006622"/>
+<text x="10" y="30.5" font-family="monospace" font-size="3" fill="#66BB6A">:wq</text>
+<rect class="vb" x="20" y="28" width="4" height="3" rx=".5" fill="#FFF" opacity=".5"/>
+</svg>

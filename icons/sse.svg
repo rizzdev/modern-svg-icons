@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256"><style>@keyframes sseFlow{0%{transform:translateX(-8px);opacity:0}50%{opacity:1}100%{transform:translateX(0);opacity:1}}.ssf1{animation:sseFlow 1.5s ease-out infinite}.ssf2{animation:sseFlow 1.5s ease-out .3s infinite}.ssf3{animation:sseFlow 1.5s ease-out .6s infinite}</style>
+<rect x="4" y="8" width="36" height="28" rx="5" fill="#263238"/>
+<rect class="ssf1" x="8" y="12" width="20" height="4" rx="1" fill="#42A5F5"/>
+<rect class="ssf2" x="8" y="18" width="24" height="4" rx="1" fill="#66BB6A"/>
+<rect class="ssf3" x="8" y="24" width="18" height="4" rx="1" fill="#FFC107"/>
+<path d="M6 8 L10 12 L6 16" stroke="#FFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".5"/>
+<text x="22" y="34" text-anchor="middle" font-family="monospace" font-size="3.5" fill="#78909C">EventStream</text></svg>

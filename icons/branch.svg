@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes flow{0%{stroke-dashoffset:20}100%{stroke-dashoffset:0}}
+.fl{stroke-dasharray:5 5;animation:flow 1.5s linear infinite}
+</style>
+<circle cx="14" cy="12" r="4" fill="#42A5F5"/>
+<circle cx="30" cy="12" r="4" fill="#66BB6A"/>
+<circle cx="14" cy="34" r="4" fill="#FFC107"/>
+<line x1="14" y1="16" x2="14" y2="30" stroke="#42A5F5" stroke-width="3" stroke-linecap="round" class="fl"/>
+<path d="M30 16 Q30 26 14 30" stroke="#66BB6A" stroke-width="3" fill="none" stroke-linecap="round" class="fl"/>
+</svg>
