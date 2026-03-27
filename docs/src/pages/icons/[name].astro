@@ -1,0 +1,432 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL;
+
+/* ── Load all icon data at build time ── */
+const categoriesPath = path.join(process.cwd(), 'public', 'categories.json');
+const rawCategories: Record<string, { category: string; tags: string[] }> =
+  JSON.parse(fs.readFileSync(categoriesPath, 'utf-8'));
+
+const RESERVED_WORDS = new Set([
+  'abstract','arguments','async','await','boolean','break','byte','case','catch',
+  'char','class','const','continue','debugger','default','delete','do','double',
+  'else','enum','eval','export','extends','false','final','finally','float','for',
+  'from','function','goto','if','implements','import','in','instanceof','int',
+  'interface','let','long','native','new','null','of','package','private',
+  'protected','public','return','short','static','super','switch','synchronized',
+  'this','throw','throws','transient','true','try','type','typeof','var','void',
+  'volatile','while','with','yield',
+]);
+
+function kebabToCamel(str: string): string {
+  let s = str;
+  if (/^\d/.test(s)) s = 'http' + s;
+  const camel = s.replace(/-([a-z0-9])/g, (_, c: string) => c.toUpperCase());
+  return RESERVED_WORDS.has(camel) ? camel + 'Icon' : camel;
+}
+
+function formatCategory(slug: string): string {
+  return slug
+    .replace(/(^|-)(\w)/g, (_: string, sep: string, c: string) =>
+      (sep ? ' ' : '') + c.toUpperCase()
+    )
+    .replace('Ai Ml', 'AI & ML')
+    .replace('Data Api', 'Data & API')
+    .replace('Frontend Ui', 'Frontend & UI')
+    .replace('Design Ux', 'Design & UX')
+    .replace('Testing Qa', 'Testing & QA')
+    .replace('Cloud Devops', 'Cloud & DevOps')
+    .replace('Database Storage', 'Database & Storage')
+    .replace('Status Workflow', 'Status & Workflow')
+    .replace('Files Media', 'Files & Media')
+    .replace('Arrows Symbols', 'Arrows & Symbols')
+    .replace('Math Crypto', 'Math & Crypto')
+    .replace('Backend Languages', 'Backend & Languages')
+    .replace('Http Codes', 'HTTP Codes');
+}
+
+/* ── Generate static paths for all 514 icons ── */
+export function getStaticPaths() {
+  const cats: Record<string, { category: string; tags: string[] }> =
+    JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'categories.json'), 'utf-8'));
+
+  return Object.entries(cats).map(([name, meta]) => ({
+    params: { name },
+    props: { meta },
+  }));
+}
+
+const { name } = Astro.params;
+const { meta } = Astro.props;
+
+const exportName = kebabToCamel(name!);
+const categoryDisplay = formatCategory(meta.category);
+const svgPath = path.join(process.cwd(), 'public', 'icons', `${name}.svg`);
+const svgContent = fs.readFileSync(svgPath, 'utf-8');
+
+/* ── Find related icons (same category, excluding self) ── */
+const related = Object.entries(rawCategories)
+  .filter(([n, m]) => m.category === meta.category && n !== name)
+  .slice(0, 8)
+  .map(([n]) => n);
+
+const importStatement = `import { ${exportName} } from '@modern-svg-icons/core';`;
+const title = `${name} — animated SVG icon`;
+const description = `${name} is an animated SVG icon in the ${categoryDisplay} category. Tree-shakeable, zero dependencies, TypeScript-first. Part of @modern-svg-icons/core.`;
+
+/* ── JSON-LD structured data ── */
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'ImageObject',
+  name: `${name} icon`,
+  description,
+  contentUrl: `https://modern-svg-icons.rizz.dev/icons/${name}.svg`,
+  encodingFormat: 'image/svg+xml',
+  width: '256',
+  height: '256',
+  isPartOf: {
+    '@type': 'SoftwareSourceCode',
+    name: '@modern-svg-icons/core',
+    url: 'https://github.com/rizzdev/modern-svg-icons',
+    programmingLanguage: 'TypeScript',
+  },
+  keywords: meta.tags.join(', '),
+});
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={`${name}, svg icon, animated icon, ${meta.tags.join(', ')}, ${categoryDisplay}, modern-svg-icons`} />
+
+    {/* Open Graph */}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`https://modern-svg-icons.rizz.dev/icons/${name}/`} />
+    <meta property="og:image" content={`https://modern-svg-icons.rizz.dev/icons/${name}.svg`} />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    {/* Canonical */}
+    <link rel="canonical" href={`https://modern-svg-icons.rizz.dev/icons/${name}/`} />
+
+    {/* JSON-LD */}
+    <script type="application/ld+json" set:html={jsonLd} />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { background: #0c0c0e; }
+    </style>
+  </head>
+  <body>
+    <div class="icon-page">
+      {/* ── Grid bg ── */}
+      <div class="grid-bg"></div>
+
+      {/* ── Nav ── */}
+      <nav class="nav">
+        <a href={base} class="nav-logo">modern-svg-icons</a>
+        <div class="nav-links">
+          <a href={`${base}getting-started/`}>Docs</a>
+          <a href={`${base}icons/`}>Gallery</a>
+          <a href="https://github.com/rizzdev/modern-svg-icons" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </nav>
+
+      <main class="main">
+        {/* ── Back link ── */}
+        <a href={`${base}icons/`} class="back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+          All Icons
+        </a>
+
+        <div class="icon-detail">
+          {/* ── Icon preview ── */}
+          <div class="preview-area">
+            <div class="preview-box" set:html={svgContent} />
+          </div>
+
+          {/* ── Info panel ── */}
+          <div class="info-panel">
+            <h1 class="icon-title">{name}</h1>
+
+            <div class="meta-row">
+              <span class="meta-label">Category</span>
+              <a href={`${base}icons/?cat=${encodeURIComponent(categoryDisplay)}`} class="meta-value category-badge">{categoryDisplay}</a>
+            </div>
+
+            <div class="meta-row">
+              <span class="meta-label">Tags</span>
+              <div class="tag-list">
+                {meta.tags.map((tag: string) => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+            </div>
+
+            <div class="meta-row">
+              <span class="meta-label">Export</span>
+              <code class="export-name">{exportName}</code>
+            </div>
+
+            {/* ── Import snippet ── */}
+            <div class="snippet-block">
+              <div class="snippet-header">
+                <span>Import</span>
+                <button class="copy-btn" id="copy-import" data-text={importStatement}>Copy</button>
+              </div>
+              <pre><code>{importStatement}</code></pre>
+            </div>
+
+            {/* ── Usage snippet ── */}
+            <div class="snippet-block">
+              <div class="snippet-header">
+                <span>Usage</span>
+                <button class="copy-btn" id="copy-usage" data-text={`import { ${exportName}, createIcon } from '@modern-svg-icons/core';\n\n// Default\ndocument.getElementById('icon').innerHTML = ${exportName};\n\n// Customized\nconst icon = createIcon(${exportName}, { size: 32, theme: 'grayscale' });\ndocument.getElementById('icon').innerHTML = icon;`}>Copy</button>
+              </div>
+              <pre><code>{`import { ${exportName}, createIcon } from '@modern-svg-icons/core';
+
+// Default
+document.getElementById('icon').innerHTML = ${exportName};
+
+// Customized
+const icon = createIcon(${exportName}, { size: 32, theme: 'grayscale' });
+document.getElementById('icon').innerHTML = icon;`}</code></pre>
+            </div>
+
+            {/* ── Direct SVG link ── */}
+            <div class="meta-row">
+              <span class="meta-label">SVG URL</span>
+              <a href={`${base}icons/${name}.svg`} class="meta-value svg-link" target="_blank" rel="noopener">{`/icons/${name}.svg`}</a>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Related icons ── */}
+        {related.length > 0 && (
+          <div class="related-section">
+            <h2 class="related-title">More {categoryDisplay} icons</h2>
+            <div class="related-grid">
+              {related.map((r) => (
+                <a href={`${base}icons/${r}/`} class="related-card">
+                  <img src={`${base}icons/${r}.svg`} alt={r} width="40" height="40" loading="lazy" />
+                  <span class="related-name">{r}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </main>
+    </div>
+
+    <script>
+      document.querySelectorAll('.copy-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const text = (btn as HTMLElement).dataset.text ?? '';
+          navigator.clipboard.writeText(text).then(() => {
+            const orig = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = orig; }, 1200);
+          });
+        });
+      });
+    </script>
+
+    <style>
+      .icon-page {
+        min-height: 100vh;
+        background: #0c0c0e;
+        color: #c0c0c8;
+        font-family: 'Outfit', sans-serif;
+        position: relative;
+      }
+
+      .grid-bg {
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px),
+          linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px);
+        background-size: 60px 60px;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .nav {
+        position: relative; z-index: 1;
+        display: flex; align-items: center; justify-content: space-between;
+        max-width: 1000px; margin: 0 auto; padding: 20px 32px;
+      }
+      .nav-logo {
+        font-size: 18px; font-weight: 700;
+        background: linear-gradient(135deg, #42a5f5, #66bb6a, #ffc107);
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        text-decoration: none;
+      }
+      .nav-links { display: flex; gap: 24px; }
+      .nav-links a { color: #4a4a54; text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
+      .nav-links a:hover { color: #a0a0aa; }
+
+      .main {
+        position: relative; z-index: 1;
+        max-width: 1000px; margin: 0 auto; padding: 0 32px 80px;
+      }
+
+      .back-link {
+        display: inline-flex; align-items: center; gap: 6px;
+        color: #4a4a54; text-decoration: none; font-size: 13px; font-weight: 500;
+        margin-bottom: 28px; transition: color .2s;
+      }
+      .back-link:hover { color: #42a5f5; }
+
+      /* ── Detail layout ── */
+      .icon-detail {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 40px;
+        margin-bottom: 48px;
+      }
+
+      /* ── Preview ── */
+      .preview-area {
+        display: flex; justify-content: center; align-items: flex-start;
+      }
+      .preview-box {
+        width: 200px; height: 200px;
+        background: #111114;
+        border: 1px solid #1e1e24;
+        border-radius: 16px;
+        display: flex; align-items: center; justify-content: center;
+        padding: 24px;
+      }
+      .preview-box :global(svg) {
+        width: 100%; height: 100%;
+      }
+
+      /* ── Info panel ── */
+      .icon-title {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 24px; font-weight: 700;
+        color: #e4e4e8;
+        margin-bottom: 20px;
+      }
+
+      .meta-row {
+        display: flex; align-items: baseline; gap: 12px;
+        margin-bottom: 12px;
+      }
+      .meta-label {
+        font-size: 11px; font-weight: 600; text-transform: uppercase;
+        letter-spacing: 0.06em; color: #3a3a44;
+        min-width: 70px; flex-shrink: 0;
+      }
+      .meta-value { color: #8b8b96; font-size: 13px; }
+
+      .category-badge {
+        color: #42a5f5; text-decoration: none;
+        font-size: 13px;
+      }
+      .category-badge:hover { text-decoration: underline; }
+
+      .tag-list { display: flex; gap: 5px; flex-wrap: wrap; }
+      .tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px; color: #4a4a54;
+        background: #141418; border: 1px solid #1e1e24;
+        padding: 2px 8px; border-radius: 4px;
+      }
+
+      .export-name {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 13px; color: #66bb6a;
+      }
+
+      .svg-link {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px; color: #42a5f5; text-decoration: none;
+      }
+      .svg-link:hover { text-decoration: underline; }
+
+      /* ── Snippet blocks ── */
+      .snippet-block {
+        margin: 16px 0;
+        background: #111114;
+        border: 1px solid #1e1e24;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .snippet-header {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 8px 14px;
+        border-bottom: 1px solid #1e1e24;
+      }
+      .snippet-header span {
+        font-size: 11px; font-weight: 600; text-transform: uppercase;
+        letter-spacing: 0.06em; color: #3a3a44;
+      }
+      .copy-btn {
+        background: none; border: 1px solid #222228;
+        color: #4a4a54; font-family: 'JetBrains Mono', monospace;
+        font-size: 10px; padding: 3px 10px; border-radius: 5px;
+        cursor: pointer; transition: all .2s;
+      }
+      .copy-btn:hover { border-color: #42a5f5; color: #42a5f5; }
+      .snippet-block pre {
+        padding: 14px; margin: 0; overflow-x: auto;
+      }
+      .snippet-block code {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px; color: #8b8b96; line-height: 1.6;
+      }
+
+      /* ── Related icons ── */
+      .related-section { margin-top: 16px; }
+      .related-title {
+        font-size: 14px; font-weight: 600; color: #4a4a54;
+        margin-bottom: 14px; letter-spacing: -0.01em;
+      }
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 8px;
+      }
+      .related-card {
+        background: #111114; border: 1px solid #1e1e24;
+        border-radius: 10px; padding: 12px 8px;
+        display: flex; flex-direction: column; align-items: center; gap: 6px;
+        text-decoration: none; transition: all .2s;
+      }
+      .related-card:hover {
+        border-color: #42a5f5; transform: translateY(-1px);
+      }
+      .related-card img { width: 40px; height: 40px; object-fit: contain; }
+      .related-name {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 9px; color: #4a4a54; text-align: center;
+        word-break: break-all; line-height: 1.2;
+      }
+
+      @media (max-width: 700px) {
+        .icon-detail {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+        .preview-area { justify-content: center; }
+        .main { padding: 0 16px 60px; }
+      }
+    </style>
+  </body>
+</html>

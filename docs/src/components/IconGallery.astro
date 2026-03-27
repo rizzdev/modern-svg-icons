@@ -132,8 +132,9 @@ const categoryDisplayNames = [...new Set(icons.map((i) => i.categoryDisplay))].s
   {/* ── Icon grid ── */}
   <div class="icon-grid" id="icon-grid">
     {icons.map((icon) => (
-      <div
+      <a
         class="icon-card"
+        href={`${base}icons/${icon.name}/`}
         data-name={icon.name}
         data-category={icon.categoryDisplay}
         data-tags={icon.tags.join(',')}
@@ -150,8 +151,7 @@ const categoryDisplayNames = [...new Set(icons.map((i) => i.categoryDisplay))].s
           />
         </div>
         <span class="icon-name">{icon.name}</span>
-        <div class="toast">Copied!</div>
-      </div>
+      </a>
     ))}
   </div>
 
@@ -251,24 +251,7 @@ const categoryDisplayNames = [...new Set(icons.map((i) => i.categoryDisplay))].s
     }, 8000);
   }
 
-  /* ── Click to copy import statement ── */
-  for (const card of cards) {
-    card.addEventListener('click', (e) => {
-      /* Don't copy if clicking on the options area */
-      const target = e.target as HTMLElement;
-      if (target.closest('.options-bar')) return;
-
-      const exportName = card.dataset.export ?? '';
-      const importStr = `import { ${exportName} } from '@modern-svg-icons/core';`;
-      navigator.clipboard.writeText(importStr).then(() => {
-        const toast = card.querySelector('.toast') as HTMLElement | null;
-        if (toast) {
-          toast.classList.add('show');
-          setTimeout(() => toast.classList.remove('show'), 900);
-        }
-      });
-    });
-  }
+  /* Icons now link to detail pages — no click-to-copy here */
 </script>
 
 <style>
@@ -505,25 +488,9 @@ const categoryDisplayNames = [...new Set(icons.map((i) => i.categoryDisplay))].s
     word-break: break-all;
   }
 
-  /* ── Copied toast ── */
-  .toast {
-    position: absolute;
-    inset: 0;
-    background: rgba(66, 187, 106, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    border-radius: 12px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.15s;
-  }
-
-  .toast.show {
-    opacity: 1;
+  /* ── Card is now an <a> tag ── */
+  .icon-card {
+    text-decoration: none;
   }
 
   /* ── Empty state ── */
