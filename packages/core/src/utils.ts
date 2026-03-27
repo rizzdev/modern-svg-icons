@@ -82,6 +82,28 @@ function applyColorMap(svg: string, colorMap: Record<string, string>): string {
   )
 }
 
+const SPEED_MULTIPLIERS: Record<string, number> = {
+  slow: 0.5,
+  normal: 1,
+  fast: 2,
+}
+
+function applySpeed(svg: string, speed: 'slow' | 'normal' | 'fast'): string {
+  const multiplier = SPEED_MULTIPLIERS[speed]
+  if (!multiplier || multiplier === 1) return svg
+
+  return svg.replace(/<style>[\s\S]*?<\/style>/, (styleBlock) => {
+    return styleBlock.replace(
+      /(\b(?:animation|animation-duration)\s*:[^}]*?)(\d*\.?\d+)(s)/g,
+      (match, before, numStr, unit) => {
+        const original = parseFloat(numStr)
+        const newVal = Math.round((original / multiplier) * 100) / 100
+        return before + newVal + unit
+      }
+    )
+  })
+}
+
 export function createIcon(svg: string, options?: IconOptions): string {
   if (!options) return svg
 
@@ -94,6 +116,11 @@ export function createIcon(svg: string, options?: IconOptions): string {
     if (colorMap) {
       result = applyColorMap(result, colorMap)
     }
+  }
+
+  // Apply speed (before animated check — if animated:false, style gets stripped anyway)
+  if (options.speed && options.speed !== 'normal' && options.animated !== false) {
+    result = applySpeed(result, options.speed)
   }
 
   if (options.animated === false) {

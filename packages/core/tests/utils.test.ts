@@ -142,3 +142,57 @@ describe('theme option', () => {
     expect(result).toContain('fill="none"')
   })
 })
+
+describe('speed option', () => {
+  const animatedSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+.cur{animation:blink .8s step-end infinite}
+.p{animation:pulse 2s ease-in-out infinite}
+</style>
+<rect class="cur" x="26" y="30" width="3" height="2" fill="#FFF"/>
+<circle class="p" cx="16" cy="28" r="2" fill="#FFC107"/>
+</svg>`
+
+  it('speed normal leaves durations unchanged', () => {
+    const result = createIcon(animatedSvg, { speed: 'normal' })
+    expect(result).toContain('.8s')
+    expect(result).toContain('2s')
+  })
+
+  it('speed fast halves all durations', () => {
+    const result = createIcon(animatedSvg, { speed: 'fast' })
+    expect(result).toContain('.4s')
+    expect(result).toContain('1s')
+    expect(result).not.toContain('.8s')
+    expect(result).not.toContain('2s ease')
+  })
+
+  it('speed slow doubles all durations', () => {
+    const result = createIcon(animatedSvg, { speed: 'slow' })
+    expect(result).toContain('1.6s')
+    expect(result).toContain('4s')
+    expect(result).not.toContain(' .8s')
+  })
+
+  it('speed is ignored when animated is false', () => {
+    const result = createIcon(animatedSvg, { animated: false, speed: 'fast' })
+    expect(result).not.toContain('<style>')
+  })
+
+  it('handles durations with leading zero like 0.5s', () => {
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="256" height="256">
+<style>.x{animation:foo 0.5s ease infinite}</style>
+<rect fill="#000"/>
+</svg>`
+    const result = createIcon(svg, { speed: 'fast' })
+    expect(result).toContain('0.25s')
+  })
+
+  it('preserves keyframe percentages unchanged', () => {
+    const result = createIcon(animatedSvg, { speed: 'fast' })
+    expect(result).toContain('0%,100%')
+    expect(result).toContain('50%')
+  })
+})
