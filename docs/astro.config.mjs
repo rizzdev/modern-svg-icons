@@ -2,8 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://rizzdev.github.io',
-  base: '/modern-svg-icons',
+  site: 'https://modern-svg-icons.rizz.dev',
   integrations: [
     starlight({
       title: 'modern-svg-icons',
