@@ -4,6 +4,8 @@ description: Install @modern-svg-icons/core and render your first animated icon.
 ---
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { terminal, release, createIcon } from '@modern-svg-icons/core';
+import IconPreview from '../../components/IconPreview.astro';
 
 ## Installation
 
@@ -37,6 +39,11 @@ document.getElementById('my-icon').innerHTML = terminal;
 
 That's it. The icon renders as an animated inline SVG — no framework required.
 
+<IconPreview items={[
+  { svg: terminal, label: 'terminal' },
+  { svg: release, label: 'release' },
+]} />
+
 ## Using `createIcon()` for customization
 
 The `createIcon` function wraps any icon SVG with options for theming, sizing, and animation control:
@@ -51,6 +58,10 @@ const icon = createIcon(terminal, {
 
 document.getElementById('my-icon').innerHTML = icon;
 ```
+
+<IconPreview items={[
+  { svg: createIcon(terminal, { size: 32, theme: 'grayscale' }), label: 'grayscale, 32px' },
+]} />
 
 ## Quick HTML example
 

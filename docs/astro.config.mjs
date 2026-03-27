@@ -15,14 +15,29 @@ export default defineConfig({
         },
       ],
       sidebar: [
-        { label: 'Getting Started', link: '/getting-started/' },
-        { label: 'API Reference', link: '/api-reference/' },
-        { label: 'Themes & Customization', link: '/themes/' },
-        { label: 'Icon Gallery', link: '/icons/' },
-        { label: 'Export CLI', link: '/export-cli/' },
-        { label: 'Contributing', link: '/contributing/' },
-        { label: 'Changelog', link: '/changelog/' },
-        { label: 'FAQ', link: '/faq/' },
+        {
+          label: 'Guides',
+          items: [
+            { label: 'Getting Started', link: '/getting-started/' },
+            { label: 'Themes & Customization', link: '/themes/' },
+            { label: 'Export CLI', link: '/export-cli/' },
+          ],
+        },
+        {
+          label: 'Reference',
+          items: [
+            { label: 'API Reference', link: '/api-reference/' },
+            { label: 'Icon Gallery', link: '/icons/' },
+          ],
+        },
+        {
+          label: 'Project',
+          items: [
+            { label: 'Contributing', link: '/contributing/' },
+            { label: 'Changelog', link: '/changelog/' },
+            { label: 'FAQ', link: '/faq/' },
+          ],
+        },
       ],
     }),
   ],

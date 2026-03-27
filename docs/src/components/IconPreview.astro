@@ -1,0 +1,54 @@
+---
+interface Props {
+  items: Array<{ svg: string; label?: string }>;
+}
+
+const { items } = Astro.props;
+---
+
+<div class="icon-preview">
+  {items.map(({ svg, label }) => (
+    <figure class="icon-preview-item">
+      <div class="icon-preview-render" set:html={svg} />
+      {label && <figcaption>{label}</figcaption>}
+    </figure>
+  ))}
+</div>
+
+<style>
+  .icon-preview {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+    margin: 0.75rem 0 1.5rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .icon-preview-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+  }
+
+  .icon-preview-render {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon-preview-render :global(svg) {
+    width: 100%;
+    height: 100%;
+  }
+
+  figcaption {
+    font-size: 0.7rem;
+    color: #6a6a74;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+</style>

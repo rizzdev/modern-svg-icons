@@ -3,9 +3,18 @@ title: Themes & Customization
 description: Retheme icons with presets, custom colors, palettes, speed control, and the factory pattern.
 ---
 
+import { terminal, release, docker, heart, star, createIcon } from '@modern-svg-icons/core';
+import IconPreview from '../../components/IconPreview.astro';
+
 ## Theme presets
 
 Pass a `theme` string to `createIcon()`:
+
+<IconPreview items={[
+  { svg: terminal, label: 'default' },
+  { svg: createIcon(terminal, { theme: 'grayscale' }), label: 'grayscale' },
+  { svg: createIcon(terminal, { theme: 'dark' }), label: 'dark' },
+]} />
 
 ### Default
 
@@ -46,6 +55,13 @@ createIcon(terminal, { theme: '#FF5722' });
 createIcon(terminal, { theme: '#9C27B0' });
 ```
 
+<IconPreview items={[
+  { svg: createIcon(terminal, { theme: '#FF5722' }), label: '#FF5722' },
+  { svg: createIcon(terminal, { theme: '#9C27B0' }), label: '#9C27B0' },
+  { svg: createIcon(terminal, { theme: '#4CAF50' }), label: '#4CAF50' },
+  { svg: createIcon(terminal, { theme: '#FF9800' }), label: '#FF9800' },
+]} />
+
 ## Palette override
 
 For full control, pass an array of 3-5 hex colors. Colors are sorted by luminance and mapped to the icon's original colors in luminance order:
@@ -55,6 +71,11 @@ createIcon(terminal, {
   palette: ['#E91E63', '#9C27B0', '#3F51B5', '#009688', '#FF9800'],
 });
 ```
+
+<IconPreview items={[
+  { svg: createIcon(terminal, { palette: ['#E91E63', '#9C27B0', '#3F51B5', '#009688', '#FF9800'] }), label: 'custom palette' },
+  { svg: createIcon(release, { palette: ['#E91E63', '#9C27B0', '#3F51B5', '#009688', '#FF9800'] }), label: 'same palette, different icon' },
+]} />
 
 The `palette` option takes precedence over `theme` if both are set.
 
@@ -73,6 +94,12 @@ createIcon(terminal, { speed: 'slow' });
 createIcon(terminal, { speed: 'fast' });
 ```
 
+<IconPreview items={[
+  { svg: createIcon(release, { speed: 'slow' }), label: 'slow' },
+  { svg: release, label: 'normal' },
+  { svg: createIcon(release, { speed: 'fast' }), label: 'fast' },
+]} />
+
 ## Disabling animations
 
 Set `animated: false` to strip all `<style>` blocks and CSS class attributes:
@@ -80,6 +107,11 @@ Set `animated: false` to strip all `<style>` blocks and CSS class attributes:
 ```js
 createIcon(terminal, { animated: false });
 ```
+
+<IconPreview items={[
+  { svg: heart, label: 'animated' },
+  { svg: createIcon(heart, { animated: false }), label: 'static' },
+]} />
 
 This produces a static SVG with no animation — useful for print or reduced-motion contexts.
 
@@ -130,3 +162,9 @@ createIcon(terminal, {
   animated: false,
 });
 ```
+
+<IconPreview items={[
+  { svg: createIcon(star, { theme: 'grayscale', speed: 'slow' }), label: 'grayscale + slow' },
+  { svg: createIcon(star, { theme: '#FF5722', speed: 'fast' }), label: 'orange + fast' },
+  { svg: createIcon(star, { palette: ['#1a1a2e', '#16213e', '#0f3460', '#533483', '#e94560'], animated: false }), label: 'palette + static' },
+]} />
