@@ -256,98 +256,101 @@ body::before{
 <script>
 const BASE = 'icons';
 
-const categories = {
-  'Dev Tools': ['terminal','code','git','bug','deploy','commit','branch','merge','pull-request','build','test','lint','package','npm','debug','console','diff','repo','fork','tag','release','pipeline','ci-cd','docker','container','compiler','runtime','stack-trace','breakpoint','variable','hot-reload','minify','bundle','transpile','refactor','snippet','dependency','monorepo','workspace','changelog','version','scaffold','template','env-variable','stdout','stderr','stdin','cli','repl','formatter','linter','prettier','devtools','sourcemap','tree-shaking'],
-  'Infrastructure': ['server','cloud','database','dns-lookup','network','firewall','load-balancer','cdn','storage','backup','cluster','node','proxy','gateway','cache','queue','monitor','log','uptime','latency','bandwidth','ip-address','domain','ssl-cert','hosting','vm','kubernetes','microservice','container-registry','nginx-conf','load-test-infra','health-check','service-mesh','autoscale','cname','a-record','mx-record','nameserver','ingress','egress','vpc','subnet','region','volume','mount','ssl-tls','waf','message-queue','pub-sub','event-bus','sla','rate-limiter','failover'],
-  'Security': ['lock','unlock','shield','key','auth','encryption','password','token','certificate','vulnerability','scan','audit','mfa','fingerprint','access-control','permission','firewall-rule','threat','malware','patch','compliance','oauth','jwt','api-key','secret','ddos','xss','sql-injection','csrf','rate-limit-security','waf-rule','sandbox','cors-policy','csp','hsts','ip-block','captcha','pen-test','zero-trust','vpn','sso','rbac','session','cookie','ssh-key','pgp','hash-password','two-factor','vault','security-audit'],
-  'Data & API': ['webhook','endpoint','json','rest-api','graphql','request','response','payload','header','query','mutation','schema','rate-limit','pagination','websocket','streaming','batch','transform','filter','sort','validate','parse','serialize','csv','xml','grpc','protobuf','soap','openapi','swagger','postman','cursor-pagination','etag','idempotent','content-type','multipart','sse','api-version','throttle','bulk-api','data-sync','migration-api','webhook-outgoing','caching-strategy','compression','base-url','oauth-flow','api-gateway'],
-  'Frontend & UI': ['browser','responsive','mobile','tablet','desktop','dark-mode','light-mode','component','layout','form','button','modal','dropdown','tooltip','animation','css','html','javascript','typescript','react-icon','vue','svelte','tailwind','grid-layout','input','carousel','accordion','tab-bar','sidebar','navbar','breadcrumb','badge','avatar','progress-bar','spinner','skeleton','toast-notification','chip','toggle','divider','stepper','pagination-ui','empty-state','error-state','loading-state','dark-theme','light-theme'],
-  'Backend & Languages': ['python','rust','go-lang','java','node-js','php','ruby','function','class-icon','loop','array','async','middleware','migration','csharp','swift','kotlin','scala','elixir','dart','lua','perl','haskell','sql-lang','bash-lang','powershell','regex-lang','zig','wasm','graphql-lang','deno','bun','promise','callback','orm','seed-db','object-oriented','interface','enum'],
-  'Cloud & DevOps': ['aws','gcp','azure','terraform','nginx','redis','postgres','mongo','elastic','grafana','lambda','s3-bucket','cloudflare-icon','vercel','netlify','fly-io','digitalocean'],
-  'AI & ML': ['ai-brain','neural-network','model','training','prompt','embedding','vector','gpu','chatbot','agent','inference','fine-tune','dataset','nlp','transformer','rag','attention','loss-function','batch-size','epoch','backprop','tokenizer','llm','diffusion','temperature','context-window','hallucination','benchmark-ai','safety','api-endpoint-ai','multimodal','reinforcement','vision-ai'],
-  'Database & Storage': ['sql','nosql','table','row','column','index','join','transaction','rollback','replication','sharding','connection-pool','view-db','trigger','stored-procedure'],
-  'Networking': ['tcp','udp','http','https','ssh','ping','traceroute','packet','port','handshake','dns-record','subdomain','reverse-proxy','cors'],
-  'Testing & QA': ['unit-test','integration-test','e2e-test','coverage','mock','fixture','snapshot','load-test','benchmark','green-build','red-build','flaky-test'],
-  'HTTP Codes': ['200-ok','201-created','301-redirect','400-bad-request','401-unauthorized','403-forbidden','404-not-found','500-server-error','502-bad-gateway','503-unavailable','timeout','retry','fallback','circuit-breaker'],
-  'Design & UX': ['wireframe','prototype','figma','color-picker','typography','accessibility','design-system','palette'],
-  'DevEx': ['vscode','vim','tmux','dotfiles','clipboard','focus-mode','keyboard'],
-  'Math & Crypto': ['calculator','binary','base64','sha256','blockchain','checksum','nonce'],
-  'Status & Workflow': ['todo','in-progress','done','blocked','review','approved','rejected','scheduled','archived','draft','published','deprecated','beta','stable','urgent'],
-  'Files & Media': ['file','folder','image','video','audio','pdf','markdown','yaml','env','zip'],
-  'Analytics': ['chart','dashboard','funnel','trend','report'],
-  'Collaboration': ['comment','mention','kanban','sprint','milestone','roadmap','brainstorm'],
-  'Gaming': ['joystick','pixel-sword','health-bar','xp','level-up','trophy','dice','coin','gem','potion'],
-  'Nature': ['tree','leaf','seed','globe','compass','atom','dna'],
-  'Arrows & Symbols': ['arrow-up','arrow-down','arrow-right','arrow-left','arrow-loop','infinity','plus','minus','checkmark','crossmark'],
-  'General': ['settings','search','download','upload','notification','bookmark','link','refresh','copy','trash','clock','warning','error','success','info','email','chat','user','team','star','heart','lightning','fire','magic','hash','regex','config','plugin','api','webhook-incoming','cron']
-};
-
-// Build lookup: icon name → category
-const iconCat = {};
-Object.entries(categories).forEach(([cat, names]) => {
-  names.forEach(n => iconCat[n] = cat);
-});
-const allIcons = Object.values(categories).flat();
-
-// Render filter pills
-const filtersEl = document.getElementById('filters');
-const cats = ['All', ...Object.keys(categories)];
-cats.forEach(cat => {
-  const pill = document.createElement('div');
-  pill.className = 'pill' + (cat === 'All' ? ' active' : '');
-  pill.textContent = cat;
-  pill.onclick = () => {
-    document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
-    pill.classList.add('active');
-    activeFilter = cat;
-    render();
-  };
-  filtersEl.appendChild(pill);
-});
-
-let activeFilter = 'All';
-const searchEl = document.getElementById('search');
-const gridEl = document.getElementById('grid');
-
-function render() {
-  const q = searchEl.value.toLowerCase().trim();
-  const filtered = allIcons.filter(name => {
-    if (activeFilter !== 'All' && iconCat[name] !== activeFilter) return false;
-    if (q && !name.includes(q)) return false;
-    return true;
-  });
-
-  gridEl.innerHTML = '';
-  if (filtered.length === 0) {
-    gridEl.innerHTML = '<div class="empty">No icons match your search</div>';
-  } else {
-    filtered.forEach((name, i) => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.style.animationDelay = `${i * 15}ms`;
-      card.innerHTML = `
-        <div class="icon-wrap"><img src="${BASE}/${name}.svg" alt="${name}" loading="lazy"></div>
-        <div class="name">${name}</div>
-        <div class="toast">Copied!</div>
-      `;
-      card.onclick = () => {
-        const url = `${BASE}/${name}.svg`;
-        navigator.clipboard.writeText(url).then(() => {
-          const toast = card.querySelector('.toast');
-          toast.classList.add('show');
-          setTimeout(() => toast.classList.remove('show'), 800);
-        });
-      };
-      gridEl.appendChild(card);
-    });
-  }
-
-  document.getElementById('visCount').textContent = filtered.length;
-  document.getElementById('countBadge').textContent = `${allIcons.length} icons`;
+// kebab-case → Display Name (e.g. "dev-tools" → "Dev Tools")
+function formatCategory(slug) {
+  return slug.replace(/(^|-)(\w)/g, (_, sep, c) => (sep ? ' ' : '') + c.toUpperCase())
+    .replace('Ai Ml', 'AI & ML')
+    .replace('Data Api', 'Data & API')
+    .replace('Frontend Ui', 'Frontend & UI')
+    .replace('Design Ux', 'Design & UX')
+    .replace('Testing Qa', 'Testing & QA')
+    .replace('Ci Cd', 'CI/CD')
+    .replace('Cloud Devops', 'Cloud & DevOps')
+    .replace('Database Storage', 'Database & Storage')
+    .replace('Status Workflow', 'Status & Workflow')
+    .replace('Files Media', 'Files & Media')
+    .replace('Arrows Symbols', 'Arrows & Symbols')
+    .replace('Math Crypto', 'Math & Crypto')
+    .replace('Backend Languages', 'Backend & Languages')
+    .replace('Http Codes', 'HTTP Codes');
 }
 
-searchEl.addEventListener('input', render);
-render();
+(async () => {
+  // Load categories from single source of truth
+  const raw = await fetch('scripts/categories.json').then(r => r.json());
+
+  // Invert: icon→category into category→icons
+  const categories = {};
+  const iconCat = {};
+  for (const [name, entry] of Object.entries(raw)) {
+    const display = formatCategory(entry.category);
+    if (!categories[display]) categories[display] = [];
+    categories[display].push(name);
+    iconCat[name] = display;
+  }
+  const allIcons = Object.values(categories).flat();
+
+  // Render filter pills
+  const filtersEl = document.getElementById('filters');
+  const cats = ['All', ...Object.keys(categories).sort()];
+  let activeFilter = 'All';
+
+  cats.forEach(cat => {
+    const pill = document.createElement('div');
+    pill.className = 'pill' + (cat === 'All' ? ' active' : '');
+    pill.textContent = cat;
+    pill.onclick = () => {
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeFilter = cat;
+      render();
+    };
+    filtersEl.appendChild(pill);
+  });
+
+  const searchEl = document.getElementById('search');
+  const gridEl = document.getElementById('grid');
+
+  function render() {
+    const q = searchEl.value.toLowerCase().trim();
+    const filtered = allIcons.filter(name => {
+      if (activeFilter !== 'All' && iconCat[name] !== activeFilter) return false;
+      if (q && !name.includes(q)) return false;
+      return true;
+    });
+
+    gridEl.innerHTML = '';
+    if (filtered.length === 0) {
+      gridEl.innerHTML = '<div class="empty">No icons match your search</div>';
+    } else {
+      filtered.forEach((name, i) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.style.animationDelay = `${i * 15}ms`;
+        card.innerHTML = `
+          <div class="icon-wrap"><img src="${BASE}/${name}.svg" alt="${name}" loading="lazy"></div>
+          <div class="name">${name}</div>
+          <div class="toast">Copied!</div>
+        `;
+        card.onclick = () => {
+          const url = `${BASE}/${name}.svg`;
+          navigator.clipboard.writeText(url).then(() => {
+            const toast = card.querySelector('.toast');
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 800);
+          });
+        };
+        gridEl.appendChild(card);
+      });
+    }
+
+    document.getElementById('visCount').textContent = filtered.length;
+    document.getElementById('countBadge').textContent = `${allIcons.length} icons`;
+  }
+
+  searchEl.addEventListener('input', render);
+  render();
+})();
 </script>
 </body>
 </html>
