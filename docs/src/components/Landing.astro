@@ -1,0 +1,370 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import FeatureCard from './FeatureCard.astro';
+
+const base = import.meta.env.BASE_URL;
+
+/* ── Read showcase icons at build time ── */
+const showcaseNames = [
+  'terminal', 'docker', 'react-icon', 'api', 'lock', 'chart', 'package', 'neural-network',
+  'kubernetes', 'python', 'graphql', 'cloud', 'fire', 'typescript', 'database', 'lightning',
+  'git', 'server', 'encryption', 'joystick', 'deploy', 'atom', 'compass', 'magic',
+];
+
+const iconsDir = path.join(process.cwd(), 'public', 'icons');
+const showcaseIcons = showcaseNames.map((name) => {
+  try {
+    const svg = fs.readFileSync(path.join(iconsDir, `${name}.svg`), 'utf-8');
+    return { name, svg };
+  } catch {
+    return null;
+  }
+}).filter(Boolean);
+
+/* Split into 3 sets of 8 */
+const sets = [
+  showcaseIcons.slice(0, 8),
+  showcaseIcons.slice(8, 16),
+  showcaseIcons.slice(16, 24),
+];
+
+const features = [
+  {
+    title: 'Tree-shakeable',
+    description: 'Import only what you use. 514 icons in the package, only the ones you import in your bundle.',
+  },
+  {
+    title: 'Animated',
+    description: 'Subtle CSS animations baked into every icon. Cursors blink, gears spin, data flows.',
+  },
+  {
+    title: 'Themeable',
+    description: 'Grayscale, dark mode, custom colors. One line to retheme every icon.',
+  },
+  {
+    title: 'TypeScript',
+    description: 'Full type declarations and autocomplete for all 514 icon names.',
+  },
+];
+---
+
+<div class="landing">
+  <nav class="landing-nav">
+    <a href={base} class="nav-logo">modern-svg-icons</a>
+    <div class="nav-links">
+      <a href={`${base}getting-started/`}>Docs</a>
+      <a href={`${base}icons/`}>Gallery</a>
+      <a href="https://github.com/rizzdev/modern-svg-icons" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+
+  <main class="hero">
+    {/* ── Animated icon showcase ── */}
+    <div class="icon-showcase">
+      {sets.map((set, i) => (
+        <div class={`icon-set ${i === 0 ? 'active' : ''}`} data-set={i}>
+          {set.map((icon) => (
+            <div class="showcase-icon" set:html={icon.svg} />
+          ))}
+        </div>
+      ))}
+    </div>
+
+    {/* ── Hero text ── */}
+    <h1 class="title">modern-svg-icons</h1>
+    <p class="tagline">
+      514 animated SVG icons for developers — tree-shakeable, zero dependencies, TypeScript-first
+    </p>
+
+    {/* ── CTA buttons ── */}
+    <div class="cta-buttons">
+      <a href={`${base}getting-started/`} class="btn btn-primary">Get Started</a>
+      <a href={`${base}icons/`} class="btn btn-secondary">Browse Icons</a>
+    </div>
+
+    {/* ── Install command ── */}
+    <div class="install-box">
+      <code id="install-cmd">npm install @modern-svg-icons/core</code>
+      <button class="copy-btn" id="copy-install" aria-label="Copy install command">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+        </svg>
+      </button>
+    </div>
+
+    {/* ── Feature cards ── */}
+    <div class="features">
+      {features.map((f) => (
+        <FeatureCard title={f.title} description={f.description} />
+      ))}
+    </div>
+  </main>
+</div>
+
+<script>
+  /* ── Icon showcase rotation ── */
+  const sets = document.querySelectorAll('.icon-set');
+  if (sets.length > 1) {
+    let current = 0;
+    setInterval(() => {
+      sets[current].classList.remove('active');
+      current = (current + 1) % sets.length;
+      sets[current].classList.add('active');
+    }, 5000);
+  }
+
+  /* ── Copy install command ── */
+  document.getElementById('copy-install')?.addEventListener('click', () => {
+    const cmd = document.getElementById('install-cmd')?.textContent ?? '';
+    navigator.clipboard.writeText(cmd).then(() => {
+      const btn = document.getElementById('copy-install');
+      if (btn) {
+        btn.textContent = 'Copied!';
+        setTimeout(() => {
+          btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+        }, 1500);
+      }
+    });
+  });
+</script>
+
+<style>
+  /* ── Grid background ── */
+  .landing {
+    min-height: 100vh;
+    background: #0c0c0e;
+    color: #e4e4e8;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+  }
+
+  .landing::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Nav ── */
+  .landing-nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 32px;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #42a5f5, #66bb6a, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-links a {
+    color: #8b8b96;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover {
+    color: #e4e4e8;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 32px 100px;
+    text-align: center;
+  }
+
+  /* ── Icon showcase ── */
+  .icon-showcase {
+    position: relative;
+    height: 64px;
+    margin-bottom: 40px;
+  }
+
+  .icon-set {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+
+  .icon-set.active {
+    opacity: 1;
+  }
+
+  .showcase-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .showcase-icon :global(svg) {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* ── Title ── */
+  .title {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #42a5f5, #66bb6a, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px;
+    line-height: 1.1;
+  }
+
+  .tagline {
+    font-size: 18px;
+    color: #8b8b96;
+    line-height: 1.6;
+    margin: 0 0 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── CTA buttons ── */
+  .cta-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: #42a5f5;
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background: #1e88e5;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #e4e4e8;
+    border: 1px solid #2a2a32;
+  }
+
+  .btn-secondary:hover {
+    border-color: #42a5f5;
+    color: #42a5f5;
+  }
+
+  /* ── Install box ── */
+  .install-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #16161a;
+    border: 1px solid #2a2a32;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 60px;
+  }
+
+  .install-box code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: #8b8b96;
+  }
+
+  .copy-btn {
+    background: none;
+    border: none;
+    color: #8b8b96;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+  }
+
+  .copy-btn:hover {
+    color: #42a5f5;
+  }
+
+  /* ── Features ── */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    text-align: left;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 640px) {
+    .title {
+      font-size: 36px;
+    }
+
+    .tagline {
+      font-size: 15px;
+    }
+
+    .features {
+      grid-template-columns: 1fr;
+    }
+
+    .icon-showcase {
+      height: 48px;
+    }
+
+    .showcase-icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    .showcase-icon :global(svg) {
+      width: 36px;
+      height: 36px;
+    }
+
+    .hero {
+      padding: 40px 20px 60px;
+    }
+  }
+</style>

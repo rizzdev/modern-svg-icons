@@ -1,0 +1,26 @@
+---
+import Landing from '../components/Landing.astro';
+
+const title = 'modern-svg-icons — 514 animated SVG icons for developers';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content="514 animated SVG icons for developers — tree-shakeable, zero dependencies, TypeScript-first." />
+    <link rel="sitemap" href={`${import.meta.env.BASE_URL}sitemap-index.xml`} />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { background: #0c0c0e; }
+    </style>
+  </head>
+  <body>
+    <Landing />
+  </body>
+</html>
