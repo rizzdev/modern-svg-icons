@@ -1,0 +1,132 @@
+---
+import IconGallery from '../components/IconGallery.astro';
+
+const base = import.meta.env.BASE_URL;
+const title = 'Icon Gallery — modern-svg-icons';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content="Browse all 514 animated SVG icons — search by name, filter by category, click to copy the import statement." />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { background: #0c0c0e; }
+    </style>
+  </head>
+  <body>
+    <div class="gallery-page">
+      <nav class="gallery-nav">
+        <a href={base} class="nav-logo">modern-svg-icons</a>
+        <div class="nav-links">
+          <a href={`${base}getting-started/`}>Docs</a>
+          <a href={`${base}icons/`} class="active">Gallery</a>
+          <a href="https://github.com/rizzdev/modern-svg-icons" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </nav>
+
+      <main class="gallery-main">
+        <h1 class="gallery-title">Icon Gallery</h1>
+        <IconGallery />
+      </main>
+    </div>
+
+    <style>
+      .gallery-page {
+        min-height: 100vh;
+        background: #0c0c0e;
+        color: #e4e4e8;
+        font-family: 'Outfit', sans-serif;
+        position: relative;
+      }
+
+      .gallery-page::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+          linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+        background-size: 60px 60px;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .gallery-nav {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 32px;
+      }
+
+      .nav-logo {
+        font-size: 18px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #42a5f5, #66bb6a, #ffc107);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 24px;
+      }
+
+      .nav-links a {
+        color: #8b8b96;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active {
+        color: #e4e4e8;
+      }
+
+      .gallery-main {
+        position: relative;
+        z-index: 1;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 32px 80px;
+      }
+
+      .gallery-title {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        background: linear-gradient(135deg, #42a5f5, #66bb6a, #ffc107);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 28px;
+      }
+
+      @media (max-width: 640px) {
+        .gallery-main {
+          padding: 16px 16px 60px;
+        }
+
+        .gallery-nav {
+          padding: 16px;
+        }
+
+        .gallery-title {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </body>
+</html>
