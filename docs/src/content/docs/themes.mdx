@@ -1,5 +1,132 @@
 ---
 title: Themes & Customization
+description: Retheme icons with presets, custom colors, palettes, speed control, and the factory pattern.
 ---
 
-Placeholder — will be replaced.
+## Theme presets
+
+Pass a `theme` string to `createIcon()`:
+
+### Default
+
+The original icon colors — no transformation applied:
+
+```js
+import { terminal, createIcon } from '@modern-svg-icons/core';
+
+createIcon(terminal, { theme: 'default' });
+// Same as: terminal (unchanged)
+```
+
+### Grayscale
+
+Converts all colors to their luminance-equivalent grayscale:
+
+```js
+createIcon(terminal, { theme: 'grayscale' });
+```
+
+### Dark
+
+Darkens all colors by 40% (reduces HSL lightness):
+
+```js
+createIcon(terminal, { theme: 'dark' });
+```
+
+## Custom color theme
+
+Pass any hex color string. The library generates 5 shades from it and maps them to the icon's colors by luminance:
+
+```js
+// Retheme to orange
+createIcon(terminal, { theme: '#FF5722' });
+
+// Retheme to purple
+createIcon(terminal, { theme: '#9C27B0' });
+```
+
+## Palette override
+
+For full control, pass an array of 3-5 hex colors. Colors are sorted by luminance and mapped to the icon's original colors in luminance order:
+
+```js
+createIcon(terminal, {
+  palette: ['#E91E63', '#9C27B0', '#3F51B5', '#009688', '#FF9800'],
+});
+```
+
+The `palette` option takes precedence over `theme` if both are set.
+
+## Animation speed
+
+Three presets control animation duration:
+
+| Preset | Effect |
+|---|---|
+| `'slow'` | 2× duration (half speed) |
+| `'normal'` | Original timing (default) |
+| `'fast'` | 0.5× duration (double speed) |
+
+```js
+createIcon(terminal, { speed: 'slow' });
+createIcon(terminal, { speed: 'fast' });
+```
+
+## Disabling animations
+
+Set `animated: false` to strip all `<style>` blocks and CSS class attributes:
+
+```js
+createIcon(terminal, { animated: false });
+```
+
+This produces a static SVG with no animation — useful for print or reduced-motion contexts.
+
+## Size override
+
+Override the SVG `width` and `height` attributes:
+
+```js
+createIcon(terminal, { size: 16 });  // 16×16px
+createIcon(terminal, { size: 128 }); // 128×128px
+```
+
+## Factory pattern
+
+Use `createIconFactory()` to bake in defaults across your entire app:
+
+```js
+import { createIconFactory } from '@modern-svg-icons/core';
+
+const icon = createIconFactory({
+  theme: 'dark',
+  size: 24,
+  speed: 'fast',
+});
+
+// Every call uses dark theme, 24px, fast speed
+icon(terminal);
+icon(docker);
+
+// Override per-call
+icon(rocket, { size: 64, theme: 'default' });
+```
+
+## Combining options
+
+All options compose naturally:
+
+```js
+createIcon(terminal, {
+  theme: 'grayscale',
+  size: 48,
+  speed: 'slow',
+});
+
+createIcon(terminal, {
+  palette: ['#1a1a2e', '#16213e', '#0f3460', '#533483', '#e94560'],
+  size: 32,
+  animated: false,
+});
+```
