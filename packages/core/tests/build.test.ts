@@ -27,7 +27,7 @@ describe('build output', () => {
     expect(existsSync(indexPath)).toBe(true)
     const content = readFileSync(indexPath, 'utf-8')
     expect(content).toContain("export * from './icons/")
-    expect(content).toContain("export { createIcon } from './utils'")
+    expect(content).toContain("export { createIcon, createIconFactory } from './utils'")
   })
 
   it('generates meta.ts with all icons', () => {

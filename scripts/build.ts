@@ -142,7 +142,7 @@ function main() {
   // Generate index.ts — re-exports all category files + utils
   const indexLines = [
     ...categoryFiles.map(f => `export * from './icons/${f}'`),
-    `export { createIcon } from './utils'`,
+    `export { createIcon, createIconFactory } from './utils'`,
     `export type { IconOptions } from './utils'`,
   ]
 
