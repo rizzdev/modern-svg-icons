@@ -1,5 +1,131 @@
 ---
 title: API Reference
+description: Full API documentation for @modern-svg-icons/core — types, functions, and entrypoints.
 ---
 
-Placeholder — will be replaced.
+## Entrypoints
+
+| Import path | Contents |
+|---|---|
+| `@modern-svg-icons/core` | All 514 icon SVG strings + `createIcon` + `createIconFactory` |
+| `@modern-svg-icons/core/utils` | `createIcon`, `createIconFactory`, `IconOptions` type |
+| `@modern-svg-icons/core/meta` | `iconMeta` object, `IconMeta` type |
+
+## Icon exports
+
+Each icon is a named export containing a raw SVG string:
+
+```ts
+import { terminal, docker, rocket } from '@modern-svg-icons/core';
+
+typeof terminal; // string — raw SVG markup
+```
+
+Icon names use camelCase. Kebab-case filenames are converted:
+- `terminal` → `terminal`
+- `pull-request` → `pullRequest`
+- `200-ok` → `http200Ok` (numeric prefix gets `http`)
+- `async` → `asyncIcon` (reserved word gets `Icon` suffix)
+
+## `IconOptions`
+
+```ts
+interface IconOptions {
+  /** Set to false to remove CSS animations. Default: true */
+  animated?: boolean;
+  /** Override width and height attributes (in pixels) */
+  size?: number;
+  /** Color theme: 'default' | 'grayscale' | 'dark' | hex string */
+  theme?: 'default' | 'grayscale' | 'dark' | string;
+  /** Direct palette override: 3-5 hex colors mapped by luminance. Overrides theme. */
+  palette?: string[];
+  /** Animation speed preset */
+  speed?: 'slow' | 'normal' | 'fast';
+}
+```
+
+## `createIcon(svg, options?)`
+
+Applies theme, size, speed, and animation options to an SVG string. Returns the modified SVG string.
+
+**Parameters:**
+
+| Param | Type | Description |
+|---|---|---|
+| `svg` | `string` | Raw SVG string (from an icon export) |
+| `options` | `IconOptions` | Optional customization |
+
+**Returns:** `string` — the modified SVG markup.
+
+```ts
+import { terminal, createIcon } from '@modern-svg-icons/core';
+
+// No options — returns the original SVG unchanged
+createIcon(terminal);
+
+// Grayscale, 32px, no animation
+createIcon(terminal, {
+  theme: 'grayscale',
+  size: 32,
+  animated: false,
+});
+
+// Custom color theme
+createIcon(terminal, { theme: '#FF5722' });
+
+// Direct palette
+createIcon(terminal, {
+  palette: ['#E91E63', '#9C27B0', '#3F51B5', '#009688', '#FF9800'],
+});
+
+// Fast animation
+createIcon(terminal, { speed: 'fast' });
+```
+
+## `createIconFactory(defaults)`
+
+Returns a function with baked-in defaults. Useful for applying a consistent theme across your app.
+
+**Parameters:**
+
+| Param | Type | Description |
+|---|---|---|
+| `defaults` | `IconOptions` | Default options applied to every call |
+
+**Returns:** `(svg: string, overrides?: IconOptions) => string`
+
+```ts
+import { createIconFactory, terminal, docker } from '@modern-svg-icons/core';
+
+const icon = createIconFactory({ theme: 'dark', size: 24 });
+
+document.body.innerHTML = icon(terminal) + icon(docker);
+
+// Override defaults per-call
+const bigTerminal = icon(terminal, { size: 64 });
+```
+
+## `IconMeta` type
+
+```ts
+interface IconMeta {
+  name: string;      // kebab-case filename (e.g. "pull-request")
+  category: string;  // category slug (e.g. "dev-tools")
+  tags: string[];    // searchable tags
+}
+```
+
+## `iconMeta`
+
+A `Record<string, IconMeta>` mapping every camelCase export name to its metadata:
+
+```ts
+import { iconMeta } from '@modern-svg-icons/core/meta';
+
+iconMeta.terminal;
+// { name: "terminal", category: "dev-tools", tags: ["terminal","cli","bash","console"] }
+
+// Find all AI icons
+const aiIcons = Object.entries(iconMeta)
+  .filter(([, meta]) => meta.category === 'ai-ml');
+```
