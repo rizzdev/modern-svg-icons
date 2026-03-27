@@ -23,3 +23,12 @@ png/
 
 # Export output
 exports/
+
+# Docs build artifacts
+docs/public/icons/
+docs/public/categories.json
+docs/.astro/
+docs/dist/
+
+# Superpowers plugin cache
+.superpowers/
